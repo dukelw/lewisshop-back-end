@@ -8,7 +8,7 @@ const ReasonStatusCode = {
   CONFLICT: "Conflict error",
 };
 
-const { StatusCodes, ReasonPhrases } = require("../utils/httpsStatusCode");
+const { StatusCodes, ReasonPhrases } = require("../utils/https-status-code");
 
 class ErrorResponse extends Error {
   constructor(message, status) {

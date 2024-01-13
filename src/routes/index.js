@@ -1,4 +1,5 @@
 const siteRouter = require("./site");
+const shopRouter = require("./shop");
 const { pushToLogDiscord } = require("../middlewares/index");
 
 function route(app) {
@@ -7,6 +8,7 @@ function route(app) {
 
   // Use router
   app.use("/", siteRouter);
+  app.use("/api/v1/shop", shopRouter);
 }
 
 module.exports = route;
