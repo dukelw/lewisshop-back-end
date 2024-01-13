@@ -5,6 +5,8 @@ const morgan = require("morgan");
 const express = require("express");
 const route = require("./routes");
 const app = express();
+const { v4: uuid } = require("uuid");
+const logsWriter = require("./helpers/logs-writer");
 
 // Init middlewares
 app.use(express.json());
@@ -33,6 +35,7 @@ app.use((req, res, next) => {
 });
 
 app.use((error, req, res, next) => {
+  logsWriter(`UID: ${uuid()} ${req.url} -- ${req.method} -- ${error.message}`);
   const statusCode = error.status || 500;
   return res.status(statusCode).json({
     status: "error",

@@ -1,7 +1,8 @@
 class SiteController {
   index(req, res, next) {
-    res.send("Home Page")
+    console.log(a);
+    res.send("Home Page");
   }
 }
 
-module.exports = new SiteController()
+module.exports = new SiteController();
