@@ -92,3 +92,19 @@
 14-January-2024	13:48:57 ----- UID: df5e5851-cde1-4db5-b460-f85f2cbfb98f /api/v1/shop/logout -- POST -- Invalid userID
 14-January-2024	13:49:38 ----- UID: 4350691a-2525-4801-9154-69f3f44ec4d2 /api/v1/shop/logout -- POST -- Not found keyStore
 14-January-2024	13:49:53 ----- UID: 8ccda089-d6a9-429a-8a30-dfae40ad0553 /api/v1/shop/logout -- POST -- invalid signature
+14-January-2024	14:17:43 ----- UID: 5c0bc424-b4d2-4afa-89dc-fe2664983bd7 /api/v1/shop/refresh-token -- POST -- Invalid request
+14-January-2024	14:18:38 ----- UID: b4138808-5030-4fa2-be86-4b1278914f45 /api/v1/shop/refresh-token -- POST -- Invalid request
+14-January-2024	14:19:10 ----- UID: 2071478f-305d-4956-9006-74f0437e5bc1 /api/v1/shop/refresh-token -- POST -- Invalid request
+14-January-2024	14:20:20 ----- UID: 502fb4ec-4348-41c2-ac2f-9d906d02074f /api/v1/shop/refresh-token -- POST -- Invalid request
+14-January-2024	14:21:14 ----- UID: e8cf7fa3-0b44-4ace-8fc0-8a3a90e4202c /api/v1/shop/refresh-token -- POST -- Invalid request
+14-January-2024	14:21:24 ----- UID: dd7bd899-3546-4ce5-8c46-f6e706f691ac /api/v1/shop/refresh-token -- POST -- Invalid request
+14-January-2024	14:23:01 ----- UID: fcd7a845-5bd2-48eb-8b5a-e694be5b7a59 /api/v1/shop/logout -- POST -- Invalid userID
+14-January-2024	14:23:21 ----- UID: bbccdca1-6054-4d30-93d8-e3a706786da4 /api/v1/shop/logout -- POST -- Invalid userID
+14-January-2024	14:23:22 ----- UID: a85705dd-34c8-4a49-a514-3f1626f23b6c /api/v1/shop/logout -- POST -- Invalid userID
+14-January-2024	14:23:22 ----- UID: a1c8f8a0-db19-4b2c-b478-87c095a2de64 /api/v1/shop/logout -- POST -- Invalid userID
+14-January-2024	14:24:19 ----- UID: b4ab4b1c-d6a4-4667-bf79-7e5d6a688c36 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+14-January-2024	14:24:43 ----- UID: c29af909-238f-4dd5-9c11-de381f830c6d /api/v1/shop/refresh-token -- POST -- Not found keyStore
+14-January-2024	14:24:45 ----- UID: fb8cd35b-f7d0-47be-8ab2-2e3f22ae2f01 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+14-January-2024	14:24:50 ----- UID: 648ca87f-6b67-4ef1-8e90-1b274a6f4dca /api/v1/shop/refresh-token -- POST -- Not found keyStore
+14-January-2024	14:29:21 ----- UID: 1f3d6e05-dde3-4fe9-a9cc-599f85124e69 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re login
+14-January-2024	14:29:30 ----- UID: debc4f58-b95f-48c8-87c6-f0862d9b0fd6 /api/v1/shop/refresh-token -- POST -- Invalid request

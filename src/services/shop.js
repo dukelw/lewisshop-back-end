@@ -1,4 +1,8 @@
-const { BadRequestError, AuthFailureError } = require("../core/error-response");
+const {
+  BadRequestError,
+  AuthFailureError,
+  ForbiddenError,
+} = require("../core/error-response");
 const ShopModel = require("../models/Shop");
 const bcrypt = require("bcrypt");
 const crypto = require("crypto");
@@ -113,6 +117,46 @@ class ShopService {
     const deletedKey = await keyTokenService.removeKeyByID(keyStore._id);
     console.log(`Deleted key:::${deletedKey}`);
     return deletedKey;
+  };
+
+  refreshToken = async ({ refreshToken, user, keyStore }) => {
+    const { userID, email } = user;
+    console.log(`User ID: ${userID} email: ${email}`);
+    if (keyStore.refreshTokenUsed.includes(refreshToken)) {
+      // Delete all tokens in keyStore
+      await keyTokenService.deleteKeyByUserID(userID);
+      throw new ForbiddenError(`Something went wrong, please re-login`);
+    }
+
+    if (keyStore.refreshToken !== refreshToken) {
+      throw new AuthFailureError("Shop has not been registered");
+    }
+
+    // Create new token
+    const tokens = await generatePairOfToken(
+      { user_id: userID, email },
+      keyStore.publicKey,
+      keyStore.privateKey
+    );
+
+    // Check userID
+    const foundShop = await findByEmail({ email });
+    if (!foundShop) throw new AuthFailureError("Shop has not been registered");
+
+    // Update token
+    await keyStore.updateOne({
+      $set: {
+        refreshToken: tokens.refreshToken,
+      },
+      $addToSet: {
+        refreshTokenUsed: refreshToken,
+      },
+    });
+
+    return {
+      user,
+      tokens,
+    };
   };
 }
 

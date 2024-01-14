@@ -1,5 +1,5 @@
 const JWT = require("jsonwebtoken");
-const { AuthFailureError, NotFoundError } = require("../core/error-response");
+const { AuthFailureError } = require("../core/error-response");
 const { findByUserID } = require("../services/key-token");
 const asyncHandler = require("../helpers/async-handler");
 
@@ -56,8 +56,8 @@ const authentication = asyncHandler(async (req, res, next) => {
     try {
       const refreshToken = req.headers[HEADER.REFRESHTOKEN];
       const decodeUser = JWT.verify(refreshToken, keyStore.privateKey);
-      
-      if (userID !== decodeUser.userID)
+
+      if (userID !== decodeUser.user_id)
         throw new AuthFailureError("Invalid userID");
       req.keyStore = keyStore;
       req.user = decodeUser;

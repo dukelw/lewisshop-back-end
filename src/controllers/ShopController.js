@@ -22,6 +22,17 @@ class ShopController {
       metadata: await shopService.logOut(req.keyStore),
     }).send(res);
   }
+
+  async refreshToken(req, res, next) {
+    new SuccessResponse({
+      message: "Refresh token successfully",
+      metadata: await shopService.refreshToken({
+        refreshToken: req.refreshToken,
+        user: req.user,
+        keyStore: req.keyStore,
+      }),
+    }).send(res);
+  }
 }
 
 module.exports = new ShopController();

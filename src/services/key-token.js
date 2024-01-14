@@ -38,6 +38,12 @@ class KeyTokenService {
   removeKeyByID = async (id) => {
     return await KeyTokenModel.deleteOne({ _id: new Types.ObjectId(id) });
   };
+
+  deleteKeyByUserID = async (user_id) => {
+    return await KeyTokenModel.deleteOne({
+      user: new Types.ObjectId(user_id),
+    });
+  };
 }
 
 module.exports = new KeyTokenService();
