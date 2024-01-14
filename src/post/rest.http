@@ -9,3 +9,15 @@ x-api-key: 374269ef583755004134d39c48bd84821de826836271c024c01c87e6ad24a9dc50d21
   "email": "shoplewis@gmail.com",
   "password": "123456"
 }
+
+### logout
+POST {{url_dev}}shop/logout
+Content-Type: application/json
+x-api-key: 374269ef583755004134d39c48bd84821de826836271c024c01c87e6ad24a9dc50d21227cefff2f91dd17dfb2745d69ea004cd961a13371f0da7fa457923c186
+x-client-id: 65a37b046d6199828898f004
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVhMzdiMDQ2ZDYxOTk4Mjg4OThmMDA0IiwiZW1haWwiOiJsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDUyMTI4MjIsImV4cCI6MTcwNTI5OTIyMn0.VKlzgDMYC14VpfDHmPyqVnPdCHJcA-XEsRPjIGvdouw
+
+{
+  "email": "shoplewis@gmail.com",
+  "password": "123456"
+}

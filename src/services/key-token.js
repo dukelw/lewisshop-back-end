@@ -11,8 +11,8 @@ class KeyTokenService {
     try {
       const filter = { user: user_id },
         update = {
-          publicKey: public_key,
           privateKey: private_key,
+          publicKey: public_key,
           refreshTokenUsed: [],
           refreshToken: refresh_token,
         },
@@ -24,6 +24,7 @@ class KeyTokenService {
         options
       );
 
+      console.log(`Public key created: ${tokens.publicKey}`);
       return tokens ? tokens.publicKey : null;
     } catch (error) {
       console.error(error);
@@ -32,6 +33,10 @@ class KeyTokenService {
 
   findByUserID = async (user_id) => {
     return await KeyTokenModel.findOne({ user: new Types.ObjectId(user_id) });
+  };
+
+  removeKeyByID = async (id) => {
+    return await KeyTokenModel.deleteOne({ _id: new Types.ObjectId(id) });
   };
 }
 

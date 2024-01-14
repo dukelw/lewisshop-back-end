@@ -52,6 +52,7 @@ class ShopService {
         publicKey,
         privateKey
       );
+      console.log("Created Token Success::", tokens);
 
       return {
         code: 201,
@@ -106,6 +107,12 @@ class ShopService {
       }),
       tokens,
     };
+  };
+
+  logOut = async (keyStore) => {
+    const deletedKey = await keyTokenService.removeKeyByID(keyStore._id);
+    console.log(`Deleted key:::${deletedKey}`);
+    return deletedKey;
   };
 }
 

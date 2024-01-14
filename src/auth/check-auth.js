@@ -34,7 +34,6 @@ const permission = (permission) => {
       });
     }
 
-    console.log("Permissions::", req.foundApiKey.permissions);
     const validPermission = req.foundApiKey.permissions.includes(permission);
     if (!validPermission) {
       return res.status(403).json({
