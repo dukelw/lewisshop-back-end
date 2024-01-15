@@ -5,6 +5,17 @@ const {
   ElectronicModel,
   FurnitureModel,
 } = require("../models/Product");
+const {
+  publishProductByShopId,
+  unpublishProductByShopId,
+  findAllDraftProductOfShop,
+  findAllPublishProductOfShop,
+  searchProductByUser,
+  findAllProducts,
+  findProduct,
+  updateProductByID,
+} = require("../models/function/Product");
+const { removeUndefinedObject, updateNestedObjectParser } = require("../utils");
 
 // Factory and Trategy pattern
 // Defined factory class to create Product
@@ -21,6 +32,69 @@ class ProductFactory {
       throw new BadRequestError("Invalid Product type: ", type);
 
     return new productClass(payload).createProduct();
+  }
+
+  static async updateProduct(type, product_id, payload) {
+    const productClass = ProductFactory.productRegistry[type];
+    if (!productClass)
+      throw new BadRequestError("Invalid Product type: ", type);
+
+    return new productClass(payload).updateProduct(product_id);
+  }
+
+  // PUT
+  static async publishProductByShop({ product_shop, product_id }) {
+    return await publishProductByShopId({ product_shop, product_id });
+  }
+
+  static async unpublishProductByShop({ product_shop, product_id }) {
+    return await unpublishProductByShopId({ product_shop, product_id });
+  }
+
+  // Query
+  static async findAllDraftProductOfShop({
+    product_shop,
+    limit = 50,
+    skip = 0,
+  }) {
+    const query = { product_shop, isDraft: true };
+    return await findAllDraftProductOfShop({ query, limit, skip });
+  }
+
+  static async findAllPublishProductOfShop({
+    product_shop,
+    limit = 50,
+    skip = 0,
+  }) {
+    const query = { product_shop, isPublished: true };
+    return await findAllPublishProductOfShop({ query, limit, skip });
+  }
+
+  // Search
+  static async searchProduct({ keySearch }) {
+    return await searchProductByUser({ keySearch });
+  }
+
+  static async findAllProducts({
+    limit = 50,
+    sort = "ctime",
+    page = 1,
+    filter = { isPublished: true },
+  }) {
+    return await findAllProducts({
+      limit,
+      sort,
+      page,
+      filter,
+      select: ["product_name", "product_price", "product_thumb"],
+    });
+  }
+
+  static async findProduct({ product_id }) {
+    return await findProduct({
+      product_id,
+      unSelect: ["--v"],
+    });
   }
 }
 
@@ -50,11 +124,26 @@ class Product {
     const newProduct = ProductModel.create({ ...this, _id: product_id });
     return newProduct;
   }
+
+  // Update product
+  async updateProduct(product_id, bodyUpdate) {
+    return await updateProductByID({
+      product_id,
+      bodyUpdate,
+      Model: ProductModel,
+    });
+  }
 }
 
 // Create sub-class for different product types Clothes
 class Clothes extends Product {
   async createProduct() {
+    const isProductExisted = await ProductModel.findOne({
+      product_name: this.product_name,
+    });
+    if (isProductExisted)
+      throw new BadRequestError(`Product has already existed`);
+
     const newClothes = await ClothesModel.create({
       ...this.product_attributes,
       product_shop: this.product_shop,
@@ -66,11 +155,38 @@ class Clothes extends Product {
 
     return newProduct;
   }
+
+  async updateProduct(product_id) {
+    // 1. Remove attributes null, undefined
+    const standardAtributes = removeUndefinedObject(this);
+    // 2. Chcek where will be updated
+    if (standardAtributes.product_attributes) {
+      // Update child
+      await updateProductByID({
+        product_id,
+        bodyUpdate: updateNestedObjectParser(
+          standardAtributes.product_attributes
+        ),
+        Model: ClothesModel,
+      });
+    }
+    const updatedProduct = await super.updateProduct(
+      product_id,
+      updateNestedObjectParser(standardAtributes)
+    );
+    return updatedProduct;
+  }
 }
 
 // Create sub-class for different product types
 class Electronic extends Product {
   async createProduct() {
+    const isProductExisted = await ProductModel.findOne({
+      product_name: this.product_name,
+    });
+    if (isProductExisted)
+      throw new BadRequestError(`Product has already existed`);
+
     const newElectronic = await ElectronicModel.create({
       ...this.product_attributes,
       product_shop: this.product_shop,
@@ -83,10 +199,37 @@ class Electronic extends Product {
 
     return newProduct;
   }
+
+  async updateProduct(product_id) {
+    // 1. Remove attributes null, undefined
+    const standardAtributes = removeUndefinedObject(this);
+    // 2. Chcek where will be updated
+    if (standardAtributes.product_attributes) {
+      // Update child
+      await updateProductByID({
+        product_id,
+        bodyUpdate: updateNestedObjectParser(
+          standardAtributes.product_attributes
+        ),
+        Model: ElectronicModel,
+      });
+    }
+    const updatedProduct = await super.updateProduct(
+      product_id,
+      updateNestedObjectParser(standardAtributes)
+    );
+    return updatedProduct;
+  }
 }
 
 class Furniture extends Product {
   async createProduct() {
+    const isProductExisted = await ProductModel.findOne({
+      product_name: this.product_name,
+    });
+    if (isProductExisted)
+      throw new BadRequestError(`Product has already existed`);
+
     const newFurniture = await FurnitureModel.create({
       ...this.product_attributes,
       product_shop: this.product_shop,
@@ -97,6 +240,27 @@ class Furniture extends Product {
     if (!newProduct) throw new BadRequestError("Create new product error");
 
     return newProduct;
+  }
+
+  async updateProduct(product_id) {
+    // 1. Remove attributes null, undefined
+    const standardAtributes = removeUndefinedObject(this);
+    // 2. Chcek where will be updated
+    if (standardAtributes.product_attributes) {
+      // Update child
+      await updateProductByID({
+        product_id,
+        bodyUpdate: updateNestedObjectParser(
+          standardAtributes.product_attributes
+        ),
+        Model: FurnitureModel,
+      });
+    }
+    const updatedProduct = await super.updateProduct(
+      product_id,
+      updateNestedObjectParser(standardAtributes)
+    );
+    return updatedProduct;
   }
 }
 
