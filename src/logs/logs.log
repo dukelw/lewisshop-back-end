@@ -124,3 +124,16 @@
 15-January-2024	13:24:40 ----- UID: 9e5b9a60-32ff-4e01-badd-c6d4735ffc22 /api/v1/discount/create -- POST -- code is not defined
 15-January-2024	13:29:10 ----- UID: 90a0d9f0-1a74-4d29-9be0-dd4bc1c6d124 /api/v1/discount/codes/all -- GET -- Cannot read properties of undefined (reading 'find')
 15-January-2024	13:31:16 ----- UID: db5c8dbc-dd73-4813-8601-f4cb6efb2b80 /api/v1/discount/create -- POST -- Discount code existed!
+15-January-2024	16:12:40 ----- UID: cc1178da-9420-4ef2-8842-7d164884a234 /api/v1/cart -- POST -- Path "card_user_id" is not in schema, strict mode is `true`, and upsert is `true`.
+15-January-2024	16:13:18 ----- UID: 8f33a445-aa30-43b9-9377-d0962e62f096 /api/v1/cart -- POST -- Path "card_user_id" is not in schema, strict mode is `true`, and upsert is `true`.
+15-January-2024	16:14:19 ----- UID: a534342e-a936-4cf1-b5ef-c6e35ec53ec9 /api/v1/cart -- POST -- Path "card_user_id" is not in schema, strict mode is `true`, and upsert is `true`.
+15-January-2024	16:33:09 ----- UID: 59ff9a91-4a49-4bf0-9f39-67c7512e3564 /api/v1/cart -- POST -- cart_products is not defined
+15-January-2024	16:33:37 ----- UID: 1bd1d5af-8f2d-48db-a560-2aba9423a0f3 /api/v1/cart -- POST -- cart_products is not defined
+15-January-2024	16:35:41 ----- UID: 97cd3256-ccfe-455a-96ee-f6ac4cbf098a /api/v1/cart -- POST -- cart_products is not defined
+15-January-2024	16:36:29 ----- UID: 9d64f39f-4736-47c1-a5eb-ad5384f8c9de /api/v1/cart -- POST -- Cannot read properties of null (reading 'cart_products')
+15-January-2024	16:37:03 ----- UID: 954ed50b-58e8-4639-b715-d1fde44d1102 /api/v1/cart -- POST -- cart_products is not defined
+15-January-2024	16:37:55 ----- UID: eeb7a55f-e188-4b26-99c6-c88549300cc1 /api/v1/cart -- POST -- Cast to Number failed for value "$.cart_products.length" (type string) at path "cart_count_products"
+15-January-2024	16:44:20 ----- UID: 4fe6ae24-7d4c-46d9-b92f-c94ec7d508fc /api/v1/cart/update -- POST -- convertToObjectIDMongo is not defined
+15-January-2024	16:45:02 ----- UID: 0cc51828-6bfc-4789-9dfd-82d5eebb9ae3 /api/v1/cart/update -- POST -- convertToObjectIDMongo is not defined
+15-January-2024	16:45:25 ----- UID: c67a92fd-2454-4b6e-9dae-427986c9f4d9 /api/v1/cart/update -- POST -- convertToObjectIDMongo is not defined
+15-January-2024	19:45:42 ----- UID: 2914d680-0f34-48f0-9004-bc9ec91b3bde /api/v1/cart/update -- POST -- Cannot destructure property 'product_id' of '(intermediate value)' as it is undefined.

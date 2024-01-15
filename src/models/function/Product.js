@@ -2,6 +2,7 @@ const { Types } = require("mongoose");
 const { ProductModel } = require("../Product");
 const { getSelectData, unGetSelectData } = require("../../utils/index");
 const { NotFoundError } = require("../../core/error-response");
+const { convertToObjectIDMongo } = require("../../utils/index");
 
 const publishProductByShopId = async ({ product_shop, product_id }) => {
   const foundProduct = await ProductModel.findOne({
@@ -90,6 +91,27 @@ const updateProductByID = async ({
   });
 };
 
+const getProductByID = async (product_id) => {
+  return await ProductModel.findOne({
+    _id: convertToObjectIDMongo(product_id),
+  }).lean();
+};
+
+const checkProductByServer = async (products) => {
+  return await Promise.all(
+    products.map(async (product) => {
+      const foundProduct = await getProductByID(product.product_id);
+      if (foundProduct) {
+        return {
+          price: foundProduct.product_price,
+          quantity: product.quantity,
+          product_id: product.product_id,
+        };
+      }
+    })
+  );
+};
+
 module.exports = {
   publishProductByShopId,
   unpublishProductByShopId,
@@ -99,4 +121,6 @@ module.exports = {
   findAllProducts,
   findProduct,
   updateProductByID,
+  getProductByID,
+  checkProductByServer,
 };
