@@ -34,6 +34,7 @@ class CartService {
     // If having cart but no product in it
     if (!foundCart.cart_products.length) {
       foundCart.cart_products = [product];
+      foundCart.cart_count_products = 1;
       return await foundCart.save();
     } else if (
       // If having cart but does not have this product in it
