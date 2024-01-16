@@ -215,3 +215,10 @@
 16-January-2024	12:15:48 ----- UID: 94a14876-d023-4822-9662-d53641951d43 /api/v1/notification -- GET -- Aggregate has empty pipeline
 16-January-2024	12:27:04 ----- UID: 645b68c9-55e9-41d0-8c5a-00c0bda6d83f /api/v1/product/create -- POST -- invalid signature
 16-January-2024	12:27:20 ----- UID: 44dbf5a8-eb66-439a-b2c0-3b141bdc5385 /api/v1/product/create -- POST -- Product has already existed
+16-January-2024	22:36:33 ----- UID: 317886ba-89f0-4015-b83d-a407ce907a00 /api/v1/cart -- POST -- invalid signature
+16-January-2024	22:36:57 ----- UID: 32b79a35-0aa6-4231-b2d0-e0a6d4a4af9e /api/v1/cart -- POST -- jwt expired
+16-January-2024	22:37:05 ----- UID: ca07e315-bfaa-44ef-b8c8-921c1e2f39dd /api/v1/cart -- POST -- jwt expired
+16-January-2024	22:37:16 ----- UID: e1a9bbe0-3ecd-49c9-89ae-ef910d74846f /api/v1/shop/refresh-token -- POST -- Invalid request
+16-January-2024	22:40:36 ----- UID: 4e99bd8f-4772-4713-b23b-e48bda7e428c /api/v1/cart -- DELETE -- invalid signature
+16-January-2024	22:41:08 ----- UID: 69863318-eb35-429e-b68d-b5a315436bc6 /api/v1/cart -- DELETE -- cart_products is not defined
+16-January-2024	22:41:10 ----- UID: 6d334d5a-db94-4ba6-b566-a4bb5551258f /api/v1/cart -- DELETE -- cart_products is not defined

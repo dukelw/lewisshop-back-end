@@ -7,6 +7,9 @@ const createUserCart = async ({ user_id, product }) => {
       $addToSet: {
         cart_products: product,
       },
+      $set: {
+        cart_count_products: 1,
+      },
     },
     options = { upsert: true, new: true };
   return await CartModel.findOneAndUpdate(query, updateOrInsert, options);

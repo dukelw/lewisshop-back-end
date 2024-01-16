@@ -93,6 +93,7 @@ class CartService {
   }
 
   async deleteUserCartItem({ user_id, product_id }) {
+    const foundCart = await CartModel.findOne({ cart_user_id: user_id });
     const query = {
         cart_user_id: user_id,
         cart_state: "active",
@@ -102,6 +103,9 @@ class CartService {
           cart_products: {
             product_id,
           },
+        },
+        $set: {
+          cart_count_products: foundCart.cart_products.length - 1,
         },
       };
     const deletedCart = await CartModel.updateOne(query, updateSet);
