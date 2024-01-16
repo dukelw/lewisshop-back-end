@@ -222,3 +222,10 @@
 16-January-2024	22:40:36 ----- UID: 4e99bd8f-4772-4713-b23b-e48bda7e428c /api/v1/cart -- DELETE -- invalid signature
 16-January-2024	22:41:08 ----- UID: 69863318-eb35-429e-b68d-b5a315436bc6 /api/v1/cart -- DELETE -- cart_products is not defined
 16-January-2024	22:41:10 ----- UID: 6d334d5a-db94-4ba6-b566-a4bb5551258f /api/v1/cart -- DELETE -- cart_products is not defined
+16-January-2024	23:09:58 ----- UID: 04e00f70-7bdd-4d0b-9fd7-cbf1563ea6da /api/v1/shop/refresh-token -- POST -- Invalid request
+16-January-2024	23:11:07 ----- UID: cf3039a5-7fa7-4546-935d-6b1b980af57e /api/v1/shop/refresh-token -- POST -- Invalid request
+16-January-2024	23:11:08 ----- UID: 64c3a932-aec3-4e5d-9459-4ceb2f103bf6 /api/v1/shop/refresh-token -- POST -- Invalid request
+16-January-2024	23:13:52 ----- UID: 34cb9435-cb8d-4fc7-8fa2-1a300993a8f9 /api/v1/shop/refresh-token -- POST -- Invalid request
+16-January-2024	23:15:02 ----- UID: 6b48fc53-62f1-4655-afcd-80fbce665eec /api/v1/shop/refresh-token -- POST -- Invalid request
+16-January-2024	23:15:48 ----- UID: 86063aee-5a6b-4504-a542-0cd5f37fc615 /api/v1/shop/refresh-token -- POST -- Invalid request
+16-January-2024	23:16:37 ----- UID: 60541b50-141b-4b66-9e42-4888a476fc35 /api/v1/product/drafts/all -- GET -- invalid signature

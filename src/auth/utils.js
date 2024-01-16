@@ -52,6 +52,7 @@ const authentication = asyncHandler(async (req, res, next) => {
   if (!keyStore) throw new AuthFailureError("Not found keyStore");
 
   // 3. Verify token
+  console.log("Refresh token", req.headers[HEADER.REFRESHTOKEN]);
   if (req.headers[HEADER.REFRESHTOKEN]) {
     try {
       const refreshToken = req.headers[HEADER.REFRESHTOKEN];
@@ -62,6 +63,7 @@ const authentication = asyncHandler(async (req, res, next) => {
       req.keyStore = keyStore;
       req.user = decodeUser;
       req.refreshToken = refreshToken;
+      console.log(`req.user`, JSON.stringify(req.user));
       return next();
     } catch (error) {
       console.error(error);

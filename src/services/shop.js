@@ -120,11 +120,11 @@ class ShopService {
   };
 
   refreshToken = async ({ refreshToken, user, keyStore }) => {
-    const { userID, email } = user;
-    console.log(`User ID: ${userID} email: ${email}`);
+    const { user_id, email } = user;
+    console.log(`User ID: ${user_id} email: ${email}`);
     if (keyStore.refreshTokenUsed.includes(refreshToken)) {
       // Delete all tokens in keyStore
-      await keyTokenService.deleteKeyByUserID(userID);
+      await keyTokenService.deleteKeyByUserID(user_id);
       throw new ForbiddenError(`Something went wrong, please re-login`);
     }
 
@@ -132,16 +132,16 @@ class ShopService {
       throw new AuthFailureError("Shop has not been registered");
     }
 
-    // Create new token
-    const tokens = await generatePairOfToken(
-      { user_id: userID, email },
-      keyStore.publicKey,
-      keyStore.privateKey
-    );
-
     // Check userID
     const foundShop = await findByEmail({ email });
     if (!foundShop) throw new AuthFailureError("Shop has not been registered");
+
+    // Create new token
+    const tokens = await generatePairOfToken(
+      { user_id, email },
+      keyStore.publicKey,
+      keyStore.privateKey
+    );
 
     // Update token
     await keyStore.updateOne({
