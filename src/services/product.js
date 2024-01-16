@@ -16,6 +16,8 @@ const {
   updateProductByID,
 } = require("../models/function/Product");
 const { removeUndefinedObject, updateNestedObjectParser } = require("../utils");
+const { insertInventory } = require("../models/function/Inventory");
+const { pushNotificationToSystem } = require("../services/notification");
 
 // Factory and Trategy pattern
 // Defined factory class to create Product
@@ -122,6 +124,27 @@ class Product {
   // Create new product
   async createProduct(product_id) {
     const newProduct = ProductModel.create({ ...this, _id: product_id });
+    if (newProduct) {
+      // Add stock to Inventory Collection
+      await insertInventory({
+        product_id: newProduct._id,
+        shop_id: this.product_shop,
+        stock: this.product_quantity,
+      });
+
+      // Push notification to Notification Collection
+      pushNotificationToSystem({
+        type: "SHOP-001",
+        receiver_id: 1,
+        sender_id: this.product_shop,
+        options: {
+          product_name: this.product_name,
+          shop_name: this.product_shop,
+        },
+      })
+        .then((rs) => console.log(rs))
+        .catch(console.error);
+    }
     return newProduct;
   }
 

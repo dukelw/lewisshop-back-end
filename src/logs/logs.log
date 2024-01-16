@@ -210,3 +210,8 @@
 16-January-2024	09:44:17 ----- UID: e4594e2a-d28c-4021-8ce2-4e2592b7f521 /api/v1/order/deleted -- POST -- OrderModel.findWithDeleted is not a function
 16-January-2024	10:35:27 ----- UID: 83af8512-75cb-4623-906c-cb09e0c49fa2 /api/v1/inventory -- POST -- The product does not exist
 16-January-2024	10:35:48 ----- UID: 1c71c4de-3566-4cac-8b7a-9639b4f3dc58 /api/v1/inventory -- POST -- Cast to number failed for value "undefined" (type undefined) at path "inven_stock"
+16-January-2024	12:12:44 ----- UID: 5b64c667-c506-48b9-9fd9-43776476ae87 /api/v1/notification -- GET -- Aggregate has empty pipeline
+16-January-2024	12:15:46 ----- UID: 45e02383-4f3f-47cb-9a01-57d5bbbc18d1 /api/v1/notification -- GET -- Aggregate has empty pipeline
+16-January-2024	12:15:48 ----- UID: 94a14876-d023-4822-9662-d53641951d43 /api/v1/notification -- GET -- Aggregate has empty pipeline
+16-January-2024	12:27:04 ----- UID: 645b68c9-55e9-41d0-8c5a-00c0bda6d83f /api/v1/product/create -- POST -- invalid signature
+16-January-2024	12:27:20 ----- UID: 44dbf5a8-eb66-439a-b2c0-3b141bdc5385 /api/v1/product/create -- POST -- Product has already existed
