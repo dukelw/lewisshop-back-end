@@ -208,3 +208,5 @@
 16-January-2024	09:40:49 ----- UID: 696613b0-aa80-475d-b321-8bedf49d9195 /api/v1/order/deleted -- POST -- OrderModel.findDeleted is not a function
 16-January-2024	09:44:16 ----- UID: a69e104d-24b2-49ab-8137-ad538a511a7b /api/v1/order/deleted -- POST -- OrderModel.findWithDeleted is not a function
 16-January-2024	09:44:17 ----- UID: e4594e2a-d28c-4021-8ce2-4e2592b7f521 /api/v1/order/deleted -- POST -- OrderModel.findWithDeleted is not a function
+16-January-2024	10:35:27 ----- UID: 83af8512-75cb-4623-906c-cb09e0c49fa2 /api/v1/inventory -- POST -- The product does not exist
+16-January-2024	10:35:48 ----- UID: 1c71c4de-3566-4cac-8b7a-9639b4f3dc58 /api/v1/inventory -- POST -- Cast to number failed for value "undefined" (type undefined) at path "inven_stock"

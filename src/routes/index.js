@@ -5,6 +5,7 @@ const discountRouter = require("./discount");
 const cartRouter = require("./cart");
 const inventoryRouter = require("./inventory");
 const orderRouter = require("./order");
+const commentRouter = require("./comment");
 const { apiKey, permission } = require("../auth/check-auth");
 const { pushToLogDiscord } = require("../middlewares/index");
 
@@ -23,6 +24,7 @@ function route(app) {
   app.use("/api/v1/cart", cartRouter);
   app.use("/api/v1/inventory", inventoryRouter);
   app.use("/api/v1/order", orderRouter);
+  app.use("/api/v1/comment", commentRouter);
 }
 
 module.exports = route;
