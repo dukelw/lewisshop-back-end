@@ -137,3 +137,74 @@
 15-January-2024	16:45:02 ----- UID: 0cc51828-6bfc-4789-9dfd-82d5eebb9ae3 /api/v1/cart/update -- POST -- convertToObjectIDMongo is not defined
 15-January-2024	16:45:25 ----- UID: c67a92fd-2454-4b6e-9dae-427986c9f4d9 /api/v1/cart/update -- POST -- convertToObjectIDMongo is not defined
 15-January-2024	19:45:42 ----- UID: 2914d680-0f34-48f0-9004-bc9ec91b3bde /api/v1/cart/update -- POST -- Cannot destructure property 'product_id' of '(intermediate value)' as it is undefined.
+15-January-2024	21:26:08 ----- UID: 99b29fc2-0f59-4c32-afd5-cbe2fc17e351 /api/v1/order -- POST -- Expected ':' after property name in JSON at position 1068
+15-January-2024	21:26:33 ----- UID: 022d46fc-fb4f-4497-9c8b-b0782a8ddcce /api/v1/order -- POST -- jwt expired
+15-January-2024	21:26:35 ----- UID: 11927b2d-8ac6-49c9-a382-320ac84910ab /api/v1/order -- POST -- jwt expired
+15-January-2024	21:26:37 ----- UID: 875e9431-fe31-48ea-abf6-307e96353269 /api/v1/order -- POST -- jwt expired
+15-January-2024	21:26:57 ----- UID: 586149f9-d9a1-4cdb-a174-fdd0d0cfec3c /api/v1/shop/refresh-token -- POST -- Invalid request
+15-January-2024	21:28:30 ----- UID: 9f796bb2-80b3-42d0-9282-aa30382a39b2 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:28:40 ----- UID: ab7493c2-a558-4a24-a399-c1b57bfe3901 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:29:16 ----- UID: 4acfa2fa-a46b-4ed6-9cb2-ec80bcd03792 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:30:04 ----- UID: a8b2773e-223d-4ac2-8b76-99c6df111656 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:31:25 ----- UID: 4daa8993-6954-4b25-8c62-907dd48bcca2 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:31:50 ----- UID: 610ab1cd-0cb4-4c03-855b-f833fc70c8f1 /api/v1/order/review -- POST -- jwt expired
+15-January-2024	21:31:54 ----- UID: 549985e1-585e-4f19-b526-601de3758a8f /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:32:45 ----- UID: 8e376360-472f-49d9-802c-9bc43e24c81c /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:33:06 ----- UID: c00cd680-e340-4f0b-aa67-1ef569efaf5c /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:33:10 ----- UID: e379f6d6-72cc-465e-98a3-173508e718f8 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:33:23 ----- UID: 7d5ab2fa-f9b1-44e4-bcb5-c1b7f299ec43 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:34:08 ----- UID: 7ee43af8-7889-4464-90b9-4b8d5716f522 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:36:15 ----- UID: 5801ab95-e33f-4420-ad34-b0083f81ef60 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:36:47 ----- UID: 41c59d78-a59a-4a75-92fe-cafd1c25fe51 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:37:16 ----- UID: eb8f0538-ec60-414a-b3be-eebaa2fc2d7a /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:37:56 ----- UID: c78058e9-e79b-4415-b7e9-211d86e6274d /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:38:12 ----- UID: 7ab806f7-3273-4bbe-ae2e-c67714a388ac /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:38:14 ----- UID: 83224d11-26fd-4296-bdfc-44184a277841 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:38:27 ----- UID: 73a02565-a6d8-49ae-91af-b2fcb8fc0ac9 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:39:19 ----- UID: 3169c4e0-1c36-4a0a-a6aa-19d68f2c861c /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:39:57 ----- UID: b290325a-13bf-4911-93b4-094b335b34d6 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:41:51 ----- UID: 74e0c756-2bb6-4154-871f-7f56f8c36481 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:43:24 ----- UID: 36906148-fd8b-4bbd-899a-26d8764a4f05 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:44:39 ----- UID: 6514798e-5c38-4a54-9546-a899575bfee1 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:44:44 ----- UID: a3a83264-f41a-43f2-815c-0d8c6f4bacda /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:44:45 ----- UID: 9aad83aa-52f2-421f-b6a4-a5c88f591c3b /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:44:53 ----- UID: e29119e7-22ec-46e5-8918-e1173b04a7a9 /api/v1/order -- POST -- Invalid userID
+15-January-2024	21:45:58 ----- UID: e1d0d8ce-570f-4d5b-a4d2-1f0bb1911569 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+15-January-2024	21:47:09 ----- UID: 2c88c774-683b-4f19-b784-818040b8f199 /api/v1/shop/refresh-token -- POST -- Invalid request
+15-January-2024	21:47:10 ----- UID: 7a88a7d5-f22b-46c2-b1b7-6e488c7c539c /api/v1/shop/refresh-token -- POST -- Invalid request
+15-January-2024	21:59:03 ----- UID: 3146ca5b-abb2-446b-ab85-7e7b256fa9a2 /api/v1/order -- POST -- 
+15-January-2024	21:59:11 ----- UID: 36525f6d-3bb1-41ef-84cd-94bbe1c24922 /api/v1/order -- POST -- Socket already opened
+15-January-2024	21:59:13 ----- UID: e0875a87-8346-4c72-b426-8e2fa0b73adc /api/v1/order -- POST -- Socket already opened
+15-January-2024	21:59:14 ----- UID: 6f1fce9e-79b3-48d0-8b7a-384a42f5c2c2 /api/v1/order -- POST -- Socket already opened
+15-January-2024	21:59:15 ----- UID: 6de6515b-0ac4-4d36-b1a0-dc8d644c7996 /api/v1/order -- POST -- Socket already opened
+15-January-2024	21:59:16 ----- UID: a4b2ac82-e541-4de0-b387-3a1a441f7058 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:00:54 ----- UID: 36de6a4d-2e7a-40b3-97b5-316ed14c8890 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:05:58 ----- UID: 4cfb5b02-2bda-4dd1-a516-eddea5b76f3a /api/v1/order -- POST -- 
+15-January-2024	22:06:00 ----- UID: d838cc19-b182-4174-bb69-061ac1d0a860 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:06:01 ----- UID: d4f80ef2-85ea-4369-80cb-fd0ac2694e05 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:06:02 ----- UID: a0e8c1fe-b68c-4e28-a2d1-08d3a6b6f277 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:06:02 ----- UID: e7376afc-6d1c-4074-8119-d71fa75db80d /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:06:02 ----- UID: a46badc8-e7e0-4b8c-899f-1bb852b457de /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:06:03 ----- UID: 0ac85622-08fb-4b62-9403-59bf868b4fb4 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:06:04 ----- UID: a18b9035-532e-46f7-8932-64ffd6c44994 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:06:32 ----- UID: cbadfbd1-f018-40ec-993f-9c02350b1c5c /api/v1/order -- POST -- 
+15-January-2024	22:07:02 ----- UID: 18dc8dde-0fb4-420a-9776-0258233825fc /api/v1/order -- POST -- 
+15-January-2024	22:07:05 ----- UID: f0bf2790-332a-4ee8-9baa-9ea645358e37 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:07:15 ----- UID: dc264147-e33b-47c5-83dd-9c72f9ad6a2c /api/v1/order -- POST -- 
+15-January-2024	22:07:17 ----- UID: 4b6ebc91-9380-4df3-8589-854c87fc74c1 /api/v1/order -- POST -- Socket already opened
+15-January-2024	22:17:00 ----- UID: 626b7a32-7352-41ad-b0fc-db6b67ed5b6f /api/v1/order -- POST -- Some products have been updated recently. please try again
+15-January-2024	22:19:15 ----- UID: a3813143-8dbc-4fb3-a860-5dd164ec03db /api/v1/inventory -- POST -- invalid signature
+16-January-2024	08:49:11 ----- UID: 0b7b0a8d-58b6-4283-af1f-cd668cfd342e /api/v1/order -- GET -- Cast to Number failed for value "65a37b046d6199828898f004" (type string) at path "order_user_id" for model "Order"
+16-January-2024	08:52:45 ----- UID: 11796a7c-db0c-40eb-a223-23f3afb36ebf /api/v1/order -- POST -- Cart does not exist
+16-January-2024	08:53:59 ----- UID: 3addc32a-3cdc-4faa-9016-959ca46ab637 /api/v1/order -- POST -- Cart does not exist
+16-January-2024	08:54:48 ----- UID: 14d2d4f9-4139-4663-9870-c4e2b8a8e96b /api/v1/order/find -- POST -- input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+16-January-2024	09:01:12 ----- UID: 7794d85e-6468-42c2-baba-5fc9df1ebdf1 /api/v1/order/cancel -- POST -- foundOrder.save is not a function
+16-January-2024	09:02:29 ----- UID: 8c4982b9-b867-4c5f-a099-0c762402f2bc /api/v1/order/cancel -- POST -- Order is not found
+16-January-2024	09:03:25 ----- UID: 31925e33-de7a-4129-b520-99d9e3c4f5e8 /api/v1/order/cancel -- POST -- Order is not found
+16-January-2024	09:03:43 ----- UID: 43ae29d2-ede3-42b0-8912-71c34ecbf0e1 /api/v1/order/cancel -- POST -- Order is not found
+16-January-2024	09:03:45 ----- UID: d5eae682-74c4-4cda-8df3-9a03f4fb4a69 /api/v1/order/cancel -- POST -- Order is not found
+16-January-2024	09:29:41 ----- UID: f68e6f6d-56b5-4ed6-8fb1-35f6549c11dc /api/v1/order/deleted -- POST -- Order is not found
+16-January-2024	09:30:16 ----- UID: 052c5e4e-a1df-46d0-907f-68da5e9cb3f8 /api/v1/order/deleted -- POST -- Order is not found
+16-January-2024	09:40:49 ----- UID: 696613b0-aa80-475d-b321-8bedf49d9195 /api/v1/order/deleted -- POST -- OrderModel.findDeleted is not a function
+16-January-2024	09:44:16 ----- UID: a69e104d-24b2-49ab-8137-ad538a511a7b /api/v1/order/deleted -- POST -- OrderModel.findWithDeleted is not a function
+16-January-2024	09:44:17 ----- UID: e4594e2a-d28c-4021-8ce2-4e2592b7f521 /api/v1/order/deleted -- POST -- OrderModel.findWithDeleted is not a function

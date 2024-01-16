@@ -4,6 +4,7 @@ const { findCartByID } = require("../models/function/Cart");
 const { checkProductByServer } = require("../models/function/Product");
 const { acquireLock, releaseLock } = require("../services/redis");
 const discountService = require("../services/discount");
+const { convertToObjectIDMongo } = require("../utils");
 
 class OrderService {
   /*
@@ -123,8 +124,6 @@ class OrderService {
     // One more check inventory of product
     // Get new array by flatmap
     const products = shop_order_ids_new.flatMap((order) => order.item_products);
-    console.log(`Shop order id new: ${shop_order_ids_new}`)
-    console.log(`Products: ${products}`);
     const acquireProduct = [];
 
     for (let i = 0; i < products.length; i++) {
@@ -160,22 +159,73 @@ class OrderService {
   /*
     1. Query Orders [User]
   */
-  static async getOrderByUser() {}
+  async getOrderByUser({ limit = 50, page = 1, sort = "ctime", user_id }) {
+    if (!user_id) throw new NotFoundError("User id not found");
+    const skip = (page - 1) * limit;
+    const sortBy = sort === "ctime" ? { _id: -1 } : { _id: 1 };
+    const orders = await OrderModel.find({
+      order_user_id: user_id,
+    })
+      .sort(sortBy)
+      .skip(skip)
+      .limit(limit)
+      .lean();
+    return orders;
+  }
 
   /*
     2. Query Orders Using ID [User]
   */
-  static async getOneOrderByUser() {}
+  async getOneOrderByUser({ user_id, order_id }) {
+    if (!user_id) throw new NotFoundError("User id not found");
+    const order = await OrderModel.find({
+      order_user_id: user_id,
+      _id: convertToObjectIDMongo(order_id),
+    }).lean();
+    return order;
+  }
 
   /*
     3. Cancel Orders [User]
   */
-  static async cancelOrderByUser() {}
+  async cancelOrderByUser({ user_id, order_id }) {
+    const foundOrder = await OrderModel.findOne({
+      order_user_id: user_id,
+      _id: convertToObjectIDMongo(order_id),
+    });
+
+    if (!foundOrder) throw new NotFoundError("Order is not found");
+
+    // Soft delete order
+    return await OrderModel.delete({
+      order_user_id: user_id,
+      _id: convertToObjectIDMongo(order_id),
+    });
+  }
+  /*
+    4. Find Deleted Orders [Shop | Admin | User]
+  */
+  async findDeletedOrder({ user_id }) {
+    if (!user_id) throw new BadRequestError("Can not find user ID");
+    return await OrderModel.findWithDeleted({ deleted: true });
+  }
 
   /*
-    4. Update Orders Status [Shop | Admin]
+    5. Restore Deleted Orders [User]
   */
-  static async updateOrderStatusByShop() {}
+  async restoreOrder({ user_id, order_id }) {
+    if (!user_id) throw new BadRequestError("Can not find user ID");
+    if (!order_id) throw new BadRequestError("Can not find order ID");
+    return await OrderModel.restore({
+      order_user_id: user_id,
+      _id: convertToObjectIDMongo(order_id),
+    });
+  }
+
+  /*
+    6. Update Orders Status [Shop | Admin]
+  */
+  async updateOrderStatusByShop() {}
 }
 
 module.exports = new OrderService();

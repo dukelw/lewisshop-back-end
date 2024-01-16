@@ -1,4 +1,5 @@
 const { Schema, model } = require("mongoose");
+var mongoose_delete = require("mongoose-delete");
 
 const DOCUMENT_NAME = "Order";
 const COLLECTION_NAME = "Orders";
@@ -53,6 +54,8 @@ var orderSchema = new Schema(
     collection: COLLECTION_NAME,
   }
 );
+
+orderSchema.plugin(mongoose_delete, { overrideMethods: true, deletedAt: true });
 
 module.exports = {
   OrderModel: model(DOCUMENT_NAME, orderSchema),
