@@ -3,8 +3,10 @@ const compression = require("compression");
 const { default: helmet } = require("helmet");
 const morgan = require("morgan");
 const express = require("express");
+const cors = require("cors");
 const route = require("./routes");
 const app = express();
+app.use(cors());
 const { v4: uuid } = require("uuid");
 const logsWriter = require("./helpers/logs-writer");
 

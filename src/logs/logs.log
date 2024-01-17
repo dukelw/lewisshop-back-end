@@ -229,3 +229,120 @@
 16-January-2024	23:15:02 ----- UID: 6b48fc53-62f1-4655-afcd-80fbce665eec /api/v1/shop/refresh-token -- POST -- Invalid request
 16-January-2024	23:15:48 ----- UID: 86063aee-5a6b-4504-a542-0cd5f37fc615 /api/v1/shop/refresh-token -- POST -- Invalid request
 16-January-2024	23:16:37 ----- UID: 60541b50-141b-4b66-9e42-4888a476fc35 /api/v1/product/drafts/all -- GET -- invalid signature
+17-January-2024	13:33:44 ----- UID: 2b8e3895-548a-4fe5-bd86-d97a5e346f5c /api/v1/shop/signin?email=Thevis%40gmail.com&password=hello -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:33:44 ----- UID: 6e085a2e-89fd-4cf4-8b94-3de2e950cd73 /api/v1/shop/signin?email=Thevis%40gmail.com&password=hello -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:34:02 ----- UID: 0ef673b3-7d11-4f08-b07d-77ea7ece48ff /api/v1/shop/signin?email=Thevis%40gmail.com&password=hello -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:34:02 ----- UID: 49206e3b-73e5-4935-a879-d1ac707ad8e9 /api/v1/shop/signin?email=Thevis%40gmail.com&password=hello -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:34:58 ----- UID: 6ef92c37-c782-404c-91e0-844751d85d3d /api/v1/shop/signin?email=Thevis%40gmail.com&password=hello -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:34:58 ----- UID: 772eb6c6-3a01-494b-b64e-7d9f7a7918c7 /api/v1/shop/signin?email=Thevis%40gmail.com&password=hello -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:35:00 ----- UID: de966050-44be-4ac0-b622-46d308f8bf6a /api/v1/shop/signin?email=Thevis%40gmail.com&password=hello -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:35:00 ----- UID: 12c27790-56c7-45de-b6ef-78107794bf3b /api/v1/shop/signin?email=Thevis%40gmail.com&password=hello -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:35:57 ----- UID: fe361feb-6cb5-42e3-ae28-70da96aec663 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:35:57 ----- UID: e15bfde0-2396-45e9-8d1c-c30af3186763 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:36:02 ----- UID: 4526d3b0-f5da-48af-8ac3-fbffb74c4444 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:36:02 ----- UID: 772d57da-d1bd-44f6-b51f-676bd1d29ef4 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:38:37 ----- UID: 69cf7335-97cd-4be0-8c76-5effd050135f /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:38:37 ----- UID: 7691762a-4deb-4738-8a7b-075b3f194d89 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:39:06 ----- UID: f9a69f41-6e1e-4369-b8d5-9915b26af432 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:39:06 ----- UID: a8fba51f-b8a6-4c02-9357-a62dcac85e17 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:39:46 ----- UID: 59543089-bc0d-43db-8002-7bb55e04efee /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:39:46 ----- UID: 0678f2d8-65b3-46ef-8608-3f6f4157b5ff /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:39:50 ----- UID: ecd0134c-2a26-4c1b-b463-95c3ee3a24d7 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:39:50 ----- UID: 0a5881cd-39c2-499b-8fd2-3d07d105ece3 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:42:25 ----- UID: c1555bb6-895e-4abe-88a0-b1c3587b27e7 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:42:25 ----- UID: ce5b2078-cbc5-41a1-a42c-8f15c34b326d /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:48:38 ----- UID: 34209c05-8cc5-4e9e-8c04-c22201ce1d26 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:48:38 ----- UID: d84ce22c-90f4-44da-bc6e-11515b173f1e /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:48:58 ----- UID: 81a33903-e2a5-463b-a422-928ae22e2632 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:48:58 ----- UID: 3d197563-8d50-4dad-acea-b37a543e8c90 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:54:27 ----- UID: eff54736-a4c5-4cfb-9fb9-80b1eb2a624b /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:54:27 ----- UID: 48a468fc-f24c-4c6b-b32c-9724b5324fde /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:55:38 ----- UID: 5c51e82f-19e6-487d-b308-7c26f0ef29b3 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:55:38 ----- UID: 0fd53533-8d0a-4eae-9865-eca76e6f5eed /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:56:35 ----- UID: a6cb4de6-f73f-4a5b-a6e0-8a114315cfa6 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	13:56:35 ----- UID: 5019d86c-c92d-490b-b1f4-547274faff85 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:02:08 ----- UID: ffec774c-dc09-4cd4-9df5-0dec9b55bdb4 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:02:08 ----- UID: 14d85a6a-8798-4bf5-be58-3b99a6009872 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:03:28 ----- UID: 85b0d6bc-73dd-4fad-a3fd-1bf6f5d8037e /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:03:28 ----- UID: 52f75b58-78ee-451e-b1cf-c522d1733659 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:03:29 ----- UID: ec728ff1-939e-449e-99a6-90af21bdcb2d /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:03:29 ----- UID: a7dd8441-8908-4338-91a2-348a9ff726c8 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:05:46 ----- UID: 46e2dfa4-3c7a-41db-9374-424febc3f379 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:05:46 ----- UID: 5374be78-47c6-4edd-9532-3bc14f703c4a /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:05:51 ----- UID: d40c153b-cf5d-4483-a38b-06abaae2c73f /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:05:51 ----- UID: b7d426d4-4d91-41cd-b81a-c1f7256a3844 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:06:50 ----- UID: 72dd9104-2f7e-4708-9d90-900d829a848a /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:06:50 ----- UID: 9c6a621d-eb43-48f4-91e1-d79461a96955 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:09:26 ----- UID: 7f3ab569-12cb-4389-b99d-67fb784596aa /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:09:26 ----- UID: 08c02d6f-1d81-4828-b0c3-47ee17992bcf /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:09:28 ----- UID: 6af4cdf8-c2e8-4b4a-99a9-5040135eb649 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:09:28 ----- UID: 49544f69-a58d-4aa2-a848-05a5bfb00dec /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:23:25 ----- UID: 1bd0cf7c-94a0-4080-9832-f18a953605b2 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:23:25 ----- UID: 57499082-44a0-46d7-bcb0-de50cd39de8c /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:23:43 ----- UID: f4d00443-f4dd-4723-a185-ae9434c913bd /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:23:43 ----- UID: 4eb10917-59b4-41ea-a141-970e766edffa /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:24:42 ----- UID: eef282df-b0a1-4daa-bf24-a9b699d929dd /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:24:42 ----- UID: d14dad60-4bd4-4ff3-9b9f-c1353ac417c9 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:25:03 ----- UID: 0e2e85d7-80c6-4835-857f-bdb973562e6c /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:25:03 ----- UID: 108cd613-c0da-432e-977f-650a3c75bde5 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:26:32 ----- UID: 5c1e3e75-57f9-424c-8e3e-e316e7cb6072 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:26:32 ----- UID: 9d7f6497-36f9-4ac9-8668-eaa0ee5bcb32 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:26:34 ----- UID: 3716f3f2-2589-4175-ba01-1c262184ac04 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:26:34 ----- UID: 98a2f0bd-7994-4298-90b2-716511d3cf0e /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:26:35 ----- UID: 14a6b33f-53a7-4275-97a8-523da592393e /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:26:35 ----- UID: d00f21e4-bca1-42ae-94ae-6364cea0ae02 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:26:38 ----- UID: c778404e-f104-4659-8c45-c3027ca78364 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:26:38 ----- UID: d6feff99-0de2-425f-ac97-baf0e58fdca0 /api/v1/shop/signin -- POST -- Unexpected token '"', "#" is not valid JSON
+17-January-2024	14:27:57 ----- UID: 09ac85ef-1e32-44ba-a42a-28d5bc3a8971 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:27:57 ----- UID: ac800eee-70d4-4b0d-af63-33fec179acd6 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:27:58 ----- UID: d2e6fb0a-b702-4695-9edd-ae4251b8eb35 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:27:58 ----- UID: 6401e033-abf1-47cd-a260-7fad1e3724cd /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:28:02 ----- UID: 0deb3b69-f6ce-440f-9597-6088fb81522a /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:28:02 ----- UID: 499d446a-84ea-479d-9be7-329ef231ab2e /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:29:31 ----- UID: 505ec297-248c-4221-8052-b130f5fa14e5 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:29:31 ----- UID: cc095bde-d6af-466d-a4b1-234eac8de5db /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:29:37 ----- UID: fa13291f-a72d-4fcf-9333-ecf33886d4f6 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:29:37 ----- UID: 210ba440-c963-4182-ab58-9bd19a0a6cb1 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:29:47 ----- UID: 45e66975-b631-4a32-a5ca-1e22bee4a2fb /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:29:47 ----- UID: 3562ae97-1e19-4b76-9d94-ffe516468aac /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:33:10 ----- UID: 4cd5d48f-8736-4bd7-a2b7-f2a31428ed82 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:33:10 ----- UID: f7949879-7455-4b79-a7ea-24670c374780 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:33:19 ----- UID: 0ad25916-5cba-4a17-8cf9-eae4db815780 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:33:19 ----- UID: 423f1c6d-8b0f-472a-9882-ea60f1a23c70 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:33:54 ----- UID: 22cc0aad-1f77-4bb5-89a2-e7da9b0d5a0c /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:33:54 ----- UID: 19c58f11-793f-4fac-83f5-f09e245de218 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:33:57 ----- UID: 68c26463-f32c-4a8c-8bf0-e9eb7a9e38f2 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:33:57 ----- UID: 7a1d5416-53f9-4653-8a93-70580be6b721 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:35:38 ----- UID: 53a62807-da18-4b92-91d0-fcb95ae7976f /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:35:38 ----- UID: de7961b7-3052-49b8-b57e-3fe8cb95ce77 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:36:22 ----- UID: c35505aa-594b-4ef8-b69f-2a2ebe1bc2d8 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:36:43 ----- UID: 1da756e1-20fd-4731-a714-f565ef7c25a7 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:36:47 ----- UID: 3702731d-2917-49d1-a197-eab3f5de03f9 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:36:51 ----- UID: 72768e88-50f1-4cb0-9ed6-347278999b08 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:38:23 ----- UID: 77a79ab7-e879-471a-8a07-28f891cdfe01 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:40:00 ----- UID: cb3cad6a-8e16-4001-a7ac-ce4392ad7840 /api/v1/shop/signin?email=lewis%40gmail.com&password=123456 -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:41:22 ----- UID: 7297c03a-8ee0-4a42-9fb2-975becf88332 /api/v1/shop/signin?email=lewis%40gmail.com&password=123456 -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:41:26 ----- UID: fcc93c55-0a7d-4b1c-bec8-1783acf4528b /api/v1/shop/signin?email=lewis%40gmail.com&password=123456 -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:41:51 ----- UID: 353d9a57-c0db-4359-98e7-6b07c6edfcbc /api/v1/shop/signin?email=lewis%40gmail.com&password=123456 -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:41:56 ----- UID: e3a09b36-7dfa-456f-8c13-80e211cb8a9a /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:41:56 ----- UID: 44bd66b9-872b-4a21-88a9-e727e5484884 /api/v1/shop/signin -- POST -- Unexpected token 'n', "#" is not valid JSON
+17-January-2024	14:43:22 ----- UID: ac745baf-f6c3-4321-bd31-a98e25081278 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	14:45:58 ----- UID: f8acfee4-953b-413e-8218-a3c1425d884b /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	14:47:06 ----- UID: d50adaca-51de-4934-a359-698caf1a6fe6 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	15:04:35 ----- UID: 45d6cc13-4104-4440-a5c0-f852a8bfbe10 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	15:19:51 ----- UID: e26741d7-47b5-4ec6-a203-846c1f52b85b /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	15:50:22 ----- UID: 62fa3785-436e-422c-9f0e-3e5ea8409e08 /api/v1/shop/signup -- POST -- Shop is already registered
+17-January-2024	15:51:02 ----- UID: 19ac9a08-88ca-4bbe-8585-d687d713964b /api/v1/shop/signup -- POST -- Shop is already registered
+17-January-2024	15:51:17 ----- UID: 5508fa1d-9893-479d-9dc5-d3fa64c04322 /api/v1/shop/signup -- POST -- Shop is already registered
+17-January-2024	16:01:04 ----- UID: 13b4ea2c-1208-4b45-a6ff-55cc32ca4da5 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	16:01:17 ----- UID: dcf754c4-5b84-4dfc-940b-9decacab9d03 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	16:01:20 ----- UID: 43289e59-92ba-4f4a-9a72-6327e9e873dc /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	16:01:20 ----- UID: 28fd9f37-1613-4f6f-8eb1-2661e619a5de /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	16:01:20 ----- UID: ccabd744-acb1-4719-aa6d-9fb4933c1f11 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	16:01:20 ----- UID: 2cf1fba8-8974-4926-80b5-7c59c642dd8c /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	17:33:46 ----- UID: 3460fba4-a6ea-4c2e-b3fb-3c63f7f454d3 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	17:34:00 ----- UID: 74262692-636a-4f1b-9ebb-0736e98b31f7 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	17:34:51 ----- UID: fd81553e-0544-49c5-8b07-9f8b8a014c09 /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	17:35:23 ----- UID: bcecbaf3-51b8-4b0e-a56d-0a641ed834fa /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	17:35:39 ----- UID: e8fd2c95-b3b6-4f94-ad02-0ee3d8055cea /api/v1/shop/signin -- POST -- Shop has not registered
+17-January-2024	20:51:50 ----- UID: 09ee16a0-48d9-4c3f-8ef4-a2de5b600222 /api/v1/shop/signin -- POST -- Shop has not registered
