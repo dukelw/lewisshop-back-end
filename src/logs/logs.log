@@ -346,3 +346,425 @@
 17-January-2024	17:35:23 ----- UID: bcecbaf3-51b8-4b0e-a56d-0a641ed834fa /api/v1/shop/signin -- POST -- Shop has not registered
 17-January-2024	17:35:39 ----- UID: e8fd2c95-b3b6-4f94-ad02-0ee3d8055cea /api/v1/shop/signin -- POST -- Shop has not registered
 17-January-2024	20:51:50 ----- UID: 09ee16a0-48d9-4c3f-8ef4-a2de5b600222 /api/v1/shop/signin -- POST -- Shop has not registered
+26-January-2024	23:08:56 ----- UID: 8c937439-0dca-46e2-a36f-41f330599965 /api/v1/shop/signin -- POST -- Shop has not registered
+26-January-2024	23:10:01 ----- UID: e77a1561-d54b-4b1a-8c07-6d1c846473d5 /api/v1/shop/signin -- POST -- Shop has not registered
+26-January-2024	23:11:33 ----- UID: 95268200-be88-4655-8484-673ddb7e89bc /api/v1/shop/signin -- POST -- Shop has not registered
+26-January-2024	23:17:46 ----- UID: db834127-f2f8-4da3-a430-b328739ef272 /api/v1/shop/signin -- POST -- Shop has not registered
+26-January-2024	23:19:12 ----- UID: 85605771-ae76-45bb-ae52-4f219f7179ec /api/v1/shop/signin -- POST -- Shop has not registered
+26-January-2024	23:54:30 ----- UID: 00375983-f780-41d4-b3ed-88afcf1020a7 /api/v1/shop/signin -- POST -- res is not defined
+26-January-2024	23:55:58 ----- UID: 2e4e15c4-8d92-426e-94a0-7c11495074f2 /api/v1/shop/signin -- POST -- res is not defined
+26-January-2024	23:56:01 ----- UID: 09092ef5-417e-4a34-a5bd-9a3a80950ead /api/v1/shop/signin -- POST -- res is not defined
+26-January-2024	23:57:33 ----- UID: 54333c8f-5ddb-4796-b59a-369eee6e2538 /api/v1/shop/signin -- POST -- Cannot read properties of undefined (reading 'setHeader')
+27-January-2024	00:06:13 ----- UID: 8408bd2e-103b-41f5-934f-06c69e769a10 /api/v1/shop/signin -- POST -- Shop has not registered
+27-January-2024	00:06:15 ----- UID: 626f717b-0c90-4ac6-96c8-2057630b36de /api/v1/shop/signin -- POST -- Shop has not registered
+27-January-2024	00:06:40 ----- UID: 9a0514ac-52f2-4ec5-bddf-72b1ccaaa467 /api/v1/shop/signin -- POST -- Authentication failed
+27-January-2024	00:24:42 ----- UID: ea90268f-0a6a-4f76-9116-2379bb92c7d4 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:24:51 ----- UID: 4604dda3-018a-49b5-b125-36f9fa340af8 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:24:51 ----- UID: d50b6d1f-fd9e-4900-98ca-f6202432580c /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:25:36 ----- UID: 834aa379-c203-47a9-a447-0473d2ecdadd /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:25:36 ----- UID: 7734ad07-132c-4da3-a7ab-b3e0d740a97c /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:25:43 ----- UID: 387ac23d-e959-43f0-bbf3-dc2721ea5f66 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:26:20 ----- UID: 484b67d6-4055-428f-b09f-c1cb4db6cf08 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:26:35 ----- UID: b5b23539-a2f3-48a8-9c30-5cffca6cabcb /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:29:20 ----- UID: a7e84c54-cc95-4626-82ab-ec78cd1a4a71 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:30:22 ----- UID: 490800a0-de9a-43e9-9aba-e3938bce8b3e /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:40:44 ----- UID: 4f5e88b3-3b09-4f87-b7e4-0668e60aff10 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	00:41:54 ----- UID: ba6ac568-7e89-4bf8-861d-9abdff960b88 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	12:09:08 ----- UID: cfea06a1-ed6d-486e-9626-e7fa717f0189 /api/v1/shop/signin -- POST -- Shop has not registered
+27-January-2024	12:09:29 ----- UID: 90fe6a2c-ac34-4ed5-8cbc-741d57ac5fe0 /api/v1/shop/signin -- POST -- Shop has not registered
+27-January-2024	12:10:10 ----- UID: 0b0c360b-37bc-448e-93f5-91764b2effae /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	12:10:14 ----- UID: 6014531f-5947-481f-8e37-6a931f4cc3c4 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	13:01:25 ----- UID: a3d9a20f-7856-4709-8278-ffe9da548fb1 /api/v1/shop/signin -- POST -- Shop has not registered
+27-January-2024	14:57:31 ----- UID: 93769a9f-4b83-423d-b3e3-be5b7910e458 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	14:57:33 ----- UID: 301ddb12-9ff6-44a5-95c0-7580ea94490d /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	14:57:35 ----- UID: f83c1d3c-85eb-4117-8e96-58a7d5476b4a /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	14:57:36 ----- UID: a4a46887-1624-4f94-955a-3bc808cb912f /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	14:57:37 ----- UID: fbceefff-99ff-4813-a455-c9b52686815d /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	15:03:20 ----- UID: 483bfbb7-fa63-4b70-866f-9b83c59edf30 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	15:23:28 ----- UID: c064662e-e355-43ec-8640-1e74d5067c5e /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	15:23:57 ----- UID: 8276746b-c5f4-4bfd-83de-567c50768168 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	15:56:41 ----- UID: 00798f90-3084-483b-895d-0bf7ecd266ff /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:15:30 ----- UID: dfc3be77-90eb-414a-8def-269dfc73e536 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:16:24 ----- UID: 2fb02e80-4ea1-4891-9f86-019d13889a31 /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:16:24 ----- UID: 2cd43489-0acc-4dc6-a739-b63d957ab1ec /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:16:24 ----- UID: 48e8bc4e-055b-4fbd-b672-cf632aa9501f /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:16:24 ----- UID: 970772b4-5ce5-47d1-85b9-810202fa1d81 /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:16:24 ----- UID: 0d12358f-5224-46b1-af37-f9753cbd5ba0 /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:16:58 ----- UID: 60fddcc3-caf2-42bd-89e9-aa1efead3e39 /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:17:00 ----- UID: b90f6447-f64a-410b-b6bf-88d9ad5a20da /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:17:01 ----- UID: 13a8ae6e-51b5-4af5-b280-f68fb1efb344 /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:17:10 ----- UID: e9aa111a-b4fe-4339-bf65-78faae03d10c /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:17:14 ----- UID: 58deeb7c-8287-475a-9ad1-72815b496c6d /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:17:14 ----- UID: 244a8b4c-6f2c-45b3-a2a1-e9bc8b97cda1 /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:17:50 ----- UID: 4d96d897-1e58-4dfe-bd81-3292575b537e /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:17:51 ----- UID: 8ec63e7e-a0e7-4eec-9f84-afc7798b7780 /api/v1/shop/draft/all -- GET -- Invalid user ID
+27-January-2024	16:18:07 ----- UID: 33c7a758-65ff-4436-b008-498f70109644 /api/v1/product/draft/all -- GET -- Invalid user ID
+27-January-2024	16:18:07 ----- UID: e058885a-cd63-485c-96a3-c9cb593bff90 /api/v1/product/draft/all -- GET -- Invalid user ID
+27-January-2024	16:18:07 ----- UID: 92483763-c105-4f04-b2f6-28fd4bb63891 /api/v1/product/draft/all -- GET -- Invalid user ID
+27-January-2024	16:18:07 ----- UID: b04e9461-cf71-4e21-acaa-fbe5faf43fab /api/v1/product/draft/all -- GET -- Invalid user ID
+27-January-2024	16:18:10 ----- UID: 66635b01-6cfa-4ea4-b4d4-506e5326ca5a /api/v1/product/draft/all -- GET -- Invalid user ID
+27-January-2024	16:18:10 ----- UID: 092cd8f0-6b8a-44ed-ba59-35a591d475ef /api/v1/product/draft/all -- GET -- Invalid user ID
+27-January-2024	16:18:10 ----- UID: 23efe830-6719-48b7-8176-f7ab33a8183c /api/v1/product/draft/all -- GET -- Invalid user ID
+27-January-2024	16:18:10 ----- UID: 90e7edfd-57b1-4b76-a1ea-ec1aeb2b8ea2 /api/v1/product/draft/all -- GET -- Invalid user ID
+27-January-2024	16:22:42 ----- UID: 3a99fa54-4b30-4fd3-8262-564df84d697a /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:23:29 ----- UID: 0d357885-f92c-4f69-908a-d4549309a945 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:23:49 ----- UID: 3f73dcca-491c-4253-9878-3feacffa8b81 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:25:12 ----- UID: ca63591e-82eb-488b-a8f5-5ba8289f9127 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:25:19 ----- UID: 787ed57a-0fbb-4ea7-a984-3df8790fe2ac /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:27:48 ----- UID: e62d907b-14b1-4a53-afd5-bac11f192f50 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:28:05 ----- UID: e165d7d1-9e8b-4168-ba4d-7b24f660c71a /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:28:45 ----- UID: 99600ae2-06ec-4576-aa87-3cb291ae0779 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:31:01 ----- UID: 5b14f791-5c31-4c8c-9cc6-19e425574bb2 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:32:05 ----- UID: 51a3985b-9ee7-4023-9300-c9cfd68c4f97 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:33:20 ----- UID: 68559fe5-9dc8-4ab0-9b37-8ecb5947ccb8 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:39:04 ----- UID: 9d20dc6c-132f-43da-b917-0222c330b401 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:40:09 ----- UID: 43fa8102-7c8c-462c-a5df-413f06cbec49 /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	16:45:51 ----- UID: 7d91e01a-e42e-4b5f-9092-32ac0e4a36bf /api/v1/product/draft/all?type=less -- GET -- Invalid user ID
+27-January-2024	18:17:12 ----- UID: d5cbf18f-6428-40eb-8af9-918299d4c194 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:17:12 ----- UID: 8f53e717-ede4-4161-9837-db2d6db9d8cb /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:17:15 ----- UID: 71f0ca09-07f9-4b8e-b93a-59596a3ad73c /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:17:15 ----- UID: 0c4d4d30-adef-415f-a5c5-ffbd879a489b /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:19:49 ----- UID: 5f5300f4-13e8-4418-9707-a3177abff567 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:19:49 ----- UID: ad10e3b9-f744-4ba9-a4bb-090f94dcc722 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:20:13 ----- UID: 8ad48277-b644-402e-b155-77c329fc8501 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:20:24 ----- UID: b63f654e-90e8-4382-9660-6c495f6eb6ba /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:20:29 ----- UID: 85ed97cd-eef2-4b76-9f7f-7046a71af94c /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:20:29 ----- UID: 39c9b8bf-0be9-4ac4-a850-e36c525780a1 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:20:34 ----- UID: b0148337-f033-4b94-89e7-996378cabf4f /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:20:34 ----- UID: b84fafb1-b1ab-4ea2-b646-a61451ea5f91 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:21:04 ----- UID: 1d6394dc-3519-47c8-ab6f-688ed1f1baea /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:21:04 ----- UID: 18b66a9a-eb47-4cf2-984e-b2f5309b2cab /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:24:42 ----- UID: aac9a6d6-a5a2-4745-bbd5-d247d669416a /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+27-January-2024	18:24:42 ----- UID: 81754817-7c0d-46c5-9188-aaf7efa89b2a /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:00:55 ----- UID: d40e19db-8d3c-43dd-af6b-b79d0f091bee /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:00:55 ----- UID: d05bbd3a-bdb9-4e8e-8136-2c3096984dcd /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:02:58 ----- UID: 37feba52-28f3-4c7f-ab8c-ba835b16ee37 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:02:58 ----- UID: bb8c401b-501b-4751-9a5e-03e82cd3c63a /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:08:32 ----- UID: 4b887df8-a863-4fd1-acbe-afc1fb104683 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:08:32 ----- UID: 1427c260-5218-4397-b7b6-a5d8dae26972 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:10:56 ----- UID: e2473c62-0091-4f98-a55f-7086da515e96 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:10:56 ----- UID: de1954bb-28e5-4ccf-aa34-f2c5189b31f6 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:17:37 ----- UID: 0396ea73-e061-4df7-8c81-ab033ca3aeb3 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	14:17:37 ----- UID: 5a6753ff-e8e0-41f5-bcf5-23a92199c7ff /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:10:40 ----- UID: 7df81131-419a-477f-90bb-b9ccbcbfba30 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:10:40 ----- UID: 42fa0553-a924-454d-a5e5-9fdeb53ff2ae /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:10:46 ----- UID: b618b7ab-ef2b-4d21-bf2e-41bf7e533e8c /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:10:46 ----- UID: 61cffea6-cb3f-4b4b-8629-ef8595cb807a /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:11:14 ----- UID: 370583ad-bdb1-4877-95de-bcda258b0aa5 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:11:14 ----- UID: c590b62c-91f1-4fa4-9170-8c3d0ebf5171 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:11:59 ----- UID: 0b9c1240-c69a-40ba-8b37-5611a409b501 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:11:59 ----- UID: ae87c9a6-6d1b-417b-b7d0-6b00129ea804 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:47:55 ----- UID: 79cc8bd2-9b67-42c8-969e-c38946c3381a /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	16:47:55 ----- UID: 9d42bb42-7d88-47d2-8bb3-785c7c679b25 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:56:01 ----- UID: 6760ade2-8bb9-4421-b12d-00cbae749cf1 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:56:01 ----- UID: 7a150398-f672-45a4-a386-6c46e38c42a8 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:56:17 ----- UID: 0558d2f4-7f82-48cb-85bb-59456aff6db1 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:56:17 ----- UID: af8d304a-3a32-44f7-80c1-578fc61ae6a1 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:56:37 ----- UID: 909c1f87-f9ea-43a7-8782-a499fb4fced8 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:56:37 ----- UID: 9197497c-c448-4338-9d3e-04387c050091 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:57:27 ----- UID: 2b743e1a-3819-4ff1-a6ba-aa898f5398f6 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:57:28 ----- UID: d9219542-4b49-46b7-8537-bb63b161080d /api/v1/product/drafts/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:57:31 ----- UID: ffd74890-2740-4621-a2b8-428a2bfc9220 /api/v1/product/drafts/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:57:31 ----- UID: 6ee5d778-b982-4804-803c-76a0e65f229e /api/v1/product/drafts/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:57:58 ----- UID: 21f8c05e-6809-478a-9e86-04e1eb731b90 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:58:06 ----- UID: f24c3ecf-ad99-41d1-bc65-b99de9acf032 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:58:06 ----- UID: e20117d5-b4e1-4bdc-82fa-e0bbfa66f735 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:58:43 ----- UID: 5e160784-946f-44fc-9957-93b4f6e5a893 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:58:43 ----- UID: 880b3e25-e5da-422a-a673-d174b6404c28 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:59:45 ----- UID: 34fac3dc-91e0-41f4-9320-04ac0a58263f /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	17:59:45 ----- UID: 45d06089-4511-439b-ade4-87e531bec44d /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	18:00:20 ----- UID: 99e5a116-3677-4312-8321-2c0725878c8a /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	18:00:20 ----- UID: e64e456a-714a-40cf-a20d-80e3e0656c60 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	18:01:13 ----- UID: 08283866-9375-418f-b6e6-cc083684168b /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	18:01:13 ----- UID: 4c2d834f-b2e3-438b-9184-e271313189f8 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	18:01:39 ----- UID: 0ed906a6-964d-438d-83af-9c00b0c8ecd9 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	18:01:39 ----- UID: e45d4217-60ef-4278-94b7-50f2325ea207 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	18:02:46 ----- UID: f94fc38b-10e6-426f-901a-057498fb5170 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	18:02:46 ----- UID: fb106d02-9b67-4bb5-ad0b-696b0a8a7095 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:03:50 ----- UID: 89bdb296-1e9a-40ee-aee3-e76445829f5b /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:03:50 ----- UID: 2f25e595-89ff-4b8d-80e5-46eca6a11644 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:03:57 ----- UID: 557323a3-cec3-4bcb-bce9-059ccd0da338 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:03:57 ----- UID: 51a0919e-975d-4f83-ac51-96935fff58a9 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:04:19 ----- UID: 664ead43-dae3-4b92-b59b-8342680da338 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:04:19 ----- UID: 4ca409eb-90e9-4c57-837b-6f4950741f58 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:05:56 ----- UID: 2d35e420-90a7-467a-b686-31d2ea360ece /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:05:56 ----- UID: 8f665560-eda5-4595-afc4-7e8db9c0e215 /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:06:16 ----- UID: e1816608-b833-422f-9c07-707be249772a /api/v1/product/draft/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:09:34 ----- UID: 3205fbda-6b93-4a82-8951-4305aa9f9964 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:09:34 ----- UID: c81726c1-0f56-4ef0-9eae-537ef88c1d04 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:09:35 ----- UID: 0e0d2ec4-3bef-4424-a741-ffbebd45b512 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:09:35 ----- UID: 8d4b01cb-0b86-4a83-b3aa-3927aa4f1be4 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:09:39 ----- UID: 5a644401-7dee-4fdc-bea9-f2f3cd10baeb /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:09:39 ----- UID: e9a05076-f8a1-4688-aec0-72fa03ff1505 /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+28-January-2024	21:10:18 ----- UID: 6cd1e021-e5b3-41c7-b193-572ce556f7cc /api/v1/product/publish/all -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	01:23:11 ----- UID: 4ba6b5c3-a561-4763-92c7-30805d736d20 /api/v1/product/publish/65a4af9e6ce3c89edb196946 -- POST -- Invalid user ID
+29-January-2024	01:26:11 ----- UID: 4e67c1af-d9c3-41ac-957c-a2cb60e2aae8 /api/v1/product/publish/65a4af9e6ce3c89edb196946 -- POST -- Invalid user ID
+29-January-2024	01:27:44 ----- UID: 72841e81-e7f1-4323-9f0c-e4f6c31030c9 /api/v1/product/publish/65a4af9e6ce3c89edb196946 -- POST -- Invalid user ID
+29-January-2024	01:38:46 ----- UID: 101d3d32-8573-4260-997a-e03d2fbafb57 /api/v1/product/publish/65a4af9e6ce3c89edb196946 -- POST -- Invalid user ID
+29-January-2024	01:38:51 ----- UID: b022dac4-8883-4b6a-b128-f964a1bfdb91 /api/v1/product/publish/65a4af9e6ce3c89edb196946 -- POST -- Invalid user ID
+29-January-2024	01:41:20 ----- UID: 8725ad9b-f8c5-4c08-8aa9-340c54876572 /api/v1/product/publish/65a4af9e6ce3c89edb196946 -- POST -- Invalid user ID
+29-January-2024	01:43:21 ----- UID: fc6e695e-4d6a-43cd-8064-d8aa75c070f3 /api/v1/product/publish/65b6899e8654cf797fb5c31a -- POST -- Invalid user ID
+29-January-2024	18:48:09 ----- UID: ecb08545-4c33-4ffa-943e-1b81da37cae4 /api/v1/shop/signup -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	18:48:51 ----- UID: 07262572-570c-4851-843b-c36ce0431d6f /api/v1/shop/signup -- POST -- Shop is already registered
+29-January-2024	18:48:54 ----- UID: 53ec8ed5-47c4-4411-aa4e-271af0df338f /api/v1/shop/signup -- POST -- Shop is already registered
+29-January-2024	18:49:21 ----- UID: 4a5c2fda-cc2b-4ae5-991e-f4c9dae0f484 /api/v1/shop/signup -- POST -- Shop is already registered
+29-January-2024	18:49:26 ----- UID: 798864c6-7f75-4569-8aa0-c06d4153124c /api/v1/shop/signup -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	18:51:00 ----- UID: 783035a3-8dad-4776-a5fe-9d4610742294 /api/v1/shop/signup -- POST -- Shop is already registered
+29-January-2024	18:51:10 ----- UID: 93291e75-48da-4cb4-8a41-870faed65a29 /api/v1/shop/signup -- POST -- metadata is not defined
+29-January-2024	18:56:12 ----- UID: 363c9a41-006b-4247-94df-705d0720f3f2 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	18:56:22 ----- UID: f65099d8-b918-4cb6-af5b-db418025b031 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	18:57:34 ----- UID: cbd8d29d-f926-425b-bcd5-cade214540ef /api/v1/shop/signin -- POST -- Shop is already registered
+29-January-2024	18:57:40 ----- UID: 94070b40-d2ac-43a1-af7c-8684f7e9b7de /api/v1/shop/signin -- POST -- Shop is already registered
+29-January-2024	18:57:53 ----- UID: 714f9f63-93cb-4114-b24b-810057a504b7 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	18:57:57 ----- UID: 4dad8d71-5922-422e-a71a-90ff677f94ca /api/v1/shop/signin -- POST -- Cannot read properties of undefined (reading 'tokens')
+29-January-2024	18:59:02 ----- UID: df7ad410-3989-4f2f-a737-8fb00e66cfb4 /api/v1/shop/signin -- POST -- Cannot read properties of undefined (reading 'tokens')
+29-January-2024	18:59:45 ----- UID: cdbbaf76-4c98-4479-9f32-d29b523f7707 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	18:59:58 ----- UID: e443f2eb-7335-4b95-85ca-d270a53247d5 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	19:00:53 ----- UID: ee43b08a-0771-4bbf-86b7-5c9ca129691b /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:01:07 ----- UID: f6116d3f-9153-475f-b27f-7fea7765e256 /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:02:14 ----- UID: fe1c9e17-365a-431b-9d99-f15eff6bb257 /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:03:29 ----- UID: dc1421aa-9cbc-4725-a810-7bc7ddc774aa /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:05:02 ----- UID: 4887135f-351e-4eb8-8e9e-b7d33b74a952 /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:08:30 ----- UID: c2a7ee69-bfbd-46e3-81e0-175e7461cd1f /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:13:55 ----- UID: 9411898e-cf68-4aad-a1c6-107480ac7ab3 /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:14:16 ----- UID: a1d39bf7-ab71-4db6-ae8a-26d9a37180b1 /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:14:24 ----- UID: 3820985d-4a24-4d13-a6b8-044b18633cc3 /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:15:28 ----- UID: f99a49e5-c27f-4883-a132-75bc3e5a0386 /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	19:16:36 ----- UID: 1c4921c1-baf6-4e9c-b65c-74a30df4b656 /api/v1/shop/refresh-token -- POST -- Cannot read properties of undefined (reading 'refreshToken')
+29-January-2024	20:11:06 ----- UID: ad239a34-1834-4053-9699-bd0b3b0a0da0 /api/v1/product/publish/65a4af9e6ce3c89edb196946 -- POST -- jwt expired
+29-January-2024	20:11:10 ----- UID: c4fb9985-ad55-4770-b9d0-333e179f9b84 /api/v1/product/publish/65a4af9e6ce3c89edb196946 -- POST -- jwt expired
+29-January-2024	20:14:36 ----- UID: 33bfda13-fb6b-4f3c-942b-fc0e0f6cd41b /api/v1/product/publish/65a3e8eaa0e55cc697b53a31 -- POST -- jwt expired
+29-January-2024	20:14:37 ----- UID: 1470dc9c-5b26-4cf3-9110-2d2b153c53b0 /api/v1/product/publish/65a3e8eaa0e55cc697b53a31 -- POST -- jwt expired
+29-January-2024	20:21:02 ----- UID: 243d2059-c5d9-433a-a365-6a5ce5eb897e /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:28:25 ----- UID: fdf477a4-6b75-4c8b-b0ce-aa8f3443a9ad /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:29:34 ----- UID: cc36a956-44b0-4871-9377-4fcf2951b213 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:29:37 ----- UID: 8af66c2f-10b5-4d74-adcc-584d2cf4c2ec /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:30:23 ----- UID: 9360edc0-e371-4b6b-b292-4827adc46e8c /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:34:10 ----- UID: a84f6c48-81b2-46da-9e47-b3853c3104c7 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:37:55 ----- UID: cb83bca0-b287-4cd4-81e4-c72b118e45a9 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:37:55 ----- UID: 53f9c836-2bfc-4ebb-9c36-5422e42ec71f /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:38:36 ----- UID: 0c278962-9f38-4622-b507-06b6ee84bf50 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	20:41:15 ----- UID: 9d82567a-e5f7-490f-a582-43f69af1b5be /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:41:15 ----- UID: 8b3529f2-3077-4d7c-8158-20843f13f9ec /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:41:45 ----- UID: 5a8b774e-d523-4a8b-a407-dd3bde3b7bef /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:41:51 ----- UID: 8209ce06-6a14-4f52-a544-6e69573ef73f /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:41:52 ----- UID: 4ed6a5a5-9e84-4b29-9f21-f563d08ffe74 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:42:47 ----- UID: bd2ffd51-730d-4d1a-a199-2843a65f7635 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:42:47 ----- UID: 3fd893d0-57fe-45ca-b804-233960961a60 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:44:40 ----- UID: 298d8dae-a485-4ab7-afd7-be3f9dc760e9 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:44:40 ----- UID: 25f051cf-616b-45d0-9e98-c394221c0d5c /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:46:24 ----- UID: 555fe193-5105-4976-a901-e41b9ea61ce9 /api/v1/shop/refresh-token -- POST -- Invalid user ID
+29-January-2024	20:46:56 ----- UID: 6bda04c3-794c-4dea-a0ab-9cd4fa3761c9 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:47:11 ----- UID: e7266739-4a58-4a86-935b-d804bd1eb819 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:47:12 ----- UID: 14c84d5d-dd1c-4787-a18e-5f01d5acb05b /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:47:24 ----- UID: 271e46f8-7296-435c-b8fd-107a610c30e1 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:48:02 ----- UID: bc93aa72-858e-43cf-ba77-03401f477000 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:49:01 ----- UID: 30de4bf2-d980-4e19-ab7a-fe2bd62a8545 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:49:02 ----- UID: 7963a736-0872-4334-aa3d-58929effe810 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:49:05 ----- UID: 848ceea6-8efb-40cd-b102-c1e9699b4676 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:49:07 ----- UID: df3f90c3-fb52-4b8b-8c0d-2862e071ac6f /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:50:59 ----- UID: 38f7f058-62da-487a-8924-0b2c384c92cc /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:52:23 ----- UID: 5c1b05e4-c3ad-4df3-afd7-7629f88b7609 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:52:23 ----- UID: 1df512b8-7738-4c08-ab01-e7354c066062 /api/v1/shop/refresh-token -- POST -- jwt expired
+29-January-2024	20:56:25 ----- UID: 9311036d-4a2a-4852-8e29-ede9f155c55f /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	20:58:59 ----- UID: 3fabebb4-40b4-4199-aeba-b21cbfcf9a04 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	20:58:59 ----- UID: 2f44c995-4150-4af6-b829-79ae0f2af989 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:03:20 ----- UID: 1984ee5e-33b0-44a8-b729-75c3e7eee5e8 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:03:24 ----- UID: 6ca45df4-8f62-4416-abf0-07f8eb423f7b /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:09:52 ----- UID: d3a04888-ee3b-4e0d-854d-688d019f0773 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:11:19 ----- UID: 6fc7aaae-5cb4-40a5-bc31-943642ab8274 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:22:45 ----- UID: f8e3a6dc-bdd5-44fb-98d6-4f238c15c0ed /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:24:01 ----- UID: 124a1a8d-c670-4758-8a26-605d67a2b225 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:24:01 ----- UID: 364c3e66-a7a1-49be-a71d-2ff9b90a10a3 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:27:33 ----- UID: baff4918-5f3b-4c6e-8c61-71a516ebe435 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:27:34 ----- UID: 125bcee9-3504-4c40-aea0-ed23b63d9bcc /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:28:25 ----- UID: d902a4d0-49ef-453a-90d2-2bfdb18a04a6 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:28:52 ----- UID: c3d1a5ff-685e-46c1-9568-26f10474b5c0 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:30:59 ----- UID: 202a8b38-6efa-4941-b489-a7711469e7fc /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:31:43 ----- UID: 98f12370-03f2-42ca-bc8f-d1771b12e40d /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:32:52 ----- UID: e283cf48-aeeb-4886-a1c1-7f5a5e5af667 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:32:57 ----- UID: 897e493f-db70-49e8-832d-3d037a630c81 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:34:12 ----- UID: 486a562e-d53a-4d58-9a46-680d7e0f9090 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:35:22 ----- UID: 6b04dbfb-7778-4e70-9177-a11f807137da /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:35:23 ----- UID: 220b71fc-2abb-46b6-8f0a-d714121090dd /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:36:16 ----- UID: 4438d63d-6897-4ae8-b3a1-f3b02b8eaf32 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:38:08 ----- UID: 7f8f1adf-9f1d-42d2-98a3-53a3f70c180a /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	21:40:37 ----- UID: 22017a88-948b-46fb-94fb-22c019daa689 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:40:37 ----- UID: a3f94182-987c-402a-93fc-ba8be372f036 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:40:55 ----- UID: 67722af2-456d-4f03-906a-d9d0938ad720 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:40:55 ----- UID: a426317a-83de-4bb9-be3e-beb889c84a01 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:43:05 ----- UID: ab56602e-ac10-4971-aa8f-5773632126e0 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:43:05 ----- UID: 15e8d059-1645-4a29-972f-787a539fa811 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:43:09 ----- UID: cbb7f230-c7b7-40e3-b574-21636b242652 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:43:09 ----- UID: 8e4e8105-2e40-46a5-9b9f-fdfd018024df /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:43:25 ----- UID: d9788191-40cb-4ff8-a738-4761b262e1d3 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:43:25 ----- UID: da23a1f4-ce30-4511-b0c4-5ca09b639e93 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:43:48 ----- UID: c213817d-f8ca-4269-a360-372b651b55ae /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:43:49 ----- UID: 45608af2-fc5b-4d3e-9e1b-6353549147d5 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:43:53 ----- UID: 212b3824-0ee5-4d1e-b3a4-a550b7b1b7a0 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:44:01 ----- UID: fd6ba053-a226-4beb-bf5a-a3eeda290e05 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:45:27 ----- UID: 9e023922-94a5-4a35-9665-651a1ab6de60 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:45:27 ----- UID: 15a395dc-fd11-4785-a8f6-85e277c3c146 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:45:48 ----- UID: d19ed992-09fc-41a4-b484-2943aa3b15cf /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:45:48 ----- UID: 1d528ee0-c29a-474d-9816-c3be7c78b9a8 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:46:05 ----- UID: 4b224e2e-cb88-41cb-b69c-7469413da648 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:46:05 ----- UID: cbd04b48-e57d-49c7-9335-3360e1676941 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:47:14 ----- UID: 3fd41544-c6bd-4da4-b401-6c02edcb45be /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:47:14 ----- UID: d60e9b28-6078-44c1-8334-95c303d33c7f /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:49:37 ----- UID: 46c69935-35a1-4c6f-9047-08cea74733fa /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:49:37 ----- UID: c9cce864-b1e5-46e6-bf39-9ae13e520432 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:50:55 ----- UID: 2e147bca-1f36-44f6-baf6-aaba25d86804 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	21:51:51 ----- UID: 1c16404c-d339-4b09-9961-300f027be48d /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:51:51 ----- UID: 9f0d09a7-1ac3-43c9-b035-5f24a55cf006 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:55:55 ----- UID: 4b98137a-dc6e-41bf-b1b1-833f9839d399 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	21:55:55 ----- UID: 2307cfbb-b02b-461e-903f-b7e474c66d25 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:01:31 ----- UID: c3e261f8-d51a-4b3f-85b1-f3978c711c85 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:01:32 ----- UID: 20b71985-de26-4df0-a1bc-f65c050f9b02 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:02:18 ----- UID: 9b0a665b-a14f-46c8-8267-c80619b4eb50 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:05:22 ----- UID: 457b9484-8171-4ff7-941c-571c6e9bfbbf /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:05:22 ----- UID: a2060df5-5218-4666-89c1-907d13e88e66 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:07:08 ----- UID: 1f6afdaa-0b1b-48fa-9d4c-473533b760f3 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:07:08 ----- UID: 5d3b60d0-ab84-4df9-b017-01141726b594 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:07:41 ----- UID: cbf37b3b-d980-4779-beac-1bd655679614 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:08:11 ----- UID: b0cdc1c0-c6e3-491a-bea7-a454f63a576f /api/v1/product/draft/all -- GET -- jwt expired
+29-January-2024	22:08:11 ----- UID: 8109560c-7129-4b1c-8d85-43e9f6ca765f /api/v1/product/draft/all -- GET -- jwt expired
+29-January-2024	22:11:57 ----- UID: d62f1111-0d77-4d05-ac6f-f1bbc9c4f5ea /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:12:03 ----- UID: cf90bd57-6cda-4d94-b508-58178a858117 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:12:15 ----- UID: acbf1c9a-4178-4079-8282-8418e780144c /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:13:28 ----- UID: e8aff8d8-af18-4632-a921-481d8e385ed4 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:13:28 ----- UID: 51b0cb57-63e7-4614-b799-ee50ab6247b6 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:15:10 ----- UID: 6cfcf4d8-7b0f-4d07-99cf-4615849807e7 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:15:10 ----- UID: 797f0776-c063-4c7b-9f88-7e98c84b17eb /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:18:51 ----- UID: aab453b1-ff37-4c15-863e-1ad4955053bb /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:18:51 ----- UID: 64125582-4711-4b0a-9817-dadd065f87f6 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:25:32 ----- UID: 92199396-3c34-4e7e-b680-1d575989af0b /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:25:32 ----- UID: ea5b44a9-efc5-49a3-b77e-b17ef94eaa7b /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:26:29 ----- UID: c8f5581c-66dd-4e4b-b233-0b8e374b0357 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:26:29 ----- UID: 7538b9bc-e75b-4878-b1be-f9ccac570dc7 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:31:51 ----- UID: fa7d528d-fa8f-46ee-9c06-8ce67ecb6c87 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:31:54 ----- UID: e382cbc1-29c4-4dc4-b8d9-efa8044d5246 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:32:03 ----- UID: 92efa95b-5072-4e02-b74d-55a77412bedf /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:33:27 ----- UID: 9251698f-f41d-4dce-8d28-42c7e993094f /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:33:27 ----- UID: a9041488-f5bf-47d8-8ebf-832bbd913e45 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:34:34 ----- UID: c66c314d-09ea-4994-ba34-8f2c84aaa42d /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:37:19 ----- UID: d1f7395f-b7b6-4c53-87f8-e40b346a859f /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:40:34 ----- UID: 7b526ad2-de6d-48db-b3ec-5c9d4740163b /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:40:34 ----- UID: 85735a89-5391-4cc9-944e-5ac536da1697 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:40:36 ----- UID: 247c7efd-1b91-4a31-a42e-ebd0e989e3a0 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:40:36 ----- UID: fd915600-d7af-43f5-90ef-f6fe8e941e8b /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:40:45 ----- UID: cd2e257a-31de-442b-9783-3cdb774eab9e /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:40:45 ----- UID: 80ca7785-685c-421a-bad5-a120d0836637 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:40:53 ----- UID: 1b7cc1f8-9787-4072-95e4-88ccad6cce09 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:41:57 ----- UID: e426884e-8999-4057-8696-1366c905accf /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:42:09 ----- UID: 0a7192ef-f3ed-486a-a405-39da89e57cb5 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:42:36 ----- UID: 7b704453-9488-4ebe-a663-3191e27f9628 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:42:51 ----- UID: a1c4fac4-5c9c-43c5-8585-0bb2e6761bb9 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:42:54 ----- UID: 9e76a74c-accb-4f3b-80f1-32331b8ad807 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:42:55 ----- UID: 3d30fdfb-740f-47dc-b68f-2b58fbff0a0a /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:42:57 ----- UID: 78592caf-bb5f-4a59-97eb-7182d715bf62 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:42:58 ----- UID: e48ae207-0fc1-474d-8cde-48f95564905b /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:43:15 ----- UID: 7c072f14-411d-4b72-8302-92a890f60ddf /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:43:20 ----- UID: 9dfa5db8-0a7d-4b1c-b82a-5f4e4e6eb8fd /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:43:30 ----- UID: 95aacc6c-c795-4c21-9cff-35d8a8663494 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:44:03 ----- UID: 93de76e9-4b50-445f-ad31-3b4ea50e4c7d /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:44:10 ----- UID: b27e8159-1449-475a-bde3-ab456a3db802 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:44:10 ----- UID: 9dec524d-328a-4af9-8ef8-93e0193bbcd4 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:45:49 ----- UID: 5ce2821d-01a0-4787-ade2-940da7823542 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:45:49 ----- UID: 7b203476-fba1-476c-9037-762be8dc5567 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	22:45:53 ----- UID: 028d8618-2453-4783-b5bf-4c734ec88a5f /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:45:53 ----- UID: 5e4d29f1-9706-4232-a407-4a1e90f5b647 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	22:46:30 ----- UID: b4ac99bc-7d23-49fe-ac28-7665193e3521 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	23:26:23 ----- UID: 21264e80-358b-4df7-900d-d0f75bf438c2 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	23:27:15 ----- UID: e813ee0c-a890-42f1-8ae7-604041afe2d3 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	23:34:32 ----- UID: 2abce7f7-a744-4b00-9a94-a3cf8ea800dc /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	23:34:58 ----- UID: 0dc934ce-d771-4f40-b063-8fa03875d017 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	23:35:00 ----- UID: 5091144b-60be-489e-8a6d-a99f89f09931 /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	23:35:10 ----- UID: 7eb268c1-56fd-4927-bdb3-1dfb66a36f6d /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	23:35:20 ----- UID: 245ea580-6704-451d-b709-09144dc75d4e /api/v1/shop/refresh-token -- POST -- Invalid request
+29-January-2024	23:37:02 ----- UID: d22f83f1-3fb4-479f-9b6c-4057e6ac5621 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	23:37:08 ----- UID: 06cf8707-c835-40f1-8a04-f692194ef1c5 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:37:26 ----- UID: 952ce078-f1b0-4804-b55b-f5eb009d2a0d /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:37:48 ----- UID: 6d6f80cd-0c14-4d65-8fc7-d4b43447be36 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:38:16 ----- UID: 48003dfd-01ce-4ed3-8315-b166c2cb2a8d /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:38:22 ----- UID: 0d6c8865-6049-4ef9-a59f-a0c204f293ec /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:38:24 ----- UID: afb4e6d8-ded0-4653-bb2f-3c60f7b2687e /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:39:51 ----- UID: 0b7c3b15-0aa0-4fe7-be75-e4e838fdb1c5 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:40:10 ----- UID: 12216bd0-53b5-4d6c-aad4-345068d06527 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:40:42 ----- UID: 7578298f-5b20-43ac-8e26-7db80692bdbf /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:41:32 ----- UID: 6415e742-c38d-4e48-8711-1ac1738c33c7 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:42:09 ----- UID: e5bc0cee-2774-4d57-83e5-6c497805d5d6 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:42:38 ----- UID: 7f95be78-94dc-43cc-9bac-a5fa794ce266 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:43:18 ----- UID: 75c43578-9af6-46ce-85b9-dba22625ed94 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:43:18 ----- UID: 8b8df2ca-4ad3-4546-a9f2-55345b216b6e /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:43:21 ----- UID: 3f4d438d-c1cc-460c-9fdf-24b20c1baf91 /api/v1/shop/refresh-token -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+29-January-2024	23:45:01 ----- UID: 6daeab44-838e-463a-893f-40a832e4b961 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	23:45:01 ----- UID: c060ba3a-d286-4136-816d-aea19a41846e /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	23:51:28 ----- UID: 026640c9-fe63-4c33-a916-5ce4ed498275 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	23:51:28 ----- UID: fce45b97-0b18-431b-b8b6-a73b4d99dfee /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	23:52:45 ----- UID: c95a25ad-6254-48fc-8315-31da05eb9054 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	23:53:46 ----- UID: fd6024d0-85bf-4742-b8a7-b562cce26623 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	23:54:35 ----- UID: c885990a-eecc-4ff4-8356-c9c93c7444fa /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+29-January-2024	23:55:00 ----- UID: 7c3acda9-4a49-48e1-8ea7-b2394ac26785 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+29-January-2024	23:55:39 ----- UID: 751a958d-4721-4361-9eb0-a7d342643d2f /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:11:07 ----- UID: 3b665593-64fc-4f9c-ab5f-be8f68d4f54f /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+30-January-2024	00:11:07 ----- UID: b8a7f19b-7220-4b2b-92fb-babf04ad7fcf /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:11:07 ----- UID: 22e29c61-7acf-4247-829e-01384de15043 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:11:08 ----- UID: f150dc4f-3a6e-4584-9b5f-4b87062e7d2d /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:12:07 ----- UID: 5cd45b6e-8be9-4337-99b2-ac117012f36d /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:12:11 ----- UID: 93e1525d-9107-41a6-8877-40cdbd24d929 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:12:16 ----- UID: 45a01b2b-30a4-49bd-aca8-e5e1630f567f /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:18:59 ----- UID: cc962157-3b5e-47c8-bbc3-596349a2c3ef /api/v1/product/draft/all -- GET -- jwt expired
+30-January-2024	00:18:59 ----- UID: b1544fde-ae03-4941-84c5-a24d4fd159d0 /api/v1/product/draft/all -- GET -- jwt expired
+30-January-2024	00:34:06 ----- UID: 3b9a17b3-cab6-4574-8455-a371deca500f /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+30-January-2024	00:34:06 ----- UID: 8e9b1ed8-01dc-4ab4-aa57-00ceb0aead78 /api/v1/shop/refresh-token -- POST -- Something went wrong, please re-login
+30-January-2024	00:34:09 ----- UID: 991a6ce9-8e97-4660-ab8a-aa600b6d926d /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:34:09 ----- UID: a9fa1286-6443-4f99-83ce-1f32e5471192 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:34:11 ----- UID: 4f804d73-af4b-4799-b8f6-8212f7de0d3e /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:34:11 ----- UID: edad2d07-8e09-4181-9f30-74ba328ad5eb /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:34:14 ----- UID: 693779da-5dea-4b4f-a137-a9d8c6dba6fd /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:34:14 ----- UID: d291e371-89da-482a-959c-3856930a52f6 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:34:16 ----- UID: 3dff156f-80a5-44b1-87bb-7f34cd0acd9b /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	00:34:16 ----- UID: f92f1e1b-c841-496b-8bc3-363f7c94e610 /api/v1/shop/refresh-token -- POST -- Not found keyStore
+30-January-2024	23:09:35 ----- UID: 524c3903-42ff-45d6-9eda-4e12eec42dc4 /api/v1/product/publish/all -- GET -- Not found keyStore
+30-January-2024	23:24:32 ----- UID: 7891b7e2-f307-47c2-9e84-ff9d1d3de529 /api/v1/product/publish/all -- GET -- Not found keyStore
+30-January-2024	23:50:02 ----- UID: ca7e7d46-4cd9-4a41-b3af-7649758dbf23 /api/v1/product/publish/65a4b4089826c15520c04490 -- POST -- getAllDraft is not a function
+30-January-2024	23:50:03 ----- UID: d7ad1b0c-d8e2-4710-9591-b39fdd54db38 /api/v1/product/publish/65a4b4089826c15520c04490 -- POST -- getAllDraft is not a function
+31-January-2024	00:02:05 ----- UID: 5e2736ca-ac81-47b6-8ada-0c31295df526 /api/v1/product/publish/all -- GET -- Not found keyStore
+31-January-2024	06:09:42 ----- UID: 2d61a567-1c01-465a-b4f5-9f885da3b8e3 /api/v1/product/publish/all -- GET -- Not found keyStore
+31-January-2024	14:45:51 ----- UID: d136d308-b121-425b-8268-4f983d39619f /api/v1/user/signin -- POST -- UserModel.findOne is not a function
+31-January-2024	14:47:14 ----- UID: 08fca249-af91-4d49-bf75-05bb2d3e3c23 /api/v1/user/signin -- POST -- UserModel.findOne is not a function
+31-January-2024	14:50:14 ----- UID: b733943f-8f84-47fe-be15-0d5d38bfbf68 /api/v1/user/signin -- POST -- UserModel.findOne is not a function
+31-January-2024	14:51:13 ----- UID: 30176d0d-bb04-4d18-a8dd-b5ea5b32cf18 /api/v1/user/signin -- POST -- UserModel.find is not a function
+31-January-2024	14:51:44 ----- UID: 88c32784-8761-437b-812b-453d029fc553 /api/v1/user/signin -- POST -- UserModel.find is not a function
+31-January-2024	14:53:18 ----- UID: ebc5fb60-5b52-4ff0-9b43-d3ca0d35a587 /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	14:53:21 ----- UID: 6e90a0b2-d021-4bd0-93e3-d8ebf50e07fe /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	14:53:54 ----- UID: 7510861a-3cfb-46b4-be67-1ffd4792fae9 /api/v1/user/signup -- POST -- User validation failed: thumb: Path `thumb` is required., name: Path `name` is required.
+31-January-2024	14:54:27 ----- UID: 7802b600-9bef-49c0-9a39-acbb73e3a65a /api/v1/user/signup -- POST -- User validation failed: name: Path `name` is required.
+31-January-2024	14:55:54 ----- UID: f0532fcd-9e50-42f5-82f0-b6ead9414e30 /api/v1/user/signup -- POST -- User is already registered
+31-January-2024	14:58:05 ----- UID: 96dcc396-4b3d-4703-983a-74cd387e49a1 /api/v1/user/logout -- POST -- Invalid user ID
+31-January-2024	14:59:40 ----- UID: 1484bb1f-d420-4f69-b932-e6032db38137 /api/v1/shop/logout -- POST -- invalid signature
+31-January-2024	15:01:42 ----- UID: bc914b0d-8e4a-495e-9ffd-fe610ed658ce /api/v1/shop/refresh-token -- POST -- Invalid request
+31-January-2024	15:02:16 ----- UID: 9ca07738-343a-441a-baec-ea3b7b9b36df /api/v1/shop/refresh-token -- POST -- Invalid request
+31-January-2024	15:02:53 ----- UID: 235cfff5-f17e-4e9e-b9db-699ce19391b9 /api/v1/user/refresh-token -- POST -- Invalid request
+31-January-2024	15:02:56 ----- UID: dd8c7a9f-29ab-4e0e-a9ef-e46257e896a8 /api/v1/user/refresh-token -- POST -- Invalid request
+31-January-2024	15:02:58 ----- UID: e891312f-111e-4f3b-9e73-0f3e1e99d3dd /api/v1/user/refresh-token -- POST -- Invalid request
+31-January-2024	15:03:48 ----- UID: 2defa758-0608-405b-9898-d85e84f1c90b /api/v1/user/refresh-token -- POST -- Invalid request
+31-January-2024	15:04:26 ----- UID: f76904b5-1edd-4897-815f-4c6033046bd9 /api/v1/user/refresh-token -- POST -- Invalid request
+31-January-2024	15:32:45 ----- UID: a7a9fcf0-3b97-4ac4-a165-c6cf23c9b7fb /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:32:53 ----- UID: f89af046-489c-45cf-8c5b-c102cacfdbb1 /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:18 ----- UID: 1a7c6ef8-da86-42a9-8009-8762edc725ff /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:19 ----- UID: 7a7392ad-f63d-405a-93f1-2e3f7298ab0a /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:20 ----- UID: 458a6c61-b0db-484d-8884-5eac15a9ba1f /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:20 ----- UID: f74ed862-3291-4c86-85c7-067e2c271b2d /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:21 ----- UID: 41967023-5ba4-479d-8f46-356022915b32 /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:22 ----- UID: 6f023e2b-203d-40b2-9be0-8e0db4d00475 /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:22 ----- UID: e69f82d7-d232-44a0-9d2a-5d922b2f1f45 /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:22 ----- UID: 70eb440c-40a6-4fcb-b7a2-c566c0ae6556 /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:32 ----- UID: 257f2491-4a13-45eb-85de-972d5a278c7d /api/v1/user/signin -- POST -- User has not registered
+31-January-2024	15:40:57 ----- UID: b19e158f-7feb-4550-ac53-bcdadd0b1148 /api/v1/user/signup -- POST -- User is already registered
+31-January-2024	15:40:59 ----- UID: 0510fab5-a254-4419-bdc9-b0e17fd89913 /api/v1/user/signup -- POST -- User is already registered
+31-January-2024	15:41:02 ----- UID: 265a07ad-b146-45e9-8829-a1e4128fede3 /api/v1/user/signup -- POST -- User is already registered
+31-January-2024	15:43:24 ----- UID: f7bfee2a-c1c6-4258-81dd-d74d8ebc59e0 /api/v1/user/signup -- POST -- User is already registered
+31-January-2024	15:43:32 ----- UID: 19c289ba-8811-4956-bfff-8a1f02aff583 /api/v1/user/signup -- POST -- User is already registered
+31-January-2024	15:47:57 ----- UID: a30b086c-094d-440d-ac35-3eef37b3b03d /api/v1/user/signup -- POST -- User is already registered
+31-January-2024	15:49:48 ----- UID: 568634b0-6311-4895-9091-a3c3a265355f /api/v1/user/signup -- POST -- User is already registered

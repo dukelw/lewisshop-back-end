@@ -1,0 +1,6 @@
+const API_KEY =
+  "374269ef583755004134d39c48bd84821de826836271c024c01c87e6ad24a9dc50d21227cefff2f91dd17dfb2745d69ea004cd961a13371f0da7fa457923c186";
+
+module.exports = {
+  API_KEY,
+};

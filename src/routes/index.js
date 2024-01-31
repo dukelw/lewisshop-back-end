@@ -1,5 +1,6 @@
 const siteRouter = require("./site");
 const shopRouter = require("./shop");
+const userRouter = require("./user");
 const productRouter = require("./product");
 const discountRouter = require("./discount");
 const cartRouter = require("./cart");
@@ -20,6 +21,7 @@ function route(app) {
   // Use router
   app.use("/", siteRouter);
   app.use("/api/v1/shop", shopRouter);
+  app.use("/api/v1/user", userRouter);
   app.use("/api/v1/product", productRouter);
   app.use("/api/v1/discount", discountRouter);
   app.use("/api/v1/cart", cartRouter);

@@ -5,19 +5,19 @@ const asyncHandler = require("../helpers/async-handler");
 
 const HEADER = {
   API_KEY: "x-api-key",
-  CLIENT_ID: "x-client-id",
+  CLIENT_ID: "user",
   AUTHORIZATION: "authorization",
-  REFRESHTOKEN: "x-rtoken-id",
+  REFRESHTOKEN: "token",
 };
 
 const generatePairOfToken = async (payload, publicKey, privateKey) => {
   try {
     const accessToken = await JWT.sign(payload, publicKey, {
-      expiresIn: "1 days",
+      expiresIn: "1d",
     });
 
     const refreshToken = await JWT.sign(payload, privateKey, {
-      expiresIn: "365 days",
+      expiresIn: "365d",
     });
 
     JWT.verify(accessToken, publicKey, (error, success) => {
@@ -45,6 +45,8 @@ const authentication = asyncHandler(async (req, res, next) => {
 
   // 1. Check userID missing
   const userID = req.headers[HEADER.CLIENT_ID];
+  console.log(`UserID`, userID);
+  console.log(`AccessToken`, req.headers[HEADER.AUTHORIZATION]);
   if (!userID) throw new AuthFailureError("Invalid user ID");
 
   // 2. Get access token
@@ -52,7 +54,7 @@ const authentication = asyncHandler(async (req, res, next) => {
   if (!keyStore) throw new AuthFailureError("Not found keyStore");
 
   // 3. Verify token
-  console.log("Refresh token", req.headers[HEADER.REFRESHTOKEN]);
+  console.log("RF::::", req.headers[HEADER.REFRESHTOKEN]);
   if (req.headers[HEADER.REFRESHTOKEN]) {
     try {
       const refreshToken = req.headers[HEADER.REFRESHTOKEN];

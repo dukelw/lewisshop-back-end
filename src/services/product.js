@@ -60,7 +60,9 @@ class ProductFactory {
     skip = 0,
   }) {
     const query = { product_shop, isDraft: true };
-    return await findAllDraftProductOfShop({ query, limit, skip });
+    const products = await findAllDraftProductOfShop({ query, limit, skip });
+    console.log(`Product in service ${products}`)
+    return products
   }
 
   static async findAllPublishProductOfShop({

@@ -3,42 +3,35 @@ const {
   AuthFailureError,
   ForbiddenError,
 } = require("../core/error-response");
-const ShopModel = require("../models/Shop");
+const UserModel = require("../models/User");
 const bcrypt = require("bcrypt");
 const crypto = require("crypto");
-const keyTokenService = require("../services/key-token");
+const keyTokenService = require("./key-token");
 const { generatePairOfToken } = require("../auth/utils");
 const { getInfoData } = require("../utils/index");
-const { findByEmail } = require("../helpers/function/shop");
+const { findByEmail } = require("../helpers/function/user");
 
-const RoleShop = {
-  SHOP: "SHOP",
-  WRITER: "WRITER",
-  EDITOR: "EDITOR",
-  ADMIN: "ADMIN",
-};
-
-class ShopService {
-  signUp = async ({ name, email, password }) => {
+class UserService {
+  signUp = async ({ name, email, password, isAdmin }) => {
     // Step 1: Check the existence of email
-    const foundShop = await ShopModel.findOne({ email }).lean();
-    if (foundShop) throw new BadRequestError("Shop is already registered");
+    const foundUser = await UserModel.findOne({ email }).lean();
+    if (foundUser) throw new BadRequestError("User is already registered");
 
     const hashedPassword = await bcrypt.hash(password, 10);
-    const newShop = await ShopModel.create({
+    const newUser = await UserModel.create({
       name,
       email,
       password: hashedPassword,
-      roles: [RoleShop.SHOP],
+      isAdmin,
     });
 
-    if (newShop) {
+    if (newUser) {
       // Create privateKey, publicKey
       const privateKey = crypto.randomBytes(64).toString("hex");
       const publicKey = crypto.randomBytes(64).toString("hex");
 
       const keyStore = await keyTokenService.createKeyToken({
-        user_id: newShop._id,
+        user_id: newUser._id,
         public_key: publicKey,
         private_key: privateKey,
       });
@@ -52,7 +45,7 @@ class ShopService {
 
       // Create pair of token
       const tokens = await generatePairOfToken(
-        { user_id: newShop._id, email },
+        { user_id: newUser._id, email },
         publicKey,
         privateKey
       );
@@ -61,9 +54,9 @@ class ShopService {
       return {
         code: 201,
         metadata: {
-          shop: getInfoData({
+          user: getInfoData({
             fields: ["_id", "name", "email"],
-            object: newShop,
+            object: newUser,
           }),
           tokens,
         },
@@ -77,11 +70,12 @@ class ShopService {
 
   signIn = async ({ email, password, refresh_token = null }) => {
     // 1. Check email
-    const foundShop = await findByEmail({ email });
-    if (!foundShop) throw new BadRequestError("Shop has not registered");
+    const foundUser = await findByEmail({ email });
+    console.log(`Found user::: ${foundUser}`);
+    if (!foundUser) throw new BadRequestError("User has not registered");
 
     // 2. Match password
-    const isMatch = await bcrypt.compare(password, foundShop.password);
+    const isMatch = await bcrypt.compare(password, foundUser.password);
     if (!isMatch) throw new AuthFailureError("Authentication failed");
 
     // 3. Create privateKey, publicKey
@@ -89,7 +83,7 @@ class ShopService {
     const publicKey = crypto.randomBytes(64).toString("hex");
 
     // 4. Generate token
-    const { _id: userID } = foundShop;
+    const { _id: userID } = foundUser;
     const tokens = await generatePairOfToken(
       { user_id: userID, email },
       publicKey,
@@ -104,9 +98,9 @@ class ShopService {
     });
 
     return {
-      shop: getInfoData({
+      user: getInfoData({
         fields: ["_id", "name", "email"],
-        object: foundShop,
+        object: foundUser,
       }),
       tokens,
     };
@@ -128,12 +122,12 @@ class ShopService {
     }
 
     if (keyStore.refreshToken !== refreshToken) {
-      throw new AuthFailureError("Shop has not been registered");
+      throw new AuthFailureError("User has not been registered");
     }
 
     // Check userID
-    const foundShop = await findByEmail({ email });
-    if (!foundShop) throw new AuthFailureError("Shop has not been registered");
+    const foundUser = await findByEmail({ email });
+    if (!foundUser) throw new AuthFailureError("User has not been registered");
 
     // Create new token
     const tokens = await generatePairOfToken(
@@ -159,4 +153,4 @@ class ShopService {
   };
 }
 
-module.exports = new ShopService();
+module.exports = new UserService();
