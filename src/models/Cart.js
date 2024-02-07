@@ -32,7 +32,8 @@ var cartSchema = new Schema(
       default: 0,
     },
     cart_user_id: {
-      type: Number,
+      type: Schema.Types.ObjectId,
+      ref: "User",
       required: true,
     },
   },

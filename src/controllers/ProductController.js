@@ -1,6 +1,6 @@
 const ProductService = require("../services/product");
 const { SuccessResponse } = require("../core/success-response");
-class ShopController {
+class ProductController {
   async create(req, res, next) {
     new SuccessResponse({
       message: "Create new product successfully",
@@ -87,4 +87,4 @@ class ShopController {
   }
 }
 
-module.exports = new ShopController();
+module.exports = new ProductController();

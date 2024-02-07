@@ -19,6 +19,14 @@ router.get(
   "/codes/all",
   asyncHandler(discountController.getAllDiscountCodesOfShop)
 );
+router.get(
+  "/discount-codes",
+  asyncHandler(discountController.getAllDiscountCodesOfAShopByUser)
+);
+router.post(
+  "/codes-of-shops",
+  asyncHandler(discountController.getAllDiscountCodesOfShopsByUser)
+);
 router.delete(
   "/delete/:code",
   asyncHandler(discountController.deleteDiscountCode)

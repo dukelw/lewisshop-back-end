@@ -1,4 +1,5 @@
 const { DiscountModel } = require("../models/Discount");
+const ShopModel = require("../models/Shop");
 const { BadRequestError, NotFoundError } = require("../core/error-response");
 const {
   convertToObjectIDMongo,
@@ -140,6 +141,66 @@ class DiscountService {
     return discounts;
   }
 
+  async getAllDiscountCodeOfAShopByUser({ limit, page, discount_shop_id }) {
+    const discounts = await findAllDiscountCodesUnselect({
+      limit: +limit,
+      page: +page,
+      Model: DiscountModel,
+      filter: {
+        discount_shop_id: convertToObjectIDMongo(discount_shop_id),
+        discount_is_active: true,
+      },
+      unSelect: ["__v"],
+    });
+    const shop = await ShopModel.findById(discount_shop_id);
+    let newDiscounts = discounts.map((discount) => {
+      return {
+        ...discount,
+        discount_shop_name: shop.name,
+      };
+    });
+    return newDiscounts;
+  }
+
+  async getAllDiscountCodeOfShopsByUser({
+    limit,
+    page,
+    discount_shop_ids = [],
+  }) {
+    const allDiscountsPromises = discount_shop_ids.map(async (shop_id) => {
+      const discounts = await findAllDiscountCodesUnselect({
+        limit: +limit,
+        page: +page,
+        Model: DiscountModel,
+        filter: {
+          discount_shop_id: convertToObjectIDMongo(shop_id),
+          discount_is_active: true,
+        },
+        unSelect: ["__v"],
+      });
+      const shop = await ShopModel.findById(shop_id);
+      let shop_name = "";
+      let newDiscounts = discounts.map((discount) => {
+        return {
+          ...discount,
+          discount_shop_name: shop.name,
+        };
+      });
+      const shop_discount = newDiscounts.map((discount) => {
+        shop_name = discount.discount_shop_name;
+        return {
+          _id: discount._id,
+          code: discount.discount_code,
+          name: discount.discount_name,
+        };
+      });
+
+      return { shop_id, shop_name, shop_discount };
+    });
+
+    return Promise.all(allDiscountsPromises);
+  }
+
   async getDiscountAmount({ code, user_id, shop_id, products }) {
     const foundDiscount = await checkDiscountExistence({
       Model: DiscountModel,
@@ -162,7 +223,7 @@ class DiscountService {
       discount_max_uses_per_user,
     } = foundDiscount;
 
-    if (!discount_is_active) throw new NotFoundError("Discount is expried");
+    if (!discount_is_active) throw new NotFoundError("Discount is expired");
     if (!discount_max_uses) throw new NotFoundError("Discount are out");
     if (new Date() > new Date(discount_end_date))
       throw new NotFoundError("Discount are out");

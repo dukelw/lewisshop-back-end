@@ -1,15 +1,18 @@
 const { NotFoundError, BadRequestError } = require("../core/error-response");
 const { CartModel } = require("../models/Cart");
 const { ProductModel } = require("../models/Product");
+const ShopModel = require("../models/Shop");
 const {
   createUserCart,
   checkProductInCart,
   updateUserCartQuantity,
 } = require("../models/function/Cart");
 const { getProductByID } = require("../models/function/Product");
+const { convertToObjectIDMongo } = require("../utils");
 
 class CartService {
   async addToCart({ user_id, product = {} }) {
+    console.log(`Added product::: ${JSON.stringify(product)}`);
     // Check cart's existence
     const foundCart = await CartModel.findOne({
       cart_user_id: user_id,
@@ -20,10 +23,18 @@ class CartService {
     if (!foundProduct) throw new NotFoundError("Product does not exist");
     const product_name = foundProduct.product_name;
     const product_price = foundProduct.product_price;
+    const product_thumb = foundProduct.product_thumb;
+    const product_description = foundProduct.product_description;
+    const shop = await ShopModel.findById(foundProduct.product_shop.toString());
+    console.log(`Shop::::${shop}`);
     product = {
       ...product,
       product_name,
       product_price,
+      shop_id: foundProduct.product_shop.toString(),
+      shop_name: shop.name,
+      product_thumb,
+      product_description,
     };
 
     if (!foundCart) {
@@ -115,7 +126,7 @@ class CartService {
 
   async getCartOfUser({ user_id }) {
     return await CartModel.findOne({
-      cart_user_id: user_id,
+      cart_user_id: convertToObjectIDMongo(user_id),
     }).lean();
   }
 }

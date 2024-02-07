@@ -768,3 +768,155 @@
 31-January-2024	15:43:32 ----- UID: 19c289ba-8811-4956-bfff-8a1f02aff583 /api/v1/user/signup -- POST -- User is already registered
 31-January-2024	15:47:57 ----- UID: a30b086c-094d-440d-ac35-3eef37b3b03d /api/v1/user/signup -- POST -- User is already registered
 31-January-2024	15:49:48 ----- UID: 568634b0-6311-4895-9091-a3c3a265355f /api/v1/user/signup -- POST -- User is already registered
+31-January-2024	20:45:36 ----- UID: 17716675-cc01-4d20-8239-65a03dd7bfe6 /api/v1/product?filter={isPublished=true&product_shop=65a794bccd2e5f046a9d2f96 -- GET -- Parameter "filter" to find() must be an object, got "{isPublished=true" (type string)
+31-January-2024	20:45:38 ----- UID: d073b2a0-c030-488e-98fe-cca622ab1bdd /api/v1/product?filter={isPublished=true&product_shop=65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished=true" (type string)
+31-January-2024	20:45:41 ----- UID: f4d3451a-59d1-46ce-a07e-876316cca45d /api/v1/product?filter={isPublished=true;product_shop=65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished=true;product_shop=65a794bccd2e5f046a9d2f96}" (type string)
+31-January-2024	20:45:45 ----- UID: ce20738f-4022-40cd-a79d-38255eeae2d1 /api/v1/product?filter={isPublished=true,product_shop=65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished=true,product_shop=65a794bccd2e5f046a9d2f96}" (type string)
+31-January-2024	20:45:50 ----- UID: e1b9e63e-b7c9-4614-8386-541f1c8fd68e /api/v1/product?filter={isPublished:true,product_shop=65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop=65a794bccd2e5f046a9d2f96}" (type string)
+31-January-2024	20:45:51 ----- UID: ec533601-d815-47e9-85fe-d07a8477fd16 /api/v1/product?filter={isPublished:true,product_shop:65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a794bccd2e5f046a9d2f96}" (type string)
+31-January-2024	20:46:05 ----- UID: 0d19c8b2-863d-44c5-af46-c0ef706ce638 /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:46:05 ----- UID: 254478ad-0f24-4eb2-a77d-317e1189df9d /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:46:14 ----- UID: 29927d7d-556c-47e2-8870-34c6124c2840 /api/v1/product?filter={isPublished:true,product_shop:65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a794bccd2e5f046a9d2f96}" (type string)
+31-January-2024	20:46:14 ----- UID: e0185aab-eeab-490e-aa76-d646508597d8 /api/v1/product?filter={isPublished:true,product_shop:65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a794bccd2e5f046a9d2f96}" (type string)
+31-January-2024	20:47:39 ----- UID: cc536052-4cf6-488c-bd19-9fae5909c9c9 /api/v1/product?filter={isPublished:true,product_shop:65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a794bccd2e5f046a9d2f96}" (type string)
+31-January-2024	20:47:39 ----- UID: 56427177-3845-487d-b414-09224b8a60ba /api/v1/product?filter={isPublished:true,product_shop:65a794bccd2e5f046a9d2f96} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a794bccd2e5f046a9d2f96}" (type string)
+31-January-2024	20:47:50 ----- UID: 903e10f9-19be-4bed-9ad6-b0b9362f0780 /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:47:50 ----- UID: 92abcba6-73f3-4498-84fe-07e042b559df /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:48:16 ----- UID: 454a348d-2116-49d4-be41-278917a7479b /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:48:16 ----- UID: 4ad4b884-2b49-4182-bfd7-60a755505bf7 /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:49:00 ----- UID: 7ea68e88-a65f-46a2-856c-1cbdb0369ff6 /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:49:07 ----- UID: ff2754fd-ae2a-4b1f-94c8-20de28e0bd7e /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:49:16 ----- UID: 4af4f464-c393-477f-b4ea-fd3d81290deb /api/v1/product?filter={isPublished:true,product_shop:65a37b046d6199828898f004} -- GET -- Parameter "filter" to find() must be an object, got "{isPublished:true,product_shop:65a37b046d6199828898f004}" (type string)
+31-January-2024	20:49:24 ----- UID: cb6e220d-dce7-4aec-b297-8d93dc962863 /api/v1/product?filter=} -- GET -- Parameter "filter" to find() must be an object, got "}" (type string)
+31-January-2024	20:49:27 ----- UID: 0a76a88a-5fc4-4946-a8f3-96b66be16f3e /api/v1/product?filter= -- GET -- Parameter "filter" to find() must be an object, got "" (type string)
+31-January-2024	20:49:33 ----- UID: 186d92f8-d621-4b7b-b75b-efc1e76e1722 /api/v1/product?filter=[object%20Object] -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+31-January-2024	20:49:39 ----- UID: 7f86c0e5-5e71-4415-9006-6569295a86c5 /api/v1/product?filter=[object%20Object] -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+31-January-2024	20:49:39 ----- UID: b0f9c78c-7b75-4a94-bfdd-fdc5c63b3806 /api/v1/product?filter=[object%20Object] -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+31-January-2024	20:51:11 ----- UID: f283a684-2469-4622-a1ae-0af819dbf872 /api/v1/product?filter=[object%20Object] -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+31-January-2024	20:51:18 ----- UID: 64f13919-6844-4acd-ad6f-e705d46416ba /api/v1/product?filter=isPublished=true&product_shop=65a37b046d6199828898f004 -- GET -- Parameter "filter" to find() must be an object, got "isPublished=true" (type string)
+31-January-2024	20:51:33 ----- UID: 59c10226-019a-4a4f-bb4e-4c1b8d9a8415 /api/v1/product?filter=isPublished=true&product_shop=65a37b046d6199828898f004 -- GET -- Parameter "filter" to find() must be an object, got "isPublished=true" (type string)
+31-January-2024	20:51:33 ----- UID: bbdf958c-e6f9-4c99-a470-a54aee114137 /api/v1/product?filter=isPublished=true&product_shop=65a37b046d6199828898f004 -- GET -- Parameter "filter" to find() must be an object, got "isPublished=true" (type string)
+31-January-2024	22:56:35 ----- UID: 9f076f4b-5db1-41f4-ab2c-766de877c79c /api/v1/product/:65b92d0f53e376ed610441d2 -- GET -- Cast to ObjectId failed for value ":65b92d0f53e376ed610441d2" (type string) at path "_id" for model "Product"
+31-January-2024	22:56:35 ----- UID: f9f967b7-e22a-4e66-a0c6-fc7a161ef867 /api/v1/product/:65b92d0f53e376ed610441d2 -- GET -- Cast to ObjectId failed for value ":65b92d0f53e376ed610441d2" (type string) at path "_id" for model "Product"
+01-February-2024	00:39:20 ----- UID: c4459082-5acc-4ebd-b997-60abe32ab44d /api/v1/product/draft/all -- GET -- invalid signature
+01-February-2024	00:39:20 ----- UID: 2bf054de-07db-42f8-b3e7-189a0ee681fe /api/v1/product/draft/all -- GET -- invalid signature
+01-February-2024	00:39:26 ----- UID: 21368dc8-d6ad-446d-8090-59f8e475c6a3 /api/v1/shop/logout -- POST -- invalid signature
+01-February-2024	00:39:29 ----- UID: 02faaa3c-a148-4dc9-b1a9-cd4b668ebcf3 /api/v1/shop/logout -- POST -- invalid signature
+01-February-2024	00:39:37 ----- UID: fc6d4408-a752-4273-9990-0f2587f4abea /api/v1/shop/logout -- POST -- invalid signature
+01-February-2024	00:39:38 ----- UID: 2b245332-51a8-447f-88c7-222e0962098e /api/v1/shop/logout -- POST -- invalid signature
+01-February-2024	00:39:38 ----- UID: 0df2fe34-084f-478b-803f-a615f85e8fe4 /api/v1/shop/logout -- POST -- invalid signature
+01-February-2024	00:39:41 ----- UID: ecba7e17-44e8-47a6-be8d-759ced0991b0 /api/v1/shop/logout -- POST -- invalid signature
+01-February-2024	00:53:58 ----- UID: 3198d7da-a648-4aeb-9893-bec8c6aaf9a8 /api/v1/product/:65b7e34f87bf4435f4106f5a -- GET -- Cast to ObjectId failed for value ":65b7e34f87bf4435f4106f5a" (type string) at path "_id" for model "Product"
+01-February-2024	00:53:58 ----- UID: 2af65c9a-edf7-4822-a915-6528685a9ed9 /api/v1/product/:65b7e34f87bf4435f4106f5a -- GET -- Cast to ObjectId failed for value ":65b7e34f87bf4435f4106f5a" (type string) at path "_id" for model "Product"
+01-February-2024	00:54:28 ----- UID: b9b69d8f-0a11-4371-9610-9b734f1c4e78 /api/v1/product/:65b7e34f87bf4435f4106f5a -- GET -- Cast to ObjectId failed for value ":65b7e34f87bf4435f4106f5a" (type string) at path "_id" for model "Product"
+01-February-2024	00:54:28 ----- UID: abc5407f-55bc-46ef-9f4e-55a78b80068a /api/v1/product/:65b7e34f87bf4435f4106f5a -- GET -- Cast to ObjectId failed for value ":65b7e34f87bf4435f4106f5a" (type string) at path "_id" for model "Product"
+01-February-2024	00:54:51 ----- UID: 3d07d093-3dce-4cff-bee3-15a871f84867 /api/v1/product/:65b7e34f87bf4435f4106f5a -- GET -- Cast to ObjectId failed for value ":65b7e34f87bf4435f4106f5a" (type string) at path "_id" for model "Product"
+01-February-2024	00:54:51 ----- UID: 99ae9779-d42d-4a68-8b1e-e00a8894852e /api/v1/product/:65b7e34f87bf4435f4106f5a -- GET -- Cast to ObjectId failed for value ":65b7e34f87bf4435f4106f5a" (type string) at path "_id" for model "Product"
+01-February-2024	01:46:56 ----- UID: 0d5082d2-2fa9-43bf-86f5-7b886ef6827b /api/v1/product/update/[object%20Object] -- PATCH -- Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Clothes"
+04-February-2024	23:20:47 ----- UID: 3e5741fa-5fec-42ff-bc98-9407fdaa590f /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Invalid user ID
+04-February-2024	23:21:02 ----- UID: 4bf99b71-a37c-4662-8789-67d8f44d6c40 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Invalid user ID
+04-February-2024	23:25:27 ----- UID: 73ae03db-47c5-484c-89ec-17f70302d0d7 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Cast to Number failed for value "65ba0798e33ce54e936d5710" (type string) at path "cart_user_id" for model "Cart"
+04-February-2024	23:26:27 ----- UID: 3ecda9fd-1983-4f7b-89aa-9f85c8b22dfb /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Cast to Number failed for value "new ObjectId("65ba0798e33ce54e936d5710")" (type ObjectId) at path "cart_user_id" for model "Cart"
+04-February-2024	23:59:31 ----- UID: 0d71151a-f762-4eae-9e10-d6804006b57b /api/v1/cart -- POST -- product_shop is not defined
+05-February-2024	00:00:24 ----- UID: a38fef40-987e-4ed6-b4ed-316743b80d81 /api/v1/cart -- POST -- shop_id is not defined
+05-February-2024	21:09:23 ----- UID: 234a3916-6406-4f43-b3ff-b623571c2727 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:11:00 ----- UID: 193869e5-72c6-43b5-b40c-5bce82545b5b /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:14:22 ----- UID: 984cd6a3-f9cc-44a3-ace9-8f0bf48176f7 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:19:59 ----- UID: 9c693b35-cade-4670-95a4-f1120948186a /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:20:18 ----- UID: 3cc2094d-4805-499a-8fe6-9f3678c5bc97 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:21:00 ----- UID: f925e321-d9c9-437f-88f0-e518ce58b3d4 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:23:27 ----- UID: 806421ca-ff04-4342-a5ca-0bb34db0ae84 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:27:36 ----- UID: b2bab894-2eb7-4b0e-825b-3cb3e85f9349 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:30:05 ----- UID: 9a660d42-6ff9-4bc5-82b5-56b50ea7fe89 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:31:33 ----- UID: 43f4a893-d3e1-4767-a0ed-a242ac5a9dfb /api/v1/user/signin -- POST -- User has not registered
+05-February-2024	21:31:40 ----- UID: e059fc38-c4fe-44d9-8f21-ad9aee6eb8af /api/v1/user/signin -- POST -- User has not registered
+05-February-2024	21:32:51 ----- UID: cee3279b-5ae6-4837-87cd-db4085f2d517 /api/v1/cart -- DELETE -- Cast to ObjectId failed for value "1000" (type number) at path "cart_user_id" for model "Cart"
+05-February-2024	21:37:25 ----- UID: 18acf06a-e807-4ec9-b838-c20c959ae5b1 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:37:57 ----- UID: 2b5480dd-61d3-42c6-836b-edd5b851edb9 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:38:21 ----- UID: ec4abfe7-b937-4eb3-9d58-6447d5712ac7 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:38:21 ----- UID: 6bb1d456-92ed-423a-8859-41b4022d42b4 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:38:22 ----- UID: ad88017a-5e95-44a7-9db0-33e47f0511d8 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:38:26 ----- UID: 49bc7220-5793-4070-902a-c3dc0fd31620 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:38:39 ----- UID: 298dae32-d7ad-4168-809b-ee4cf20b5bed /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:38:42 ----- UID: d4724de6-4d67-4a7a-8be8-c1863ea2bfd4 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:38:58 ----- UID: cbbdda33-2a79-459b-91f6-2388b9e20aed /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:38:59 ----- UID: 85015217-3c92-49ea-8633-3c4974d2099a /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:38:59 ----- UID: 46745d3a-457b-4656-aa29-7899306ac337 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:39:00 ----- UID: 53f3c2c0-fbce-41df-bf60-6adf22bd5305 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:39:02 ----- UID: 5e5d7852-7e6c-4a88-be9b-ce0980e433be /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:39:02 ----- UID: 7b00b99b-4baa-42ce-96d7-ec049204b2c4 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:39:02 ----- UID: 7b205eae-0de3-4b27-8982-1fce797445c2 /api/v1/cart -- POST -- invalid signature
+05-February-2024	21:39:07 ----- UID: 7748ee7e-c090-4823-9e99-b90d8f62f092 /api/v1/user/logout -- POST -- invalid signature
+05-February-2024	21:39:39 ----- UID: a26232f8-7fe2-44cb-b16a-8cc5b4a77f92 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:42:11 ----- UID: 7a8353e3-6c05-4ad1-9df6-a98a9ec689dc /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:43 ----- UID: 06f46757-2baa-4b1c-9fd7-2794fc3515d5 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:44 ----- UID: d44866d9-ebb8-4cd0-ac5e-3c8a80f628ec /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:47 ----- UID: 89af55d5-8e18-4cc1-86f4-08cbe8c3dc82 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:47 ----- UID: f12e9912-bc2a-4a5a-befd-dacbef08cb4c /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:50 ----- UID: a2d6bda1-247b-44ce-b2ae-b45290527b4d /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:52 ----- UID: 5cbbfdf0-530d-4e38-a62b-396e43a1282a /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:53 ----- UID: 8d1a0bb2-ce62-4e61-b418-753d61937f55 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:53 ----- UID: 3ff954c0-20a0-4d14-b13f-2bc8fa64b651 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:53 ----- UID: beb120ea-018b-44ee-96f4-9d6367ad0898 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:53 ----- UID: b637645f-1c9d-46c2-bbee-3b4b31317f60 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:53 ----- UID: 95716697-dc81-44f9-b2ea-bebe9d95f5a7 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:54 ----- UID: 0efa6810-ddf2-4cae-99d3-c53dda52c2f2 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:54 ----- UID: 493cf8c6-98b7-400e-97c6-b15ffe400741 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:46:56 ----- UID: 845a60cc-1c6c-438e-8081-6c6c3d58439f /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:48:00 ----- UID: 15ac67d8-6148-44a8-9487-e3dafbaba449 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	21:48:37 ----- UID: a38f998c-0d15-4b71-aa45-d382a68383c1 /api/v1/cart -- DELETE -- Invalid user ID
+05-February-2024	22:53:02 ----- UID: f8ae63a5-bf7a-4460-b2c9-4fd6b44ba9d4 /api/v1/cart -- POST -- Cannot read properties of undefined (reading 'findById')
+05-February-2024	22:53:12 ----- UID: b181e337-2ff8-428b-b0bc-099c06de71b1 /api/v1/cart -- POST -- Cannot read properties of undefined (reading 'findById')
+07-February-2024	18:16:02 ----- UID: 45996a8a-ce47-4992-9011-9b9c52fb8a00 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	18:16:03 ----- UID: 5a46d948-1960-4803-9246-cb62aeefdfc3 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	18:16:04 ----- UID: e1cfb4e4-b149-45c7-b14b-592e3c9e29f8 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	18:16:04 ----- UID: 7d3e0a38-55c3-4c64-bc81-401c61fac401 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	18:16:10 ----- UID: 922aa3ee-fb60-4835-90e4-2554838ca535 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	18:16:10 ----- UID: 129398af-d252-4bb7-9288-11c70f82cedc /api/v1/order/review -- POST -- invalid signature
+07-February-2024	18:52:20 ----- UID: 68facda3-6ca4-4a8f-b20f-6d183c585a6a /api/v1/order/review -- POST -- Discount are out
+07-February-2024	18:52:20 ----- UID: 52ec2cbc-2dc1-4dc1-88c8-bcd200857cf6 /api/v1/order/review -- POST -- Discount are out
+07-February-2024	18:57:45 ----- UID: 0767aa07-f9a8-4bd8-8ee1-1cbe8a424e9e /api/v1/order/review -- POST -- Discount are out
+07-February-2024	18:57:45 ----- UID: 584c89d2-3d1a-426f-bb9a-6247fc800e99 /api/v1/order/review -- POST -- Discount are out
+07-February-2024	19:20:23 ----- UID: c42b5aca-a52e-4f3d-b055-f78ae0e8a099 /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- invalid signature
+07-February-2024	19:20:25 ----- UID: 13bf403a-cbe5-4afe-8567-ff3c248e93fa /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- invalid signature
+07-February-2024	19:28:53 ----- UID: f19924d1-b7fe-4d0b-9b88-792a87301b2d /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:29:32 ----- UID: e326bfd8-6ed5-4389-ba87-4ba4dffef16c /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:30:32 ----- UID: 9aa7c37c-a628-4cfe-9164-d4cebe794b0d /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:32:14 ----- UID: f799ca36-6842-4f9c-b52a-5878ff1d034b /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:32:16 ----- UID: 3d06ee92-1f5c-4414-9f63-91539b052aeb /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:32:17 ----- UID: 336ef1cb-1c6e-47e4-962c-344af30f338f /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:32:17 ----- UID: dd2e61e9-9cc0-4b00-94d7-3c548ab88559 /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:32:17 ----- UID: 871f2606-4390-405c-abf7-ba4fe9ccaf7d /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:32:17 ----- UID: 94be8446-0b1f-44e3-8b64-084e79162ddb /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:32:17 ----- UID: 2b362172-cff1-480f-b930-fe75ded364c8 /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:34:44 ----- UID: b98b102e-6f99-4fdc-849b-b7993b5f04f0 /api/v1/discount/codes-of-shops -- POST -- getAllDiscountCodeOfAShopByUser is not defined
+07-February-2024	19:35:50 ----- UID: 92c3c598-239a-4e76-8012-11096c817b13 /api/v1/discount/codes-of-shops -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+07-February-2024	19:36:21 ----- UID: 7b0d080f-e17c-4b34-bf14-1b7262fb0aa0 /api/v1/discount/codes-of-shops -- POST -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+07-February-2024	19:37:09 ----- UID: ee0b4129-f4f0-41de-a190-4d1cff285aa4 /api/v1/discount/codes-of-shops -- POST -- Cannot read properties of undefined (reading 'map')
+07-February-2024	19:37:42 ----- UID: ad68d730-0d8b-4cd9-8202-c4b28bff0e82 /api/v1/discount/codes-of-shops -- POST -- Cannot read properties of undefined (reading 'map')
+07-February-2024	19:41:10 ----- UID: a6679847-e43f-4f69-95c5-55a89fea8101 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:41:26 ----- UID: 508fadba-f04f-45c3-857f-f7f81b0deae1 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:41:30 ----- UID: 8c708a2f-7f81-49ae-84ec-6b972b6d0e3a /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:41:37 ----- UID: 80544908-d908-4dc9-ab8a-95a3c330044e /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:42:02 ----- UID: 05cc8777-abc5-43fb-a100-0d1d2f3defd1 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:42:59 ----- UID: 11dae63b-55b0-4ebb-93f8-ac9524144e8d /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:42:59 ----- UID: 7f516f8c-9b8e-4a78-b820-423af4304d18 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:43:03 ----- UID: 92d077b7-52d2-44fc-998b-aab68408f931 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:43:03 ----- UID: da5fff2b-c656-4497-a638-472c78f55791 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:43:07 ----- UID: 308b9885-6579-4a0b-a048-aae85bfb176c /api/v1/order/review -- POST -- invalid signature
+07-February-2024	19:43:07 ----- UID: 2e27a4ab-42c9-46dc-9e72-283da392b2c2 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	20:46:04 ----- UID: 057fce2a-f026-4f69-8aec-0c0a87053edc /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- invalid signature
+07-February-2024	20:46:25 ----- UID: c2e614a0-0420-41a4-89c4-ba735564072f /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- Cannot read properties of undefined (reading 'findById')
+07-February-2024	20:46:50 ----- UID: c1866e8e-ca3f-4bf4-a7f1-6a41705c5931 /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- Cannot read properties of null (reading 'name')
+07-February-2024	20:46:52 ----- UID: aa1cf0e5-10ee-41ea-bffa-bd77a7e36421 /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- Cannot read properties of null (reading 'name')
+07-February-2024	20:47:48 ----- UID: 971d59c8-4bf2-441f-a829-8810e9e6c913 /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- Cannot read properties of null (reading 'name')
+07-February-2024	20:48:31 ----- UID: b6270425-d053-4e97-8934-da4fcd25bd6d /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- Cannot read properties of null (reading 'name')
+07-February-2024	20:48:55 ----- UID: 5a1952ec-77d3-46d5-b7d6-48473eb14869 /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- Assignment to constant variable.
+07-February-2024	20:50:58 ----- UID: d6a29878-0529-4c98-83ed-db1f66f409b6 /api/v1/discount/codes-of-shops -- POST -- invalid signature
+07-February-2024	20:50:58 ----- UID: 6115230d-be7a-472a-b046-68044f9c55bb /api/v1/order/review -- POST -- invalid signature
+07-February-2024	20:54:29 ----- UID: 87af0b2c-9bab-4ce0-a387-a0db5d472135 /api/v1/discount/discount-codes?discount_shop_id=65a37b046d6199828898f004 -- GET -- invalid signature
+07-February-2024	20:59:29 ----- UID: 6e0fa966-a3ef-48de-a5b5-bc571c287201 /api/v1/discount/codes-of-shops -- POST -- invalid signature
+07-February-2024	20:59:29 ----- UID: ed36aa73-34be-4dab-a71a-96d2bf501468 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	20:59:59 ----- UID: 40d75b10-c8c2-457e-82f7-c562cd6490ac /api/v1/discount/codes-of-shops -- POST -- invalid signature
+07-February-2024	20:59:59 ----- UID: cf8637ff-ddb7-4027-b27f-09a361880400 /api/v1/order/review -- POST -- invalid signature
+07-February-2024	21:00:12 ----- UID: 7137ef3b-53e6-4c68-a64f-c51bf6ec4ab3 /api/v1/user/logout -- POST -- invalid signature

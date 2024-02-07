@@ -44,6 +44,24 @@ class DiscountController {
     }).send(res);
   }
 
+  async getAllDiscountCodesOfAShopByUser(req, res, next) {
+    new SuccessResponse({
+      message: `Get all discount codes of shop successfully`,
+      metadata: await discountService.getAllDiscountCodeOfAShopByUser({
+        ...req.query,
+      }),
+    }).send(res);
+  }
+
+  async getAllDiscountCodesOfShopsByUser(req, res, next) {
+    new SuccessResponse({
+      message: `Get all discount codes of shops successfully`,
+      metadata: await discountService.getAllDiscountCodeOfShopsByUser({
+        ...req.body,
+      }),
+    }).send(res);
+  }
+
   async getDiscountAmount(req, res, next) {
     new SuccessResponse({
       message: `Get discount amount successfully`,

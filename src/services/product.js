@@ -61,8 +61,8 @@ class ProductFactory {
   }) {
     const query = { product_shop, isDraft: true };
     const products = await findAllDraftProductOfShop({ query, limit, skip });
-    console.log(`Product in service ${products}`)
-    return products
+    console.log(`Product in service ${products}`);
+    return products;
   }
 
   static async findAllPublishProductOfShop({
@@ -84,13 +84,28 @@ class ProductFactory {
     sort = "ctime",
     page = 1,
     filter = { isPublished: true },
+    shop_id,
   }) {
+    console.log(`Filter`, filter);
+    let filters = filter;
+    if (shop_id) {
+      filters = {
+        ...filter,
+        product_shop: shop_id,
+      };
+    }
     return await findAllProducts({
       limit,
       sort,
       page,
-      filter,
-      select: ["product_name", "product_price", "product_thumb"],
+      filter: filters,
+      select: [
+        "product_name",
+        "product_description",
+        "product_price",
+        "product_thumb",
+        "product_ratingAverage",
+      ],
     });
   }
 
