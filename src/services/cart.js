@@ -45,7 +45,7 @@ class CartService {
     // If having cart but no product in it
     if (!foundCart.cart_products.length) {
       foundCart.cart_products = [product];
-      foundCart.cart_count_products = 1;
+      foundCart.cart_count_products = product.quantity; // old: 1
       return await foundCart.save();
     } else if (
       // If having cart but does not have this product in it
@@ -56,7 +56,10 @@ class CartService {
       })
     ) {
       foundCart.cart_products = [...foundCart.cart_products, product];
-      foundCart.cart_count_products = foundCart.cart_products.length;
+      const quantities = foundCart.cart_products.reduce((acc, curr) => {
+        return (acc += curr.quantity);
+      }, 0);
+      foundCart.cart_count_products = quantities;
       return await foundCart.save();
     }
 
@@ -106,6 +109,12 @@ class CartService {
 
   async deleteUserCartItem({ user_id, product_id }) {
     const foundCart = await CartModel.findOne({ cart_user_id: user_id });
+    const oldQuantities = foundCart.cart_products.reduce((acc, curr) => {
+      return (acc += curr.quantity);
+    }, 0);
+    const deleteQuantities = foundCart.cart_products.find((product) => {
+      return product.product_id === product_id;
+    }).quantity;
     const query = {
         cart_user_id: user_id,
         cart_state: "active",
@@ -117,7 +126,7 @@ class CartService {
           },
         },
         $set: {
-          cart_count_products: foundCart.cart_products.length - 1,
+          cart_count_products: oldQuantities - deleteQuantities,
         },
       };
     const deletedCart = await CartModel.updateOne(query, updateSet);

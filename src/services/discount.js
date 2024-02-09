@@ -17,8 +17,8 @@ class DiscountService {
   async createDiscountCode(payload) {
     const {
       discount_code,
-      discount_start_day,
-      discount_end_day,
+      discount_start_date,
+      discount_end_date,
       discount_is_active,
       discount_shop_id,
       discount_min_order_value,
@@ -36,10 +36,10 @@ class DiscountService {
     } = payload;
 
     // Check
-    if (new Date() > new Date(discount_end_day))
+    if (new Date() > new Date(discount_end_date))
       throw new BadRequestError("Discount code has expired!");
 
-    if (new Date(discount_start_day) > new Date(discount_end_day))
+    if (new Date(discount_start_date) > new Date(discount_end_date))
       throw new BadRequestError("Start day must before end day");
 
     // Create index for discount code
@@ -58,8 +58,8 @@ class DiscountService {
       discount_value,
       discount_max_value,
       discount_code,
-      discount_start_date: new Date(discount_start_day),
-      discount_end_date: new Date(discount_end_day),
+      discount_start_date: new Date(discount_start_date),
+      discount_end_date: new Date(discount_end_date),
       discount_max_uses,
       discount_uses_count,
       discount_users_used: discount_users_uses,

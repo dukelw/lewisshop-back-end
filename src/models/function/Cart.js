@@ -31,6 +31,7 @@ const updateUserCartQuantity = async ({ user_id, product }) => {
     updateSet = {
       $inc: {
         "cart_products.$.quantity": quantity,
+        cart_count_products: quantity,
       },
     },
     options = { upsert: true, new: true };
