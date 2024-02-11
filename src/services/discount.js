@@ -192,6 +192,7 @@ class DiscountService {
           _id: discount._id,
           code: discount.discount_code,
           name: discount.discount_name,
+          minimum: discount.discount_min_order_value,
         };
       });
 

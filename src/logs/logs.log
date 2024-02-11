@@ -1057,3 +1057,14 @@
 10-February-2024	04:14:04 ----- UID: 963420ce-8b6a-4afc-875b-5a793954c74c /api/v1/cart -- POST -- invalid signature
 10-February-2024	04:14:12 ----- UID: 4c9f9ade-8499-44a5-ae63-b8d04c7f6b92 /api/v1/cart -- POST -- invalid signature
 10-February-2024	04:14:18 ----- UID: 3b5c792c-751f-452a-8b22-ea5a3f43947b /api/v1/cart -- POST -- invalid signature
+11-February-2024	22:06:33 ----- UID: 8174dd96-6b59-4048-8645-6c4034966ab7 /api/v1/order/review -- POST -- Discount requires minimum order value 29900000
+11-February-2024	22:06:55 ----- UID: fcac5369-2a51-4e4f-b8b6-ee727cb4a17c /api/v1/order/review -- POST -- Discount requires minimum order value 29900000
+11-February-2024	22:07:34 ----- UID: 9232ef4b-cd4f-400a-9d18-35aff5b13626 /api/v1/order/review -- POST -- Discount requires minimum order value 29900000
+11-February-2024	22:07:41 ----- UID: 0e479fbb-d262-4c6b-8e28-e2796a1cf70a /api/v1/order/review -- POST -- Discount requires minimum order value 29900000
+11-February-2024	22:07:50 ----- UID: aa55131f-9327-458f-bae9-4d35adaf6c12 /api/v1/order/review -- POST -- Discount requires minimum order value 29900000
+11-February-2024	22:08:05 ----- UID: 5c868c00-b048-4f8e-88eb-8e862ce8a54d /api/v1/order/review -- POST -- Discount requires minimum order value 29900000
+11-February-2024	22:08:16 ----- UID: 35fedd13-f1d2-4a4c-b0f4-21c00d6b72a9 /api/v1/order/review -- POST -- Discount requires minimum order value 29900000
+11-February-2024	22:10:41 ----- UID: d9e159b3-4a8f-4556-9961-b26786f34663 /api/v1/order/review -- POST -- Discount requires minimum order value 600000
+11-February-2024	23:13:42 ----- UID: dba03ac5-49fc-4fb2-864d-7f7407c5b39e /api/v1/order/review -- POST -- Discount requires minimum order value 600000
+11-February-2024	23:13:51 ----- UID: 7bc32453-23e2-4102-970e-e3a32e058bee /api/v1/order/review -- POST -- Discount requires minimum order value 600000
+11-February-2024	23:14:09 ----- UID: 4fc40b03-ed15-4a1c-ac1f-a3713cfeb372 /api/v1/order/review -- POST -- Discount requires minimum order value 600000
