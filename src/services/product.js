@@ -13,6 +13,7 @@ const {
   searchProductByUser,
   findAllProducts,
   findProduct,
+  findProductBySlug,
   updateProductByID,
 } = require("../models/function/Product");
 const { removeUndefinedObject, updateNestedObjectParser } = require("../utils");
@@ -61,7 +62,16 @@ class ProductFactory {
   }) {
     const query = { product_shop, isDraft: true };
     const products = await findAllDraftProductOfShop({ query, limit, skip });
-    console.log(`Product in service ${products}`);
+    return products;
+  }
+
+  static async findAllProductSameCategory({
+    product_type,
+    limit = 50,
+    skip = 0,
+  }) {
+    const filter = { product_type };
+    const products = await findAllProducts({ filter, limit, skip });
     return products;
   }
 
@@ -86,7 +96,6 @@ class ProductFactory {
     filter = { isPublished: true },
     shop_id,
   }) {
-    console.log(`Filter`, filter);
     let filters = filter;
     if (shop_id) {
       filters = {
@@ -104,6 +113,9 @@ class ProductFactory {
         "product_description",
         "product_price",
         "product_thumb",
+        "product_slug",
+        "product_shop",
+        "product_type",
         "product_ratingAverage",
       ],
     });
@@ -112,6 +124,13 @@ class ProductFactory {
   static async findProduct({ product_id }) {
     return await findProduct({
       product_id,
+      unSelect: ["--v"],
+    });
+  }
+
+  static async findProductBySlug({ product_slug }) {
+    return await findProductBySlug({
+      product_slug,
       unSelect: ["--v"],
     });
   }

@@ -32,7 +32,6 @@ const unpublishProductByShopId = async ({ product_shop, product_id }) => {
 
 const findAllDraftProductOfShop = async ({ query, limit, skip }) => {
   const products = await queryProduct({ query, limit, skip });
-  console.log(`products: ${products}`);
   return products;
 };
 

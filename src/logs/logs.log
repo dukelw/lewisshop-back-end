@@ -1068,3 +1068,31 @@
 11-February-2024	23:13:42 ----- UID: dba03ac5-49fc-4fb2-864d-7f7407c5b39e /api/v1/order/review -- POST -- Discount requires minimum order value 600000
 11-February-2024	23:13:51 ----- UID: 7bc32453-23e2-4102-970e-e3a32e058bee /api/v1/order/review -- POST -- Discount requires minimum order value 600000
 11-February-2024	23:14:09 ----- UID: 4fc40b03-ed15-4a1c-ac1f-a3713cfeb372 /api/v1/order/review -- POST -- Discount requires minimum order value 600000
+12-February-2024	00:26:59 ----- UID: a135c2c1-9ee0-47d6-a85e-e829ee667e53 /api/v1/discount/create -- POST -- Discount code existed!
+12-February-2024	14:04:31 ----- UID: 82c23af3-3db3-4325-b3a6-b660d83157d5 /api/v1/product/%2265b92d0f53e376ed610441d2%22 -- GET -- Cast to ObjectId failed for value ""65b92d0f53e376ed610441d2"" (type string) at path "_id" for model "Product"
+12-February-2024	14:05:17 ----- UID: 70f7f84f-5d63-419d-9da3-f98c6f024a05 /api/v1/product/%2265b92d0f53e376ed610441d2%22 -- GET -- Cast to ObjectId failed for value ""65b92d0f53e376ed610441d2"" (type string) at path "_id" for model "Product"
+12-February-2024	14:05:33 ----- UID: 82c58147-370e-4509-8b75-2b4b4f700043 /api/v1/product/%2265b92d0f53e376ed610441d2%22 -- GET -- Cast to ObjectId failed for value ""65b92d0f53e376ed610441d2"" (type string) at path "_id" for model "Product"
+12-February-2024	14:05:44 ----- UID: e81d1dd1-7d4b-4b16-a324-a8ff1c552602 /api/v1/product/%2265b92d0f53e376ed610441d2%22 -- GET -- Cast to ObjectId failed for value ""65b92d0f53e376ed610441d2"" (type string) at path "_id" for model "Product"
+12-February-2024	14:05:46 ----- UID: 24733c17-1844-483b-bd42-53c784ed1671 /api/v1/product/%2265b92d0f53e376ed610441d2%22 -- GET -- Cast to ObjectId failed for value ""65b92d0f53e376ed610441d2"" (type string) at path "_id" for model "Product"
+12-February-2024	14:37:38 ----- UID: 38e814e0-5df6-4a85-b07f-830cf85c23e5 /api/v1/shop/65b79180b6f82940982ca3a5 -- GET -- Invalid user ID
+12-February-2024	14:37:53 ----- UID: eb7501f0-a1e5-48ed-94db-e4b2fa6d6d85 /api/v1/shop/65b79180b6f82940982ca3a5 -- GET -- Invalid user ID
+12-February-2024	14:37:56 ----- UID: 5452e7d3-ecf0-45a4-a80e-1b3cd4fc2d34 /api/v1/shop/65b79180b6f82940982ca3a5 -- GET -- Invalid user ID
+12-February-2024	14:38:03 ----- UID: 0598cd7e-221c-4646-a6ae-d89e78042b42 /api/v1/shop/65b79180b6f82940982ca3a5 -- GET -- Invalid user ID
+12-February-2024	14:38:14 ----- UID: 2f08e761-e8ca-4f0c-b7bf-be339d54ba21 /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- Invalid user ID
+12-February-2024	14:38:44 ----- UID: bfba347c-9ca3-4ed1-af68-52390ffadb01 /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- convertToObjectIDMongo is not defined
+12-February-2024	14:38:56 ----- UID: ed16f4e2-6c11-4bb6-b552-fd040db7ac63 /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- convertToObjectIDMongo is not defined
+12-February-2024	14:39:31 ----- UID: f0e1ce81-3f4a-4a75-86ae-1adf92133c76 /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- Cast to ObjectId failed for value "{ shop_id: '65b4c138dc2fee0cae90bd8e' }" (type Object) at path "_id" for model "Shop"
+12-February-2024	14:39:35 ----- UID: 329f3645-b58f-45b6-aa9e-7a8e3d5b7007 /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- Cast to ObjectId failed for value "{ shop_id: '65b4c138dc2fee0cae90bd8e' }" (type Object) at path "_id" for model "Shop"
+12-February-2024	14:40:22 ----- UID: a09a35d5-dc2b-42d7-b6fd-5c160aaee305 /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- Cast to ObjectId failed for value "{ _id: { shop_id: '65b4c138dc2fee0cae90bd8e' } }" (type Object) at path "_id" for model "Shop"
+12-February-2024	14:40:24 ----- UID: 41ff4f57-6809-4b70-bc02-c135d3423591 /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- Cast to ObjectId failed for value "{ _id: { shop_id: '65b4c138dc2fee0cae90bd8e' } }" (type Object) at path "_id" for model "Shop"
+12-February-2024	14:41:36 ----- UID: 4a4a273c-eaa7-4b2a-90a2-14fa90095c5c /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- Argument passed in does not match the accepted types
+12-February-2024	14:42:16 ----- UID: 83aacf0f-4e87-48ad-8e27-066e546151ea /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- Argument passed in does not match the accepted types
+12-February-2024	14:43:09 ----- UID: ebf5ac78-00d4-4e3c-82aa-1712a22e837e /api/v1/shop/65b4c138dc2fee0cae90bd8e -- GET -- Argument passed in does not match the accepted types
+12-February-2024	15:27:36 ----- UID: 2a95e105-e6e5-4c66-9801-5900656d8e47 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
+12-February-2024	15:27:47 ----- UID: 40ef9126-0d28-4905-87bc-8143740b4e2f /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
+12-February-2024	15:28:18 ----- UID: a4a8ef34-5df3-4733-a2b2-47e5762b40c2 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
+12-February-2024	15:28:51 ----- UID: 72c12a37-1dfb-4b46-862c-1b31cb6d9471 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
+12-February-2024	15:30:27 ----- UID: bb615798-359c-47d7-968c-ce3519fa3296 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
+12-February-2024	15:31:39 ----- UID: 273a55af-d991-4394-bc3e-bc60775b3930 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
+12-February-2024	15:31:54 ----- UID: 415c2bcf-ae6b-4f1e-b962-1a0614bb7b79 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
+12-February-2024	15:33:46 ----- UID: 982e143c-3d0b-477a-b656-8bec22a025b0 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"

@@ -8,8 +8,9 @@ router.get(
   "/search/:keySearch",
   asyncHandler(productController.getMatchProduct)
 );
+router.get("/type/:type", asyncHandler(productController.getAllRelateProduct));
+router.get("/id/:id", asyncHandler(productController.findProduct));
 router.get("", asyncHandler(productController.findAllProducts));
-router.get("/:id", asyncHandler(productController.findProduct));
 
 router.use(authentication);
 router.post("/create", asyncHandler(productController.create));

@@ -8,7 +8,11 @@ const bcrypt = require("bcrypt");
 const crypto = require("crypto");
 const keyTokenService = require("../services/key-token");
 const { generatePairOfToken } = require("../auth/utils");
-const { getInfoData } = require("../utils/index");
+const {
+  getInfoData,
+  convertToObjectIDMongo,
+  getSelectData,
+} = require("../utils/index");
 const { findByEmail } = require("../helpers/function/shop");
 
 const RoleShop = {
@@ -156,6 +160,16 @@ class ShopService {
       user,
       tokens,
     };
+  };
+
+  getShopByID = async (shop_id) => {
+    return await ShopModel.findOne({
+      _id: convertToObjectIDMongo(shop_id),
+    })
+      .select(
+        getSelectData(["name", "thumb", "email", "description", "status"])
+      )
+      .lean();
   };
 }
 

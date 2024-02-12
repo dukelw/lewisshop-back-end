@@ -85,6 +85,16 @@ class ProductController {
       }),
     }).send(res);
   }
+
+  async getAllRelateProduct(req, res, next) {
+    console.log("Product_type", req.params.type);
+    new SuccessResponse({
+      message: "Get all relate product successfully",
+      metadata: await ProductService.findAllProductSameCategory({
+        product_type: req.params.type,
+      }),
+    }).send(res);
+  }
 }
 
 module.exports = new ProductController();

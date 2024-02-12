@@ -33,6 +33,13 @@ class ShopController {
       }),
     }).send(res);
   }
+
+  async findShopByID(req, res, next) {
+    new SuccessResponse({
+      message: "Find shop by ID successfully",
+      metadata: await shopService.getShopByID(req.params.id),
+    }).send(res);
+  }
 }
 
 module.exports = new ShopController();

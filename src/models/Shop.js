@@ -20,6 +20,14 @@ var shopSchema = new Schema(
       type: String,
       required: true,
     },
+    thumb: {
+      type: String,
+      default:
+        "https://img.lovepik.com/png/20231006/black-line-drawing-online-store-mobile-shopping-icon-drawing-icons_105485_wh860.png",
+    },
+    description: {
+      type: String,
+    },
     status: {
       type: String,
       enum: ["active", "inactive"],
