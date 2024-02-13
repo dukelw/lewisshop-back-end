@@ -1096,3 +1096,8 @@
 12-February-2024	15:31:39 ----- UID: 273a55af-d991-4394-bc3e-bc60775b3930 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
 12-February-2024	15:31:54 ----- UID: 415c2bcf-ae6b-4f1e-b962-1a0614bb7b79 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
 12-February-2024	15:33:46 ----- UID: 982e143c-3d0b-477a-b656-8bec22a025b0 /api/v1/product/Furniture -- GET -- Cast to ObjectId failed for value "Furniture" (type string) at path "_id" for model "Product"
+12-February-2024	17:28:45 ----- UID: 1bfeb4b9-faa5-4cb7-9fcb-241d87a4fa21 /api/v1/product/id/null -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+12-February-2024	17:28:45 ----- UID: 21c44cea-594e-4dac-8ca8-33e7f245e113 /api/v1/shop/null -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+12-February-2024	20:51:30 ----- UID: 54665945-bb05-46ba-b10e-f772da88c791 /api/v1/discount/codes/all -- GET -- Invalid user ID
+12-February-2024	20:51:36 ----- UID: fcf4bce9-4d78-4176-bcf9-4b093f039d86 /api/v1/discount/codes/all -- GET -- Not found keyStore
+12-February-2024	22:48:32 ----- UID: 818e5a7a-107d-4091-ad1f-54ad1051be9c /api/v1/discount/create -- POST -- Discount code existed!

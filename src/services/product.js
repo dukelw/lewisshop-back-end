@@ -117,6 +117,7 @@ class ProductFactory {
         "product_shop",
         "product_type",
         "product_ratingAverage",
+        "product_quantity",
       ],
     });
   }
