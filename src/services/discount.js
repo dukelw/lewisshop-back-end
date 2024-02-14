@@ -265,7 +265,7 @@ class DiscountService {
   }
 
   async deleteDiscountCode({ shop_id, code }) {
-    const deleted = await DiscountModel.findOneAndDelete({
+    const deleted = await DiscountModel.delete({
       discount_code: code,
       discount_shop_id: shop_id,
     });

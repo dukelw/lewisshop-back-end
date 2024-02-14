@@ -1230,3 +1230,5 @@
 14-February-2024	22:31:51 ----- UID: 3b7a3174-04a3-44f1-9989-ba8903cc65f0 /api/v1/product/id/undefined -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
 14-February-2024	22:31:58 ----- UID: ce0c2bfb-38ed-4845-869a-b925d7a6be22 /api/v1/product/id/undefined -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
 14-February-2024	22:32:51 ----- UID: 75006f28-170b-458d-8506-7baf64c2656e /api/v1/product/id/undefined -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+15-February-2024	02:49:07 ----- UID: 6f68eb2e-6a63-4ba3-95a8-83eb0b34d6d7 /api/v1/discount/delete/LEWISHOCKIEMTHU -- DELETE -- DiscountModel.delete is not a function
+15-February-2024	02:50:07 ----- UID: 839cf881-fa8e-4c4a-8408-76e38b666cc7 /api/v1/discount/delete/LEWISHOCKIEMTHU -- DELETE -- DiscountModel.delete is not a function

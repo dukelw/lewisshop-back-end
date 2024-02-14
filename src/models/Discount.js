@@ -1,4 +1,5 @@
 const { Schema, model } = require("mongoose");
+var mongoose_delete = require("mongoose-delete");
 
 const DOCUMENT_NAME = "Discount";
 const COLLECTION_NAME = "Discounts";
@@ -80,6 +81,11 @@ var discountSchema = new Schema(
     collection: COLLECTION_NAME,
   }
 );
+
+discountSchema.plugin(mongoose_delete, {
+  overrideMethods: true,
+  deletedAt: true,
+});
 
 module.exports = {
   DiscountModel: model(DOCUMENT_NAME, discountSchema),
