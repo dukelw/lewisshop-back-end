@@ -129,6 +129,18 @@ class ProductFactory {
     });
   }
 
+  static async findProducts({ product_ids }) {
+    const products = await Promise.all(
+      product_ids.map(async (product_id) => {
+        return await findProduct({
+          product_id,
+          unSelect: ["--v"],
+        });
+      })
+    );
+    return products;
+  }
+
   static async findProductBySlug({ product_slug }) {
     return await findProductBySlug({
       product_slug,

@@ -8,6 +8,7 @@ router.get(
   "/search/:keySearch",
   asyncHandler(productController.getMatchProduct)
 );
+router.post("/find-products", asyncHandler(productController.findProducts));
 router.get("/type/:type", asyncHandler(productController.getAllRelateProduct));
 router.get("/id/:id", asyncHandler(productController.findProduct));
 router.get("", asyncHandler(productController.findAllProducts));

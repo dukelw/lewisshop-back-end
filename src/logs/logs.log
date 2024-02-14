@@ -1101,3 +1101,132 @@
 12-February-2024	20:51:30 ----- UID: 54665945-bb05-46ba-b10e-f772da88c791 /api/v1/discount/codes/all -- GET -- Invalid user ID
 12-February-2024	20:51:36 ----- UID: fcf4bce9-4d78-4176-bcf9-4b093f039d86 /api/v1/discount/codes/all -- GET -- Not found keyStore
 12-February-2024	22:48:32 ----- UID: 818e5a7a-107d-4091-ad1f-54ad1051be9c /api/v1/discount/create -- POST -- Discount code existed!
+14-February-2024	01:11:04 ----- UID: a7288e8f-33d2-49e7-848c-216d026ed6f8 /api/v1/order/review -- POST -- Discount requires minimum order value 300000
+14-February-2024	01:12:45 ----- UID: ddd67690-15ec-42d8-a3a5-ba4709d4f36e /api/v1/order/review -- POST -- Discount requires minimum order value 300000
+14-February-2024	20:13:19 ----- UID: c4d1150a-d4d2-48f6-a54f-bfe0ff232ea9 /api/v1/user/signin -- POST -- User has not registered
+14-February-2024	20:13:21 ----- UID: 7067cfe9-ad1a-4f76-9dd0-748a1743c360 /api/v1/user/signin -- POST -- User has not registered
+14-February-2024	20:13:22 ----- UID: 889b7f31-92c2-4fdd-a569-5a7e4784edb7 /api/v1/user/signin -- POST -- User has not registered
+14-February-2024	20:13:23 ----- UID: b9896838-a35a-4352-938c-ccdbeeb002b5 /api/v1/user/signin -- POST -- User has not registered
+14-February-2024	20:13:23 ----- UID: 938b888f-9059-4bb6-9218-abdae118703c /api/v1/user/signin -- POST -- User has not registered
+14-February-2024	20:13:23 ----- UID: f51d46fa-adcd-45de-b931-0675fa8d2561 /api/v1/user/signin -- POST -- User has not registered
+14-February-2024	20:13:30 ----- UID: 6d55f0af-0d25-4515-b3ab-f71ff443e2e2 /api/v1/user/signin -- POST -- User has not registered
+14-February-2024	20:45:01 ----- UID: baf794dc-efb6-475b-ba54-138b0ac7d0b7 /api/v1/product/id/null -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+14-February-2024	20:45:01 ----- UID: 975a8c0c-d7e3-40d4-9aeb-db9f2e9696bc /api/v1/shop/null -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+14-February-2024	20:51:27 ----- UID: 7e24125e-b797-402c-8f38-e50a27566fb3 /api/v1/product/id/null -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+14-February-2024	20:51:27 ----- UID: 0f78278e-6b43-4352-a2a2-287e1f6acdbd /api/v1/shop/null -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+14-February-2024	21:51:33 ----- UID: 8cded340-0f3c-42f6-9590-fb763a8306d4 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:51:33 ----- UID: dd786a50-4ca6-440d-9f76-92f4fe875bb3 /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:51:33 ----- UID: 2a49b9b0-8ff9-4e59-88e1-9c06925bd6f5 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:51:33 ----- UID: 9a6ebc9e-e6c6-4b0e-a6f4-d1596dd2a889 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:51:33 ----- UID: e286daf1-57b0-44ac-9e6b-92e296c701f3 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:51:33 ----- UID: f0be7e8f-aba9-434c-a24c-79c257bea3c2 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:51:33 ----- UID: 82758d79-8c79-479a-b950-846bc1624654 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:51:33 ----- UID: 32d8ea26-2e26-45ca-a5ca-f17059e007b6 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:52:25 ----- UID: 3768e33f-2fe9-4ca0-903f-2962e08ce3d8 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:25 ----- UID: fbae3b63-ce42-4cf6-ae17-dd62d35bc8d0 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:52:25 ----- UID: 7f122dd1-0c35-48c3-a230-c10e0b3efd3b /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:25 ----- UID: 64b78678-812d-4174-9351-b730178aed58 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:25 ----- UID: 64d4c557-6bfa-4d08-b496-4e1394873172 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:52:25 ----- UID: bc9a766b-6a9a-4b8c-862c-e72f6687622e /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:25 ----- UID: fee4fcbb-3260-4f57-a4fe-a2be5c2d759f /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:25 ----- UID: d70d7468-5ab8-4825-b893-41450cf95845 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:52:30 ----- UID: 0ea9c70d-6683-4fce-bce7-c9637d000642 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:30 ----- UID: 1145074e-572e-4235-9069-e0036e7f040f /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:30 ----- UID: 3dcffb54-45c9-4029-b378-aa96c72104a5 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:52:30 ----- UID: 9a931f24-34d3-4535-9a65-0ffcf607c2c3 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:30 ----- UID: 15a9c6de-32b3-4b88-884b-c37d73b0369d /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:30 ----- UID: deccf768-cb5e-4de3-bec0-b30a3e29cec4 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:52:30 ----- UID: 420b110a-b613-478f-8bb3-3e96d7e7fc24 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:52:30 ----- UID: 68be5011-08b6-4ec7-add0-4aa9b9d62a13 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:39 ----- UID: ce7a346d-0f1b-4868-adda-2e8dc89c7faf /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:39 ----- UID: ef5d4a4b-e4a1-469a-b6e5-b2f01e2a4e4e /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:39 ----- UID: b9254a70-e8b3-48ba-af13-1e2c9add43ec /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:39 ----- UID: a91d6a3b-fb2d-4d0f-b484-95c553e7ac95 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:39 ----- UID: 1b91f021-0ff7-4a0e-9b82-13e280fa076a /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:39 ----- UID: a959f183-a0ad-49f7-b966-dc8b45447d5b /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:39 ----- UID: 6dbfc4a7-2e33-4979-80f6-6349cfd70a50 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:39 ----- UID: 68f22de0-94e4-4ddb-9a15-ae8ce608f218 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:46 ----- UID: 155b20d7-691d-411c-b1ed-a3041d1b951a /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:46 ----- UID: c20d6750-5a3c-4c55-b67d-62549f7bb584 /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:46 ----- UID: ef54580f-06fc-4afb-ba55-ae0c182cd220 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:46 ----- UID: a84babbf-dc53-4893-bea0-17d605973dfa /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:46 ----- UID: 4a5e943d-697c-401b-b309-5eaad2bfafbe /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:46 ----- UID: 647e3ff5-cacf-451d-b440-6658bf2d6dba /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:46 ----- UID: ce6eea76-aa35-4179-a60f-31a939412d38 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:46 ----- UID: 90e889e1-5e84-4063-b8a3-381979663e83 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:49 ----- UID: 35330e7d-ea66-49bf-b78c-b39dffb98b51 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:49 ----- UID: 9e093ba8-5d9c-4863-8d97-8a14f11a0639 /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:49 ----- UID: d180bd00-ffbd-4114-b0d8-afd4945e3711 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:49 ----- UID: ca3c7f7c-6cf0-44b7-bfbe-9c172cd88b48 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:49 ----- UID: da4e0586-95cf-4254-9ba0-71a2217f2769 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:49 ----- UID: c13a949f-0a47-4f93-9db2-8b16c1f14bde /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:53:49 ----- UID: 6d0cf9d7-9395-434b-8ca8-561d6d511883 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:53:49 ----- UID: 8c49279f-2b4c-403c-8b21-354d4529d1b8 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:06 ----- UID: d432d638-3e08-46ad-87c1-e2559d8c12b3 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:06 ----- UID: 0913ef32-db64-4663-948d-25de9267a67b /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:06 ----- UID: ca6c2c4f-77ed-445f-a07f-38b7314b152c /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:06 ----- UID: 342abb9f-23c5-461d-a896-470370d35b83 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:06 ----- UID: 38503d25-a292-4d4e-9039-a6cb7ecf1cbc /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:06 ----- UID: d0762ef5-91b2-4d6a-a3fc-b833014bc3c1 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:06 ----- UID: 2f2dd34b-4b96-444b-940b-c53945745621 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:06 ----- UID: 64cda6f0-f41b-434a-aaf7-70e263824571 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:21 ----- UID: 8d70d840-dc12-4542-9ce9-73771c247781 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:21 ----- UID: df54de70-c4dd-4531-8df6-baea2dfa4b6e /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:21 ----- UID: 830952cc-86c4-493c-b813-d4910d4e8017 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:21 ----- UID: 7b54684f-304b-4fe4-98a2-518fa9c2ef58 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:21 ----- UID: 57fdd0b2-f156-413d-a8cc-d6fb1316fffe /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:21 ----- UID: 8021a805-ceab-42a4-b5e6-0c6cc12d2b1a /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:21 ----- UID: 3a714ae8-cd30-4ee3-9368-c4a1d3e53d89 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:21 ----- UID: b5020c1d-aa11-427d-a08d-4253046e89d6 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:43 ----- UID: abb2909b-474d-42cb-96b9-d01f91d96b3a /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:43 ----- UID: a2ffe4de-a0ce-4631-8870-6a9d4914b510 /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:43 ----- UID: 6df247d1-e464-4f7b-b049-7ed95884e437 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:43 ----- UID: c4674584-da83-4c74-880d-7b26f0d3c6ed /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:43 ----- UID: 04008a42-31ee-496d-86e1-6911f1e208ea /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:43 ----- UID: d6284848-88de-41d8-9054-70f65ac11f55 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:54:43 ----- UID: ce7586ce-b0b9-4217-a4e5-4c55d54d6f98 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- Cannot read properties of undefined (reading 'map')
+14-February-2024	21:54:43 ----- UID: e276cc6f-220e-4b31-9916-d8fe943cecb6 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:56:27 ----- UID: 1cd1890b-bd88-4659-825b-a7420c65fd9f /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:56:27 ----- UID: 58375afc-f29b-4327-b5ca-b602f5ce9d83 /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- product_ids.map is not a function
+14-February-2024	21:56:27 ----- UID: b516c2b7-ea08-4d1c-ba02-79c7e14b4589 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:56:27 ----- UID: 0d6a9e10-6bd7-4038-9e5c-ef919e10db90 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:56:27 ----- UID: 38c58f84-be47-40e8-b0b0-c4e983d45d45 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:56:27 ----- UID: 588750bc-df5d-49fb-9634-122711f239c9 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:56:27 ----- UID: 0d4648c7-feae-4c68-bfee-4fe27775727f /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:56:27 ----- UID: a2d9fe73-263d-430f-80e2-04e31a1a2998 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:56:28 ----- UID: ff3de7cf-e6cb-4cd4-9d3c-f848541c9de7 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:56:28 ----- UID: b63cee4c-88d4-4236-9dcb-34cfa799f913 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:56:28 ----- UID: ee7a5648-6e3d-4e0e-b3fd-f2b3601f028b /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- product_ids.map is not a function
+14-February-2024	21:56:28 ----- UID: 0584a763-e2e6-4689-804a-ccc5fdaf804c /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:56:28 ----- UID: 9acf77bc-1796-4e34-8829-ebc42bb2bd19 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:56:28 ----- UID: 389235e5-d976-4de9-8799-6ec188aeae8e /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:56:28 ----- UID: 9cd9e7dd-2e65-4e29-99b1-bd0299576bba /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:56:28 ----- UID: b5347965-082f-4a76-adbf-47dd50e52c19 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:57:08 ----- UID: 0b75a55c-94df-44b4-9b24-fda7c158250d /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:57:08 ----- UID: 7d8ce56f-06b8-437f-b815-641ac45add84 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:57:08 ----- UID: 0cae481f-86f2-44b2-a341-ca46018e13bb /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- product_ids.map is not a function
+14-February-2024	21:57:08 ----- UID: 1b4516e1-5866-42b5-9659-5a8f62d8cc73 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:57:08 ----- UID: a6e7ffc1-d190-41f3-9d1f-cc2f1e6d8e51 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:57:08 ----- UID: b1191dee-aae6-4b9e-b76e-0b9a03f39972 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:57:08 ----- UID: 3606e555-a562-4c34-847b-c0885f7514d4 /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:57:08 ----- UID: c60006a7-a42a-4dd3-977e-eab0be40301a /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:57:11 ----- UID: aa707c7e-2f86-4bee-8a1a-d93336126208 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:57:11 ----- UID: 7d7d4fc5-28db-4d93-8206-16065cfc05e0 /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- product_ids.map is not a function
+14-February-2024	21:57:11 ----- UID: 11bc01e8-e26d-44c6-ae5d-2711a616a595 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:57:11 ----- UID: 2db45bd7-4247-4c49-991f-1001918ad5ac /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:57:11 ----- UID: 4915cf6e-a849-412d-94a7-24facab12547 /api/v1/product/ids/65cb8e42566e256fd0b3ea91,65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:57:11 ----- UID: 3b4e8805-3e6d-43d3-aeae-8089e7adbfe8 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:57:11 ----- UID: 522b5e4f-f7f3-4671-b946-05a8e8880dcc /api/v1/product/ids/65c902eb4743c666bd86855e -- GET -- product_ids.map is not a function
+14-February-2024	21:57:11 ----- UID: ac0e8b81-275b-4def-b832-7559ac426412 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:57:17 ----- UID: 97c652ae-47e0-4c0f-8f2f-ad2cce69b32d /api/v1/product/ids/65c902eb4743c666bd86855e,65cb8e42566e256fd0b3ea91,65cb8e42566e256fd0b3ea91 -- GET -- product_ids.map is not a function
+14-February-2024	21:57:25 ----- UID: d34111ac-9167-447d-bcd3-ac57d1a14285 /api/v1/product/ids/ -- GET -- Invalid user ID
+14-February-2024	21:59:16 ----- UID: 5f3ad29c-3ddb-4176-ab89-db3952da238f /api/v1/cart -- POST -- Invalid user ID
+14-February-2024	21:59:16 ----- UID: b470e720-2f35-4ca9-b793-258050d3e99a /api/v1/cart -- POST -- Invalid user ID
+14-February-2024	22:02:13 ----- UID: c3c4b51f-4ecb-4d7c-8d6d-71b081e64736 /api/v1/product/find-products -- POST -- Invalid user ID
+14-February-2024	22:02:13 ----- UID: 8adb80cf-9b43-49e5-a176-daee0ef6812a /api/v1/product/find-products -- POST -- Invalid user ID
+14-February-2024	22:02:18 ----- UID: 70739df1-6058-4908-a43e-f087b54d2524 /api/v1/product/find-products -- POST -- Invalid user ID
+14-February-2024	22:03:49 ----- UID: 46a97288-dfb0-48ce-827e-93e28342035d /api/v1/product/find-products -- POST -- Invalid user ID
+14-February-2024	22:16:11 ----- UID: e225f945-1ab5-4352-b966-856e190a7d54 /api/v1/product/id/undefined -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+14-February-2024	22:31:51 ----- UID: 3b7a3174-04a3-44f1-9989-ba8903cc65f0 /api/v1/product/id/undefined -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+14-February-2024	22:31:58 ----- UID: ce0c2bfb-38ed-4845-869a-b925d7a6be22 /api/v1/product/id/undefined -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+14-February-2024	22:32:51 ----- UID: 75006f28-170b-458d-8506-7baf64c2656e /api/v1/product/id/undefined -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"

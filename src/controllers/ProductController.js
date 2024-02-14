@@ -86,6 +86,15 @@ class ProductController {
     }).send(res);
   }
 
+  async findProducts(req, res, next) {
+    new SuccessResponse({
+      message: "Find products by id successfully",
+      metadata: await ProductService.findProducts({
+        product_ids: req.body,
+      }),
+    }).send(res);
+  }
+
   async getAllRelateProduct(req, res, next) {
     console.log("Product_type", req.params.type);
     new SuccessResponse({
