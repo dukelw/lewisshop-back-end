@@ -296,6 +296,35 @@ class DiscountService {
 
     return result;
   }
+
+  async findDeletedDiscount({ shop_id }) {
+    const foundShop = ShopModel.findById(shop_id);
+    if (!foundShop) throw new BadRequestError("Can not find shop");
+    return await DiscountModel.findWithDeleted({
+      deleted: true,
+      discount_shop_id: convertToObjectIDMongo(shop_id),
+    });
+  }
+
+  async restoreDiscount({ discount_id }) {
+    const foundDiscount = DiscountModel.findById(discount_id);
+    if (!foundDiscount) throw new BadRequestError("Can not find discount");
+    return await DiscountModel.restore({
+      _id: convertToObjectIDMongo(discount_id),
+    });
+  }
+
+  async destroyDiscount({ discount_id, shop_id }) {
+    const foundShop = DiscountModel.findById(shop_id);
+    if (!foundShop) throw new BadRequestError("Can not find shop");
+    const foundDiscount = DiscountModel.findById(discount_id);
+    if (!foundDiscount) throw new BadRequestError("Can not find discount");
+    if (foundShop._id !== foundDiscount.discount_shop_id)
+      throw new BadRequestError(
+        "You dont have permission to delete this discount"
+      );
+    return await DiscountModel.deleteOne({ _id: discount_id });
+  }
 }
 
 module.exports = new DiscountService();

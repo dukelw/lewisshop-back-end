@@ -1232,3 +1232,11 @@
 14-February-2024	22:32:51 ----- UID: 75006f28-170b-458d-8506-7baf64c2656e /api/v1/product/id/undefined -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
 15-February-2024	02:49:07 ----- UID: 6f68eb2e-6a63-4ba3-95a8-83eb0b34d6d7 /api/v1/discount/delete/LEWISHOCKIEMTHU -- DELETE -- DiscountModel.delete is not a function
 15-February-2024	02:50:07 ----- UID: 839cf881-fa8e-4c4a-8408-76e38b666cc7 /api/v1/discount/delete/LEWISHOCKIEMTHU -- DELETE -- DiscountModel.delete is not a function
+15-February-2024	02:56:19 ----- UID: 67ef457d-74fb-41d9-bb2c-38890706872c /api/v1/user/signin -- POST -- User has not registered
+15-February-2024	02:56:21 ----- UID: c1f7dbdf-6271-4fe5-82a3-0cac7b4079da /api/v1/user/signin -- POST -- User has not registered
+15-February-2024	02:56:34 ----- UID: 83d26cd2-b2b2-4547-b5dc-1fdc60c1e43b /api/v1/product/find-products -- POST -- product_ids.map is not a function
+15-February-2024	02:56:34 ----- UID: c33cf65c-6b00-48cb-95ce-385b7c37d5ce /api/v1/product/find-products -- POST -- product_ids.map is not a function
+15-February-2024	02:56:34 ----- UID: fc89baf0-824b-4ff4-9aa6-70e77e689bfc /api/v1/product/find-products -- POST -- product_ids.map is not a function
+15-February-2024	13:36:24 ----- UID: e6234509-915a-4b0b-9b67-d3ca19a21c26 /api/v1/product/find-products -- POST -- product_ids.map is not a function
+15-February-2024	13:36:24 ----- UID: d0c7cea8-7a9d-4e2b-864f-f9a19a7acb82 /api/v1/product/find-products -- POST -- product_ids.map is not a function
+15-February-2024	13:36:24 ----- UID: 452d276e-4c8c-4694-845c-11aded512f12 /api/v1/product/find-products -- POST -- product_ids.map is not a function

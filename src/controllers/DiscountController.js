@@ -81,6 +81,16 @@ class DiscountController {
     }).send(res);
   }
 
+  async destroyDiscountCode(req, res, next) {
+    new SuccessResponse({
+      message: `Destroy discount code successfully`,
+      metadata: await discountService.destroyDiscount({
+        shop_id: req.user.user_id,
+        discount_id: req.params.id,
+      }),
+    }).send(res);
+  }
+
   async cancelDiscountCode(req, res, next) {
     new SuccessResponse({
       message: `Cancel discount code successfully`,
@@ -88,6 +98,24 @@ class DiscountController {
         shop_id: req.params.shop_id,
         code: req.body.code,
         user_id: req.body.user_id,
+      }),
+    }).send(res);
+  }
+
+  async getDeletedDiscountCode(req, res, next) {
+    new SuccessResponse({
+      message: `Find deleted discount code successfully`,
+      metadata: await discountService.findDeletedDiscount({
+        shop_id: req.user.user_id,
+      }),
+    }).send(res);
+  }
+
+  async restoreDiscountCode(req, res, next) {
+    new SuccessResponse({
+      message: `Restore discount code successfully`,
+      metadata: await discountService.restoreDiscount({
+        discount_id: req.params.id,
       }),
     }).send(res);
   }

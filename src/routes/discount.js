@@ -31,6 +31,18 @@ router.delete(
   "/delete/:code",
   asyncHandler(discountController.deleteDiscountCode)
 );
+router.delete(
+  "/destroy/:id",
+  asyncHandler(discountController.destroyDiscountCode)
+);
+router.post(
+  "/restore/:id",
+  asyncHandler(discountController.restoreDiscountCode)
+);
+router.get(
+  "/deleted-codes",
+  asyncHandler(discountController.getDeletedDiscountCode)
+);
 router.post(
   "/cancel/:shop_id",
   asyncHandler(discountController.cancelDiscountCode)
