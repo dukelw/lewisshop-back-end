@@ -325,6 +325,27 @@ class DiscountService {
       );
     return await DiscountModel.deleteOne({ _id: discount_id });
   }
+
+  async checkAndUpdateDiscountStatus() {
+    try {
+      // Get all the expired discount
+      const activeDiscounts = await DiscountModel.find({
+        discount_end_date: { $gt: new Date() }, // Get all the active discount
+      });
+
+      // Update expired discount
+      const expiredDiscounts = await DiscountModel.updateMany(
+        {
+          _id: { $nin: activeDiscounts.map((discount) => discount._id) }, // Get all discount with is not in active discount list
+        },
+        { discount_is_active: false } // Update their status to false
+      );
+
+      console.log("Updated discounts:", expiredDiscounts.nModified);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
 module.exports = new DiscountService();
