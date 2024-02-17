@@ -1,3 +1,4 @@
+const { BadRequestError } = require("../../core/error-response");
 const { convertToObjectIDMongo } = require("../../utils/index");
 const { InventoryModel } = require("../Inventory");
 
@@ -15,7 +16,29 @@ const insertInventory = async ({
   });
 };
 
+const restoreInventory = async (restore_products) => {
+  for (const restoreProduct of restore_products) {
+    const { product_id, product_quantity, cart_id } = restoreProduct;
+    const query = {
+      inven_product_id: convertToObjectIDMongo(product_id),
+    };
+    const update = {
+      $inc: {
+        inven_stock: product_quantity,
+      },
+      $pull: {
+        inven_reservation: { cart_id: cart_id.toString() },
+      },
+    };
+    await InventoryModel.updateOne(query, update);
+  }
+};
+
 const reservationInventory = async ({ product_id, quantity, cart_id }) => {
+  const foundInventory = await InventoryModel.findOne({
+    inven_stock: { $gte: quantity },
+  });
+  if (!foundInventory) throw new BadRequestError("Not enough inventory");
   const query = {
       inven_product_id: convertToObjectIDMongo(product_id),
       inven_stock: { $gte: quantity },
@@ -38,5 +61,6 @@ const reservationInventory = async ({ product_id, quantity, cart_id }) => {
 
 module.exports = {
   insertInventory,
+  restoreInventory,
   reservationInventory,
 };

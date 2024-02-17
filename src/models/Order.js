@@ -7,8 +7,9 @@ const COLLECTION_NAME = "Orders";
 var orderSchema = new Schema(
   {
     order_user_id: {
-      type: Number,
+      type: Schema.Types.ObjectId,
       required: true,
+      ref: "User",
     },
     order_checkout: {
       type: Object,
@@ -38,6 +39,10 @@ var orderSchema = new Schema(
     order_products: {
       type: Array,
       required: true,
+    },
+    order_cart_id: {
+      type: Schema.Types.ObjectId,
+      ref: "Cart",
     },
     order_trackingNumber: {
       type: String,

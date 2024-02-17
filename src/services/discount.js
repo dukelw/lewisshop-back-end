@@ -244,12 +244,14 @@ class DiscountService {
     }
 
     if (discount_max_uses_per_user > 0) {
-      const usedUserDiscount = discount_users_used.find(
-        (user) => user.user_id === user_id
+      const usedUserDiscount = discount_users_used.filter(
+        (user) => user === user_id
       );
 
-      if (usedUserDiscount)
-        throw new BadRequestError(`Each user can only user this code once`);
+      if (usedUserDiscount.length >= discount_max_uses_per_user)
+        throw new BadRequestError(
+          `Each user can only user this code ${discount_max_uses_per_user} times`
+        );
     }
 
     const amount =

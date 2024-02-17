@@ -1565,3 +1565,109 @@
 16-February-2024	11:41:08 ----- UID: bb57dbd3-6e30-40ad-ab62-b45d8ab45a30 /api/v1/product/search/ -- GET -- Invalid user ID
 16-February-2024	11:41:08 ----- UID: 0a681c25-4f8e-4ca4-a434-1f9bc2153e98 /api/v1/product/search/ -- GET -- Invalid user ID
 16-February-2024	11:41:18 ----- UID: b10edadc-a67d-4bb4-addf-7565eb329035 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:42:32 ----- UID: b75e4eb3-882d-447c-998f-91930adea667 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:42:32 ----- UID: 9fc200da-8b8b-4292-9823-ad817edce93a /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:43:58 ----- UID: 59f15901-9135-4541-aaf4-afd6c42968d7 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:44:20 ----- UID: b556845d-4ee7-4cc5-8f3f-c9c8cc112816 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:44:24 ----- UID: 9dfc2579-aae4-4d59-ab76-91a9734ce401 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:44:24 ----- UID: 9277c4c5-f742-4b36-a3e6-2cc1402545b6 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:44:31 ----- UID: 34c1c61f-6b60-456e-a7b0-f922fccb3821 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:44:37 ----- UID: 4f5e2895-0264-43f8-a9f3-d5a713624a00 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:44:37 ----- UID: 8ebda11d-45ce-4ef4-b2ff-ec2e909903dd /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:44:41 ----- UID: 9b24298a-766a-4ded-92aa-7e83f78a229d /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:45:44 ----- UID: f7083fbd-b23f-4fd8-aa55-3c7afef083a8 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:45:46 ----- UID: eb2609a9-04d4-4d3b-9baa-57497c3f7894 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:45:46 ----- UID: 442c89e7-ad17-47d0-ba6d-615a0115c1f4 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:45:53 ----- UID: 01ef4272-f8a2-44e5-b376-ba499e650c29 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:45:57 ----- UID: 8f1eb728-5012-440a-8588-e9cadf5cbad4 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:45:57 ----- UID: 7ef4293d-37c1-4b0f-957b-5eb50a91762d /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:46:02 ----- UID: 7c3e3f02-976e-4591-8442-a97a94162f4b /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:46:03 ----- UID: 935c4ec7-8db0-4749-95c6-784bf9f6b81e /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:46:03 ----- UID: 9c2d646d-83a8-4bbd-b05f-2fea0cc6e2cb /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:46:04 ----- UID: 6ccd0832-649b-4096-91bb-68b1f38c1e47 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:46:05 ----- UID: 313b33f2-0df7-4a96-b64c-d08d52d2e22b /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:46:05 ----- UID: 877ded36-433a-46f4-b36b-d908038c0313 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:46:05 ----- UID: b55cae39-4fd8-478a-889b-a3b9b55292a6 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:47:10 ----- UID: ee0c361c-2a11-4064-8512-fe5755e67909 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:47:10 ----- UID: 37e666a1-c97e-4703-a31d-bf217d88fb6d /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:47:13 ----- UID: de2d6812-1692-4d7f-8e27-65019640e9eb /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:47:16 ----- UID: 395681f2-8a95-4a39-9f7c-7ed57d2ac7e2 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:47:22 ----- UID: 3b19858e-789b-4531-963d-8d34472ca281 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:17 ----- UID: 3dd98c54-7f6a-4267-aaf5-fbdb658a6a10 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:17 ----- UID: 297ff8c0-e558-4036-b6f3-8e82c5583229 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:23 ----- UID: 9483c188-1ed2-4b2d-b8bc-6596b64df670 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:28 ----- UID: ccb67e75-5e30-4495-9103-d3f70d1c5610 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:28 ----- UID: 2a43e0ed-a6d6-4c46-ab4b-75c915e9e72a /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:31 ----- UID: 2b7fc372-b741-4b79-b437-108c820ffc77 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:31 ----- UID: 3150a4d3-b2f6-43b6-9548-638f33b87f21 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:40 ----- UID: c732803a-1d37-43f6-a35c-e428491d164f /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:42 ----- UID: 1809afe5-88e1-456b-a567-8d614c4c47b3 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:42 ----- UID: 2cc3826f-8e38-42ec-b700-513cc1f9bca7 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:45 ----- UID: a0011f54-678b-4894-8767-6d6a33373549 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:53 ----- UID: dfcb4654-7f16-4eb5-923b-972feae0ca98 /api/v1/product/search/ -- GET -- Invalid user ID
+16-February-2024	11:48:53 ----- UID: 656f759c-4a1f-41ed-bdab-1e19f5bb219c /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:41:49 ----- UID: a1d13f89-46fb-4129-af79-c2cf6aed29b0 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:41:49 ----- UID: 1a498492-81b4-4159-bc2f-0d3f7070bcc7 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:41:59 ----- UID: 6e6dc3f8-e4a2-4bc4-916b-88a73f49b9f0 /api/v1/user/signin -- POST -- User has not registered
+17-February-2024	23:42:01 ----- UID: b3a6aee7-0937-4294-ba96-509ff4e5381c /api/v1/user/signin -- POST -- User has not registered
+17-February-2024	23:42:03 ----- UID: cfa5d082-aaeb-4ff6-9190-cd63eaa8e3dc /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:42:03 ----- UID: e06fe5ea-184c-4b09-a914-abcbbf9d8f85 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:42:09 ----- UID: f848ba64-765f-43db-bfbe-aedc94055ed0 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:42:09 ----- UID: 3ebe6aa9-7f89-41d0-8ef1-c34a58eb214e /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:42:15 ----- UID: 28375663-26e8-490f-ba3c-df8a6e11d2af /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:42:15 ----- UID: 72215827-95ec-45b5-b859-c9a05ca9b5fb /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:42:54 ----- UID: 80f8326e-7d9d-4bc6-9706-ea83ad440739 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:42:54 ----- UID: b106ed31-1132-477d-9db4-812210709657 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:43:48 ----- UID: ab7e7634-9669-48b5-9482-96ce4e53a9d2 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:43:48 ----- UID: a01780db-111f-471d-a95a-e785782a1306 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:44:23 ----- UID: d7305b07-c4ba-4cc9-84b9-09bd2d154b3c /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:44:23 ----- UID: f3cc6266-94b9-4198-82b0-c98ae4d882dd /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:44:49 ----- UID: bfb1ff10-c22f-4692-a018-e5225f1a87a4 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:44:49 ----- UID: c8933990-d790-406a-ab1a-7347d897d777 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:07 ----- UID: 61ce7dd1-f656-41c1-9e58-97d959a7a8d7 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:07 ----- UID: bd89bb60-78ca-408e-ad7d-bfd55129c257 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:12 ----- UID: 2cd642db-2775-4285-883b-5f840d74980b /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:12 ----- UID: 1381dd69-e641-4921-9ac8-325b03598898 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:16 ----- UID: 9b8e6390-6ea0-4035-a071-f3e920f21129 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:17 ----- UID: 0fe9d5d6-930b-4cad-b4cb-255fcbba62c8 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:19 ----- UID: fae6e796-d98c-4066-9c30-7779a14abf45 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:19 ----- UID: a5a0e309-6f10-4901-8a08-d19e9b6af820 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:29 ----- UID: f0e12054-a2d9-4958-9f03-d18655e4dedc /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:47:48 ----- UID: d96ed367-3ad1-49f8-8a52-ddbc8b734842 /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:48:04 ----- UID: f256df29-c308-4f4c-85af-2e6ee752295f /api/v1/product/search/ -- GET -- Invalid user ID
+17-February-2024	23:48:46 ----- UID: b10569b6-1642-4786-b39f-da06754bde85 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:00:39 ----- UID: 4d5ffab9-7821-4fb9-a594-9ba5cb58b128 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:01:30 ----- UID: ef4b232d-cabc-4989-bf22-4805fd368756 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:04:10 ----- UID: 9678a901-b430-430d-949a-890f743574ef /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:04:41 ----- UID: ef23ca89-6643-4f01-8018-c57dbbca32de /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:35 ----- UID: b1d2565b-18fc-41e7-a10a-7c0a9ac4055d /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:35 ----- UID: b6af69e6-d170-4ccf-9d9c-6f3ce59298df /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:40 ----- UID: 7ee0dd5e-c29d-4886-a075-85d77dba93f0 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:43 ----- UID: 47c8cf12-bfe8-47ff-a397-58007726b936 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:46 ----- UID: bc08c98c-9580-46c3-803d-019d8ed060f8 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:54 ----- UID: d80c5e4b-1938-4200-a830-45f115c74807 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:54 ----- UID: 11efa2c0-98e7-49fb-b8b3-26a72642263d /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:58 ----- UID: b93a32c9-e153-4acd-a4bc-3dc395085fc3 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:05:58 ----- UID: 92e08ff9-7f12-4aca-8883-97d4eb18e23d /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:06:02 ----- UID: 4364b83e-2530-44ac-9944-88a02eec6558 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	00:25:11 ----- UID: f1dabff7-10b9-4640-9068-24be10fb640b /api/v1/order -- POST -- Invalid user ID
+18-February-2024	00:25:16 ----- UID: 59fc030c-629d-4f34-9edb-c384ce7c5097 /api/v1/order -- POST -- Some products have been updated recently. please try again
+18-February-2024	00:32:19 ----- UID: b6169c15-53a7-4b3b-a770-2a86adad86d0 /api/v1/order -- POST -- Some products have been updated recently. please try again
+18-February-2024	00:33:41 ----- UID: 344eb9f3-b8ca-43a4-b72c-bef361d5123d /api/v1/order -- POST -- Some products have been updated recently. please try again
+18-February-2024	00:58:54 ----- UID: ead858b4-6bff-4b57-b347-eb9274cb0ca5 /api/v1/order -- POST -- Some products have been updated recently. please try again
+18-February-2024	01:00:58 ----- UID: 82ee737b-c71f-432d-a54e-647473ea4e7f /api/v1/order -- POST -- Some products have been updated recently. please try again
+18-February-2024	01:01:45 ----- UID: 6f4b2952-a7a0-49cc-9a86-9d5a70b1e004 /api/v1/inventory -- POST -- Invalid user ID
+18-February-2024	01:21:43 ----- UID: 73114e96-cfc7-48e4-ad3d-990002a3baef /api/v1/order -- POST -- Some products have been updated recently. please try again
+18-February-2024	01:27:39 ----- UID: 6d446890-b27b-4bcb-b98d-89a712bfcccf /api/v1/order -- POST -- Not enough inventory
+18-February-2024	02:04:39 ----- UID: f1b402fc-f0b1-4675-9b0a-3c93c84a10b3 /api/v1/order/cancel -- POST -- Cast to number failed for value "undefined" (type undefined) at path "inven_stock"
+18-February-2024	02:06:33 ----- UID: a7db846b-a8fa-4f5d-af7d-5f278b5a7ff3 /api/v1/order -- POST -- Not enough inventory
+18-February-2024	02:08:05 ----- UID: b5b3409c-067e-4eba-9bc8-5746d361b601 /api/v1/order/cancel -- POST -- Order is not found
+18-February-2024	02:14:49 ----- UID: 674d25dc-5905-4dc9-b7bf-ebbdfa4e01ac /api/v1/order/cancel -- POST -- Order is not found
+18-February-2024	02:19:51 ----- UID: f7e43f07-cffa-44f5-9ed1-d43348303e3a /api/v1/order/cancel -- POST -- Order is not found
+18-February-2024	02:28:52 ----- UID: 591fd235-4cd0-4843-8221-528dab534d22 /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	02:30:39 ----- UID: 687385a6-5ba3-42ff-910a-08b9d46cd62c /api/v1/product/search/ -- GET -- Invalid user ID
+18-February-2024	03:00:24 ----- UID: b2d7b5db-2930-4e01-9e1d-5f94123437bc /api/v1/order -- POST -- Order validation failed: order_user_id: Cast to Number failed for value "65ba0798e33ce54e936d5710" (type string) at path "order_user_id"
+18-February-2024	03:11:12 ----- UID: 9b7589f7-dfeb-4458-ac24-91998e921fc2 /api/v1/order -- POST -- Each user can only user this code once
+18-February-2024	03:11:30 ----- UID: 1749d42d-6f7a-4e91-821d-2646c94c9561 /api/v1/order/cancel -- POST -- Order is not found
+18-February-2024	03:14:41 ----- UID: 853bbc58-203b-4203-a117-53a1b37eb3e6 /api/v1/order -- POST -- Each user can only user this code once
+18-February-2024	03:16:50 ----- UID: 8439a162-740f-4695-a654-a645f51235a1 /api/v1/order -- POST -- Each user can only user this code 1 times

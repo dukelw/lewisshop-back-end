@@ -5,6 +5,11 @@ const { checkProductByServer } = require("../models/function/Product");
 const { acquireLock, releaseLock } = require("../services/redis");
 const discountService = require("../services/discount");
 const { convertToObjectIDMongo } = require("../utils");
+const { restoreInventory } = require("../models/function/Inventory");
+const {
+  updateDiscountByCode,
+  restoreDiscount,
+} = require("../models/function/Discount");
 
 class OrderService {
   /*
@@ -135,6 +140,8 @@ class OrderService {
       }
     }
 
+    console.log("Acquire product:::", acquireProduct);
+
     // Check if some products is out of stock
     if (acquireProduct.includes(false))
       throw new BadRequestError(
@@ -147,10 +154,39 @@ class OrderService {
       order_shipping: user_address,
       order_payment: user_payment,
       order_products: shop_order_ids_new,
+      order_cart_id: cart_id,
     });
 
     // If insert successfully, remove products from cart
+    const discountInfos = [];
     if (newOrder) {
+      shop_order_ids_new.forEach((order_id) => {
+        order_id.shop_discounts.map((discount) => {
+          discountInfos.push({
+            id: discount.discount_id,
+            shop: discount.shop_id,
+            code: discount.code,
+          });
+        });
+      });
+
+      for (const discount of discountInfos) {
+        const bodyUpdate = {
+          $inc: {
+            discount_uses_count: 1,
+            discount_max_uses: -1,
+          },
+          $push: {
+            discount_users_used: user_id,
+          },
+        };
+
+        updateDiscountByCode({
+          discount_shop_id: discount.shop,
+          discount_code: discount.code,
+          bodyUpdate,
+        });
+      }
     }
 
     return newOrder;
@@ -195,6 +231,33 @@ class OrderService {
     });
 
     if (!foundOrder) throw new NotFoundError("Order is not found");
+
+    // Update quantity of inventory
+    const restoreProducts = [];
+    const restoreDiscounts = [];
+    foundOrder.order_products.forEach((shop_order) => {
+      shop_order.item_products.forEach((product) => {
+        restoreProducts.push({
+          product_id: product.product_id,
+          product_quantity: product.quantity,
+          cart_id: foundOrder.order_cart_id,
+        });
+      });
+      shop_order.shop_discounts.forEach((discount) => {
+        restoreDiscounts.push({
+          id: discount.discount_id,
+          shop: discount.shop_id,
+          code: discount.code,
+          user: user_id,
+        });
+      });
+    });
+    await restoreInventory(restoreProducts);
+    await restoreDiscount(restoreDiscounts);
+
+    // Update discount code
+
+    // Cancel reservation order
 
     // Soft delete order
     return await OrderModel.delete({
