@@ -8,6 +8,7 @@ const inventoryRouter = require("./inventory");
 const orderRouter = require("./order");
 const commentRouter = require("./comment");
 const notificationRouter = require("./notification");
+const paymentRouter = require("./payment");
 const { apiKey, permission } = require("../auth/check-auth");
 const { pushToLogDiscord } = require("../middlewares/index");
 
@@ -29,6 +30,7 @@ function route(app) {
   app.use("/api/v1/order", orderRouter);
   app.use("/api/v1/comment", commentRouter);
   app.use("/api/v1/notification", notificationRouter);
+  app.use("/api/v1/payment", paymentRouter);
 }
 
 module.exports = route;

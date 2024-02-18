@@ -12,7 +12,6 @@ const { convertToObjectIDMongo } = require("../utils");
 
 class CartService {
   async addToCart({ user_id, product = {} }) {
-    console.log(`Added product::: ${JSON.stringify(product)}`);
     // Check cart's existence
     const foundCart = await CartModel.findOne({
       cart_user_id: user_id,
@@ -137,6 +136,12 @@ class CartService {
     return await CartModel.findOne({
       cart_user_id: convertToObjectIDMongo(user_id),
     }).lean();
+  }
+
+  async deleteCart({ cart_id }) {
+    const foundCart = await CartModel.findById(cart_id);
+    if (!foundCart) throw new NotFoundError("Cart not found");
+    await CartModel.delete({ _id: convertToObjectIDMongo(cart_id) });
   }
 }
 

@@ -10,6 +10,7 @@ const {
   updateDiscountByCode,
   restoreDiscount,
 } = require("../models/function/Discount");
+const { deleteCart } = require("./cart");
 
 class OrderService {
   /*
@@ -140,8 +141,6 @@ class OrderService {
       }
     }
 
-    console.log("Acquire product:::", acquireProduct);
-
     // Check if some products is out of stock
     if (acquireProduct.includes(false))
       throw new BadRequestError(
@@ -187,6 +186,8 @@ class OrderService {
           bodyUpdate,
         });
       }
+
+      await deleteCart({ cart_id });
     }
 
     return newOrder;
