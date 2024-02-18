@@ -166,6 +166,7 @@ class DiscountService {
     limit,
     page,
     discount_shop_ids = [],
+    user_id,
   }) {
     const allDiscountsPromises = discount_shop_ids.map(async (shop_id) => {
       const discounts = await findAllDiscountCodesUnselect({
@@ -193,6 +194,8 @@ class DiscountService {
           code: discount.discount_code,
           name: discount.discount_name,
           minimum: discount.discount_min_order_value,
+          maxUse: discount.discount_max_uses_per_user,
+          userUsed: discount.discount_users_used,
         };
       });
 
