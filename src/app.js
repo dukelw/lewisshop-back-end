@@ -7,7 +7,7 @@ const cors = require("cors");
 const route = require("./routes");
 const { API_KEY } = require("./private/api-key");
 const app = express();
-// const cookieParser = require("cookie-parser");
+
 const corsOptions = {
   origin: "http://localhost:1610",
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
@@ -16,7 +16,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-// app.use(cookieParser());
 
 app.use((req, res, next) => {
   if (req.headers.origin && req.headers.origin === "http://localhost:1610") {

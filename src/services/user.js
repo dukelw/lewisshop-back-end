@@ -55,7 +55,17 @@ class UserService {
         code: 201,
         metadata: {
           user: getInfoData({
-            fields: ["_id", "name", "email"],
+            fields: [
+              "_id",
+              "name",
+              "email",
+              "thumb",
+              "bank_account_number",
+              "address",
+              "phone_number",
+              "gender",
+              "isAdmin",
+            ],
             object: newUser,
           }),
           tokens,
@@ -99,7 +109,17 @@ class UserService {
 
     return {
       user: getInfoData({
-        fields: ["_id", "name", "email"],
+        fields: [
+          "_id",
+          "name",
+          "email",
+          "thumb",
+          "bank_account_number",
+          "address",
+          "phone_number",
+          "gender",
+          "isAdmin",
+        ],
         object: foundUser,
       }),
       tokens,
