@@ -132,6 +132,52 @@ class CartService {
     return deletedCart;
   }
 
+  async deleteCartItemsForUser({ user_id, product_ids }) {
+    try {
+      const foundCart = await CartModel.findOne({ cart_user_id: user_id });
+
+      if (!foundCart) {
+        throw new NotFoundError("Cart not found");
+      }
+
+      // Get product_ids list in cart
+      const cartProductIds = foundCart.cart_products.map(
+        (product) => product.product_id
+      );
+
+      // Get need to delete product_ids
+      const productIdsToDelete = product_ids.filter((productId) =>
+        cartProductIds.includes(productId)
+      );
+
+      // Filter products to keep based on product_ids
+      const filteredProducts = foundCart.cart_products.filter(
+        (product) => !productIdsToDelete.includes(product.product_id)
+      );
+
+      // Calculate new total quantity
+      const newQuantity = filteredProducts.reduce(
+        (acc, curr) => acc + curr.quantity,
+        0
+      );
+
+      // Update cart with filtered products and new quantity
+      const updatedCart = await CartModel.updateOne(
+        { _id: foundCart._id },
+        {
+          $set: {
+            cart_products: filteredProducts,
+            cart_count_products: newQuantity,
+          },
+        }
+      );
+
+      return updatedCart;
+    } catch (error) {
+      throw new BadRequestError("Failed to delete cart items");
+    }
+  }
+
   async getCartOfUser({ user_id }) {
     return await CartModel.findOne({
       cart_user_id: convertToObjectIDMongo(user_id),

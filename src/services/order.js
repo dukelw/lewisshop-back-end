@@ -1,6 +1,8 @@
 const { OrderModel } = require("../models/Order");
+const ShopModel = require("../models/Shop");
+const UserModel = require("../models/User");
 const { NotFoundError, BadRequestError } = require("../core/error-response");
-const { findCartByID } = require("../models/function/Cart");
+const { findCartByID, createUserCart } = require("../models/function/Cart");
 const { checkProductByServer } = require("../models/function/Product");
 const { acquireLock, releaseLock } = require("../services/redis");
 const discountService = require("../services/discount");
@@ -10,7 +12,7 @@ const {
   updateDiscountByCode,
   restoreDiscount,
 } = require("../models/function/Discount");
-const { deleteCart } = require("./cart");
+const { deleteUserCartItem, deleteCartItemsForUser } = require("./cart");
 
 class OrderService {
   /*
@@ -47,7 +49,17 @@ class OrderService {
   async checkoutReview({ cart_id, user_id, shop_order_ids }) {
     // Check cart's existence
     const foundCart = await findCartByID({ cart_id });
-    if (!foundCart) throw new NotFoundError("Cart does not exist");
+    // if (!foundCart) throw new NotFoundError("Cart does not exist");
+    if (!foundCart) {
+      await createUserCart({
+        user_id,
+        product: {
+          product_id: shop_order_ids[0].item_products[0].product_id,
+          quantity: shop_order_ids[0].item_products[0].quantity,
+          shop_id: shop_order_ids[0].shop_id,
+        },
+      });
+    }
 
     const checkout_order = {
         totalPrice: 0,
@@ -65,6 +77,8 @@ class OrderService {
         item_products = [],
       } = shop_order_ids[i];
 
+      const shopName = await ShopModel.findById(shop_id);
+
       // Check product available
       const checkProductServer = await checkProductByServer(item_products);
       if (!checkProductServer) throw new BadRequestError("Order wrong");
@@ -79,6 +93,7 @@ class OrderService {
 
       const itemCheckout = {
         shop_id,
+        shop_name: shopName,
         shop_discounts,
         rawPrice: checkoutPrice,
         appliedDiscountPrice: checkoutPrice,
@@ -130,10 +145,12 @@ class OrderService {
     // One more check inventory of product
     // Get new array by flatmap
     const products = shop_order_ids_new.flatMap((order) => order.item_products);
+    const productIDs = [];
     const acquireProduct = [];
 
     for (let i = 0; i < products.length; i++) {
       const { product_id, quantity } = products[i];
+      productIDs.push(product_id);
       const keyLock = await acquireLock(product_id, quantity, cart_id);
       acquireProduct.push(keyLock ? true : false);
       if (keyLock) {
@@ -156,7 +173,11 @@ class OrderService {
       order_cart_id: cart_id,
     });
 
-    // If insert successfully, remove products from cart
+    // Delete ordered products in cart
+    if (newOrder) {
+      await deleteCartItemsForUser({ user_id, product_ids: productIDs });
+    }
+
     const discountInfos = [];
     if (newOrder) {
       shop_order_ids_new.forEach((order_id) => {
@@ -186,8 +207,6 @@ class OrderService {
           bodyUpdate,
         });
       }
-
-      await deleteCart({ cart_id });
     }
 
     return newOrder;
@@ -197,7 +216,8 @@ class OrderService {
     1. Query Orders [User]
   */
   async getOrderByUser({ limit = 50, page = 1, sort = "ctime", user_id }) {
-    if (!user_id) throw new NotFoundError("User id not found");
+    const foundUser = await UserModel.findById(user_id);
+    if (!foundUser) throw new NotFoundError("User id not found");
     const skip = (page - 1) * limit;
     const sortBy = sort === "ctime" ? { _id: -1 } : { _id: 1 };
     const orders = await OrderModel.find({

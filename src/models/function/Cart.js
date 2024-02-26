@@ -2,13 +2,14 @@ const { CartModel } = require("../Cart");
 const { convertToObjectIDMongo } = require("../../utils/index");
 
 const createUserCart = async ({ user_id, product }) => {
+  console.log("product:::", product);
   const query = { cart_user_id: user_id, cart_state: "active" },
     updateOrInsert = {
       $addToSet: {
         cart_products: product,
       },
       $set: {
-        cart_count_products: 1,
+        cart_count_products: 1, // If something wrong occurs, it is here
       },
     },
     options = { upsert: true, new: true };

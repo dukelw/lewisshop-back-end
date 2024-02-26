@@ -2222,3 +2222,93 @@
 22-February-2024	20:45:55 ----- UID: c11ad289-ab93-48d7-9b77-32789df40f91 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
 22-February-2024	20:46:05 ----- UID: 4ee56ddf-5460-4623-aad3-79208a857785 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
 22-February-2024	20:55:28 ----- UID: b6fa7975-7c05-4ad5-9520-82147dff0a2a /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+24-February-2024	06:05:36 ----- UID: 72fed95f-80ef-4130-9045-3362c1be8713 /api/v1/order/review -- POST -- Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+24-February-2024	06:05:36 ----- UID: f1484fe2-9fee-451d-a9ab-72b11d2bf726 /api/v1/order/review -- POST -- Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+24-February-2024	06:06:21 ----- UID: 4409cd15-e100-4493-9bac-aa44ed4b0c79 /api/v1/order/review -- POST -- Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+24-February-2024	06:06:21 ----- UID: c37844c5-1c20-401a-b155-24405f7b0825 /api/v1/order/review -- POST -- Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+24-February-2024	06:07:03 ----- UID: 0b7968b5-7ae0-446c-9287-09bc35d345d0 /api/v1/order/review -- POST -- Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+24-February-2024	06:07:19 ----- UID: fd6a7c45-758e-438c-b72d-6454efb3fdb7 /api/v1/order/review -- POST -- Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+24-February-2024	06:07:19 ----- UID: 95c84628-1876-4838-b1d6-92ba261a6591 /api/v1/order/review -- POST -- Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+24-February-2024	06:20:00 ----- UID: 73d1932d-60e9-4df5-9492-0a6de8d737a7 /api/v1/cart/update -- POST -- Product does not exist
+24-February-2024	06:20:00 ----- UID: 89aa5106-c725-413d-90c4-7e83c78c49f2 /api/v1/cart/update -- POST -- Product does not exist
+24-February-2024	06:20:01 ----- UID: b79b7f68-b084-4864-9b91-4327a35223c7 /api/v1/cart/update -- POST -- Product does not exist
+24-February-2024	17:03:01 ----- UID: a7b3f550-7c15-455c-9e13-4802ef0002b7 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'quantity')
+24-February-2024	17:03:09 ----- UID: 2645b2a6-6837-431a-9daf-19c8f7e6553f /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'quantity')
+24-February-2024	17:03:12 ----- UID: 65802f0f-17d9-48c4-a480-3c8b8b2d10e5 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'quantity')
+24-February-2024	17:05:57 ----- UID: 81548c37-acac-4b3e-a88a-7192fc3ec05e /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'quantity')
+24-February-2024	17:07:16 ----- UID: d38421ad-7993-4b5d-9ad2-ad65ad7370b4 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'quantity')
+24-February-2024	17:27:05 ----- UID: 15cbb492-4f3b-4f2a-bcc0-a2b779d73b89 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:30:13 ----- UID: 694a031c-aa6b-4d0d-86ef-1cb6a46e9dda /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:30:13 ----- UID: 4172a6a3-fe74-46cd-b667-1ef90398e6e9 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:30:15 ----- UID: 8c8c6178-081e-4c66-b604-100200541461 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:30:34 ----- UID: c7eecb49-d984-4e14-9bc3-f8a44a9878ea /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:30:43 ----- UID: d400b30e-5924-42ea-b610-9d7001d2c89c /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:30:46 ----- UID: 930b24bc-67b7-4d53-bed9-b61b1211c7a4 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:31:11 ----- UID: 066ffab9-8e94-49d6-9c99-ed842bd74462 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:31:12 ----- UID: 5970d8f5-8b78-4b2b-8aae-390e4db9053b /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:32:57 ----- UID: 87abbee7-159a-493f-9d92-52e6eb80e598 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:37:05 ----- UID: 5915680b-869c-4309-a273-9fd337ba7300 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:37:06 ----- UID: 954644cd-a985-4cc0-8b11-9a2f258794d0 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:37:08 ----- UID: 993c725a-29bc-4b35-9b90-ebeea7365d2f /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:37:21 ----- UID: cbcde136-68f8-4708-86c7-164b8d0b70fa /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:38:55 ----- UID: 2f3133b2-76d5-4779-a545-8c09eb4c5a73 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+24-February-2024	17:44:08 ----- UID: bd65809b-e567-4c2b-967b-e46c30e53cdf /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+24-February-2024	17:44:10 ----- UID: 8bd761d6-19ea-4fbc-bb17-acbcbdccae45 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+24-February-2024	17:44:12 ----- UID: 0aa34a73-46af-4b2a-8cae-382be3d19f47 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+24-February-2024	18:06:55 ----- UID: be9b80d7-7d5b-49e8-b058-345b3c87eed5 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+24-February-2024	18:06:56 ----- UID: 1703343a-573f-42a7-836e-164a4334c62c /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+24-February-2024	18:20:01 ----- UID: 574bda78-7de7-4483-a357-6fa1ff214dc5 /api/v1/cart -- DELETE -- Cannot read properties of undefined (reading 'quantity')
+24-February-2024	18:20:01 ----- UID: 795ec1b9-42ef-46cf-bed4-55d2709f3f5c /api/v1/cart -- DELETE -- Cannot read properties of undefined (reading 'quantity')
+24-February-2024	18:20:35 ----- UID: f0295dcb-aaff-42ac-a38a-f4aba00196db /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+24-February-2024	18:20:36 ----- UID: 57bc7224-d05a-4ba1-a05b-98437d648846 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+24-February-2024	18:20:44 ----- UID: 42edbd41-8f5b-410a-8c05-9f3b3bd6a46a /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+24-February-2024	18:20:45 ----- UID: 5f2a0a3a-3159-48b8-9492-b1a895a5d9c6 /api/v1/order/review -- POST -- Cannot read properties of undefined (reading 'product_id')
+25-February-2024	02:41:39 ----- UID: 4dda6409-c479-40f2-9c0d-33e28caf35fc /api/v1/order/review -- POST -- Cannot read properties of undefined (reading '0')
+26-February-2024	10:24:19 ----- UID: f6118a5c-303f-4d9d-8f5d-ba6ee21b52af /api/v1/order/review -- POST -- invalid signature
+26-February-2024	10:24:19 ----- UID: 0f873db4-8d58-481e-89eb-947492506949 /api/v1/discount/codes-of-shops -- POST -- invalid signature
+26-February-2024	10:24:19 ----- UID: 7d79c38e-e683-425e-8b49-22a2daaf12ab /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+26-February-2024	10:24:24 ----- UID: 4ed69592-83b6-4a12-8ff3-dbc58e82b405 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+26-February-2024	10:24:24 ----- UID: 4ded1278-4247-4fb3-aad9-ae2473ae875e /api/v1/order/review -- POST -- invalid signature
+26-February-2024	10:24:24 ----- UID: 0c9b77a0-f3c7-4f42-8688-52fd6bae1b4c /api/v1/discount/codes-of-shops -- POST -- invalid signature
+26-February-2024	10:24:30 ----- UID: c1aedf47-2630-401d-97bc-f074822df4bf /api/v1/cart -- DELETE -- invalid signature
+26-February-2024	10:24:30 ----- UID: 47d570c3-bfa7-4c37-bff2-92fbd481a1b8 /api/v1/cart -- DELETE -- invalid signature
+26-February-2024	10:24:31 ----- UID: 7c79f06b-f782-46e9-b627-83d0695f997e /api/v1/cart -- DELETE -- invalid signature
+26-February-2024	10:24:32 ----- UID: 9163be81-7d2b-4df0-82c8-b3fc4a05bf5e /api/v1/cart -- DELETE -- invalid signature
+26-February-2024	10:24:36 ----- UID: ea9db14d-fd5e-4572-a155-95ae8d094937 /api/v1/cart -- DELETE -- invalid signature
+26-February-2024	10:24:43 ----- UID: 2a81930a-2221-413f-a5b1-f6325e54a756 /api/v1/user/logout -- POST -- invalid signature
+26-February-2024	10:53:46 ----- UID: d7e0acaa-9803-4a09-b302-ae90e0114a70 /api/v1/order -- POST -- Cannot read properties of undefined (reading '0')
+26-February-2024	10:56:35 ----- UID: 67300a3a-3711-423e-a468-76587a087b48 /api/v1/order -- POST -- Cannot read properties of undefined (reading '0')
+26-February-2024	11:03:09 ----- UID: e4e754a8-ab19-4f6a-939e-e2eccf962b01 /api/v1/order -- POST -- Some products have been updated recently. please try again
+26-February-2024	11:05:45 ----- UID: 626e1d3a-503b-47a0-a349-44d3c27e547c /api/v1/inventory -- POST -- Not found keyStore
+26-February-2024	11:13:57 ----- UID: 728cc14a-a599-40a3-ae82-88a61f8a924c /api/v1/order -- POST -- deleteUserCartItem is not defined
+26-February-2024	11:16:53 ----- UID: c79b0a5c-5f80-42cc-8115-04c583568d2d /api/v1/order -- POST -- Cannot read properties of undefined (reading 'deleteUserCartItem')
+26-February-2024	11:18:17 ----- UID: 775d53b3-f257-45f1-a937-5e1cc7220dae /api/v1/order -- POST -- Cannot read properties of undefined (reading 'deleteUserCartItem')
+26-February-2024	11:36:20 ----- UID: 01840a93-7b1d-4b0e-974b-ac7dcfb296cc /api/v1/order -- POST -- Each user can only user this code 1 times
