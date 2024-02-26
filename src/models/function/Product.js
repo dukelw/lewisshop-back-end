@@ -1,5 +1,6 @@
 const { Types } = require("mongoose");
 const { ProductModel } = require("../Product");
+const ShopModel = require("../Shop");
 const { getSelectData, unGetSelectData } = require("../../utils/index");
 const { NotFoundError } = require("../../core/error-response");
 const { convertToObjectIDMongo } = require("../../utils/index");
@@ -102,11 +103,16 @@ const checkProductByServer = async (products) => {
   return await Promise.all(
     products.map(async (product) => {
       const foundProduct = await getProductByID(product.product_id);
+      const foundShop = await ShopModel.findById(foundProduct.product_shop);
       if (foundProduct) {
         return {
           price: foundProduct.product_price,
           quantity: product.quantity,
           product_id: product.product_id,
+          shop_name: foundShop.name,
+          name: foundProduct.product_name,
+          description: foundProduct.product_description,
+          thumb: foundProduct.product_thumb,
         };
       }
     })

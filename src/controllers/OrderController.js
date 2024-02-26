@@ -25,9 +25,17 @@ class OrderController {
     }).send(res);
   }
 
+  async findOrderOfUserByStatus(req, res, next) {
+    new SuccessResponse({
+      message: "Find order of user by status successfully",
+      metadata: await orderService.getOrderByStatus({
+        user_id: req.body.user_id,
+        order_status: req.body.order_status,
+      }),
+    }).send(res);
+  }
+
   async findOrderOfUserByID(req, res, next) {
-    console.log(`User id:: ${req.body.user_id}`);
-    console.log(`Order id:: ${req.body.order_id}`);
     new SuccessResponse({
       message: "Find order of user by ID successfully",
       metadata: await orderService.getOneOrderByUser({

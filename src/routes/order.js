@@ -10,6 +10,10 @@ router.use(authentication);
 router.post("/review", asyncHandler(orderController.review));
 router.post("", asyncHandler(orderController.order));
 router.post("/all", asyncHandler(orderController.findOrderOfUser));
+router.post(
+  "/find-status",
+  asyncHandler(orderController.findOrderOfUserByStatus)
+);
 router.post("/find", asyncHandler(orderController.findOrderOfUserByID));
 router.post("/cancel", asyncHandler(orderController.cancel));
 router.post("/deleted", asyncHandler(orderController.findDeleted));

@@ -2312,3 +2312,46 @@
 26-February-2024	11:16:53 ----- UID: c79b0a5c-5f80-42cc-8115-04c583568d2d /api/v1/order -- POST -- Cannot read properties of undefined (reading 'deleteUserCartItem')
 26-February-2024	11:18:17 ----- UID: 775d53b3-f257-45f1-a937-5e1cc7220dae /api/v1/order -- POST -- Cannot read properties of undefined (reading 'deleteUserCartItem')
 26-February-2024	11:36:20 ----- UID: 01840a93-7b1d-4b0e-974b-ac7dcfb296cc /api/v1/order -- POST -- Each user can only user this code 1 times
+26-February-2024	20:14:17 ----- UID: 50850359-b16d-4c73-a8b5-faa9d5f44c4e /api/v1/order/find-status -- POST -- Invalid user ID
+26-February-2024	20:14:26 ----- UID: 5a355640-b747-462b-b872-3da90f464f20 /api/v1/order/find-status -- POST -- jwt malformed
+26-February-2024	20:14:29 ----- UID: abd2474c-31d8-4186-a89c-9da49576dedf /api/v1/order/find-status -- POST -- jwt malformed
+26-February-2024	20:16:22 ----- UID: 38be00d9-227c-4c0d-afe1-591169321079 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+26-February-2024	20:16:22 ----- UID: ca7a0c66-dcfc-4924-9bea-5b2e88553e58 /api/v1/order/all -- POST -- invalid signature
+26-February-2024	20:20:46 ----- UID: 597d4def-9717-44d4-97a4-719f8810bbae /api/v1/order/all -- POST -- invalid signature
+26-February-2024	20:20:46 ----- UID: f547274e-668d-44bb-86ff-81bedcb58409 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+26-February-2024	20:20:48 ----- UID: b705ffe4-5019-4a04-8539-e4652ace8c28 /api/v1/order/all -- POST -- invalid signature
+26-February-2024	20:20:48 ----- UID: 152a118c-3568-47eb-ab23-b3a3715d2699 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+26-February-2024	20:22:01 ----- UID: 4b1ba87b-cd5e-4132-98f1-41b2890a2252 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+26-February-2024	20:22:02 ----- UID: 55cb2370-dc7c-4d20-9fd7-7f4b4c11ac85 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+26-February-2024	20:22:02 ----- UID: 5bbe0a44-4d7b-45e5-a1d3-4c3493da2eba /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- invalid signature
+26-February-2024	20:22:06 ----- UID: 8447cdd7-eb4a-4cdf-9769-b3b509ae62be /api/v1/user/logout -- POST -- invalid signature
+26-February-2024	21:05:52 ----- UID: 42e09c24-b196-4fd3-b8fd-b3e3fec7f631 /api/v1/order/cancel -- POST -- Order is not found
+26-February-2024	21:38:19 ----- UID: b70e33fb-50b2-4e01-8922-80588e4675d2 /api/v1/order/review -- POST -- Discount requires minimum order value 300000
+26-February-2024	21:38:37 ----- UID: 78ff6bf6-a2af-4d76-8ec3-423c1b9a2cfe /api/v1/order/review -- POST -- Discount requires minimum order value 300000
+26-February-2024	21:38:53 ----- UID: 2ecdcec3-e130-4c8e-9992-555c1e2fc787 /api/v1/order/review -- POST -- Discount requires minimum order value 300000
+26-February-2024	21:48:27 ----- UID: af9a96ca-37b6-4a19-beae-1486d1cf9ebc /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:48:28 ----- UID: 05ba7fcb-93c7-4736-ab9b-c942347c6c29 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:48:28 ----- UID: 23dd2c19-412d-40a6-8719-3c6a80f8ed31 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:48:29 ----- UID: 6f673d3c-2f78-496f-82ac-a31347982776 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:48:32 ----- UID: df05a0bb-512f-49f4-a75d-9bde3790dd7b /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:48:33 ----- UID: 2b6a2601-31e9-4de9-aacf-2debd7a19cd9 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:55:03 ----- UID: 5f1c6d1c-bb20-400f-a963-65592b06b2a7 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:55:04 ----- UID: 68cd9d4d-765e-4496-b348-8d319134264b /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:55:04 ----- UID: 65c0964d-e434-474f-95bf-eb990fc94075 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	21:55:05 ----- UID: 29748ce6-ce89-47e1-b10d-3684453c3e61 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:53 ----- UID: 92727c23-7463-409a-b17a-228b676a6a3d /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:54 ----- UID: e8fb7db5-4c4e-49a1-84c6-9e00b79bd220 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:54 ----- UID: 46956f4d-ab28-4c83-961f-4b7be62d0aa1 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:55 ----- UID: 2c469f03-60dd-4e51-ac57-b1efbf23b9d3 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:55 ----- UID: 417e8c89-c7d2-4ae3-a049-51f0cd5625be /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:55 ----- UID: 3caeaff9-411d-418b-980c-f4c179eeb5de /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:56 ----- UID: 346055e7-93b2-4bbe-a8ef-0fbf32b761b6 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:56 ----- UID: bc61a658-bf9e-46fc-93a3-d4501b23ce68 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:57 ----- UID: e7ad9d5e-6e6e-4df9-b33a-aabe929e6b53 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:57 ----- UID: 7759c6ae-aafb-47de-a6f5-14cf89a9f95f /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:58 ----- UID: b5055278-3fe8-4a96-9d0a-55919d4e4c9c /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:58 ----- UID: 7969fd2a-ac32-4909-b1eb-5bab11756075 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:59 ----- UID: afc71011-4b9a-42ee-beb6-bf8fa8ccb5ab /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:04:59 ----- UID: 82b5f9ff-126b-4164-af69-8fcc8ac81c9b /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:05:04 ----- UID: f058c13a-0b8b-4ba0-bca8-864548133421 /api/v1/order/review -- POST -- Cart does not exist
+26-February-2024	22:05:04 ----- UID: 8b93efc7-08d9-41fc-a9ba-29255f5e7f30 /api/v1/order/review -- POST -- Cart does not exist

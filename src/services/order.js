@@ -2,7 +2,7 @@ const { OrderModel } = require("../models/Order");
 const ShopModel = require("../models/Shop");
 const UserModel = require("../models/User");
 const { NotFoundError, BadRequestError } = require("../core/error-response");
-const { findCartByID, createUserCart } = require("../models/function/Cart");
+const { findCartByID } = require("../models/function/Cart");
 const { checkProductByServer } = require("../models/function/Product");
 const { acquireLock, releaseLock } = require("../services/redis");
 const discountService = require("../services/discount");
@@ -12,7 +12,7 @@ const {
   updateDiscountByCode,
   restoreDiscount,
 } = require("../models/function/Discount");
-const { deleteUserCartItem, deleteCartItemsForUser } = require("./cart");
+const { deleteCartItemsForUser } = require("./cart");
 
 class OrderService {
   /*
@@ -49,17 +49,17 @@ class OrderService {
   async checkoutReview({ cart_id, user_id, shop_order_ids }) {
     // Check cart's existence
     const foundCart = await findCartByID({ cart_id });
-    // if (!foundCart) throw new NotFoundError("Cart does not exist");
-    if (!foundCart) {
-      await createUserCart({
-        user_id,
-        product: {
-          product_id: shop_order_ids[0].item_products[0].product_id,
-          quantity: shop_order_ids[0].item_products[0].quantity,
-          shop_id: shop_order_ids[0].shop_id,
-        },
-      });
-    }
+    if (!foundCart) throw new NotFoundError("Cart does not exist");
+    // if (!foundCart) {
+    //   await createUserCart({
+    //     user_id,
+    //     product: {
+    //       product_id: shop_order_ids[0].item_products[0].product_id,
+    //       quantity: shop_order_ids[0].item_products[0].quantity,
+    //       shop_id: shop_order_ids[0].shop_id,
+    //     },
+    //   });
+    // }
 
     const checkout_order = {
         totalPrice: 0,
@@ -77,7 +77,7 @@ class OrderService {
         item_products = [],
       } = shop_order_ids[i];
 
-      const shopName = await ShopModel.findById(shop_id);
+      const foundShop = await ShopModel.findById(shop_id);
 
       // Check product available
       const checkProductServer = await checkProductByServer(item_products);
@@ -93,7 +93,7 @@ class OrderService {
 
       const itemCheckout = {
         shop_id,
-        shop_name: shopName,
+        shop_name: foundShop.name,
         shop_discounts,
         rawPrice: checkoutPrice,
         appliedDiscountPrice: checkoutPrice,
@@ -230,6 +230,28 @@ class OrderService {
     return orders;
   }
 
+  async getOrderByStatus({
+    limit = 50,
+    page = 1,
+    sort = "ctime",
+    user_id,
+    order_status,
+  }) {
+    const foundUser = await UserModel.findById(user_id);
+    if (!foundUser) throw new NotFoundError("User id not found");
+    const skip = (page - 1) * limit;
+    const sortBy = sort === "ctime" ? { _id: -1 } : { _id: 1 };
+    const orders = await OrderModel.find({
+      order_user_id: user_id,
+      order_status,
+    })
+      .sort(sortBy)
+      .skip(skip)
+      .limit(limit)
+      .lean();
+    return orders;
+  }
+
   /*
     2. Query Orders Using ID [User]
   */
@@ -273,12 +295,12 @@ class OrderService {
         });
       });
     });
-    await restoreInventory(restoreProducts);
-    await restoreDiscount(restoreDiscounts);
 
     // Update discount code
+    await restoreDiscount(restoreDiscounts);
 
     // Cancel reservation order
+    await restoreInventory(restoreProducts);
 
     // Soft delete order
     return await OrderModel.delete({

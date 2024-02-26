@@ -50,7 +50,7 @@ var orderSchema = new Schema(
     },
     order_status: {
       type: String,
-      enum: ["pending", "confirmed", "shipped", "canceled", "delivered"],
+      enum: ["pending", "confirming", "shipped", "canceled", "delivering"],
       default: "pending",
     },
   },
