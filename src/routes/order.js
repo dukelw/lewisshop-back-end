@@ -18,5 +18,6 @@ router.post("/find", asyncHandler(orderController.findOrderOfUserByID));
 router.post("/cancel", asyncHandler(orderController.cancel));
 router.post("/deleted", asyncHandler(orderController.findDeleted));
 router.post("/restore", asyncHandler(orderController.restore));
+router.post("/update-status", asyncHandler(orderController.updateStatus));
 
 module.exports = router;

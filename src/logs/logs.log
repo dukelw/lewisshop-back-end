@@ -2355,3 +2355,7 @@
 26-February-2024	22:04:59 ----- UID: 82b5f9ff-126b-4164-af69-8fcc8ac81c9b /api/v1/order/review -- POST -- Cart does not exist
 26-February-2024	22:05:04 ----- UID: f058c13a-0b8b-4ba0-bca8-864548133421 /api/v1/order/review -- POST -- Cart does not exist
 26-February-2024	22:05:04 ----- UID: 8b93efc7-08d9-41fc-a9ba-29255f5e7f30 /api/v1/order/review -- POST -- Cart does not exist
+27-February-2024	23:32:44 ----- UID: 8a2a64b9-1f89-4903-87d3-bf4ee7474e0a /api/v1/order/update-status -- POST -- Can not find order
+27-February-2024	23:33:02 ----- UID: 0c4504dd-c386-4e93-9e61-5134c605eb6b /api/v1/order/update-status -- POST -- shop is not iterable
+27-February-2024	23:33:39 ----- UID: 4a29e786-4cb5-4e16-ac64-22661c68117e /api/v1/order/update-status -- POST -- shop is not iterable
+27-February-2024	23:33:53 ----- UID: 1845d7a8-8096-4218-b525-9df73d02d821 /api/v1/order/update-status -- POST -- shop is not iterable

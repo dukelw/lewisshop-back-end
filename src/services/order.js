@@ -13,6 +13,7 @@ const {
   restoreDiscount,
 } = require("../models/function/Discount");
 const { deleteCartItemsForUser } = require("./cart");
+const { updateStatusOfOrder } = require("../models/function/Order");
 
 class OrderService {
   /*
@@ -331,7 +332,102 @@ class OrderService {
   /*
     6. Update Orders Status [Shop | Admin]
   */
-  async updateOrderStatusByShop() {}
+  async updateOrderStatusByShop({ shop_id, order_id, action }) {
+    const foundShop = await ShopModel.findById(shop_id);
+    if (!foundShop) throw new NotFoundError("Can not find user");
+
+    const foundOrder = await OrderModel.findById(order_id);
+    if (!foundOrder) throw new NotFoundError("Can not find order");
+
+    // From here we use newOrder
+    const newOrder = foundOrder;
+
+    if (newOrder) {
+      foundOrder.$isDeleted = true;
+    }
+
+    // Case when in the order only has one shop
+    if (foundOrder.order_products.length === 1) {
+      const isValid = shop_id === foundOrder.order_products[0].shop_id;
+      if (!isValid) throw new BadRequestError("Invalid shop");
+
+      await updateStatusOfOrder({ order_id, action });
+    } else {
+      // Case when order has more than one shop
+      foundOrder.order_products.forEach(async (shop, index) => {
+        if (shop.shop_id === shop_id) {
+          const shop_order_ids = [
+            {
+              shop_id: shop.shop_id,
+              shop_discounts: shop.shop_discounts,
+              item_products: shop.item_products,
+            },
+          ];
+          console.log("Shop_order_ids: ", shop_order_ids);
+          console.log(
+            "Shop_order_ids item_products: ",
+            shop_order_ids[0].item_products
+          );
+
+          const subOrder = this.orderByUser({
+            shop_order_ids,
+            cart_id: foundOrder.order_cart_id,
+            user_id: foundOrder.order_user_id,
+            user_address: foundOrder.order_shipping,
+            user_payment: foundOrder.order_payment,
+          });
+
+          if (!subOrder) {
+            throw new BadRequestError("Can not create sub order");
+          } else {
+            newOrder.order_products = newOrder.order_products.splice(index, 1);
+          }
+
+          await updateStatusOfOrder({ order_id: subOrder._id, action });
+          return newOrder;
+        }
+      });
+    }
+  }
 }
+
+/*"shop_order_ids": [
+    {
+      "shop_id": "65a37b046d6199828898f004",
+      "shop_discounts": [
+        {
+          "shop_id": "65a37b046d6199828898f004",
+          "discount_id": "65a4d02a279c1afc2208cd0c",
+          "code": "LEWISSALEADVANCE"
+        }
+      ],
+      "item_products": [
+        {
+          "quantity": 1,
+          "product_id": "65a4af9e6ce3c89edb196946"
+        },
+        {
+          "quantity": 2,
+          "product_id": "65a4b4089826c15520c04490"
+        }
+      ]
+    },
+    {
+      "shop_id": "65a794bccd2e5f046a9d2f96",
+      "shop_discounts": [
+        {
+          "shop_id": "65a794bccd2e5f046a9d2f96",
+          "discount_id": "65c4ed0418f6f5ad1a6a2a45",
+          "code": "LEWISTETNHENHANG"
+        }
+      ],
+      "item_products": [
+        {
+          "quantity": 1,
+          "product_id": "65ba52d9fd1f84a20f0027c4"
+        }
+      ]
+    }
+  ], */
 
 module.exports = new OrderService();

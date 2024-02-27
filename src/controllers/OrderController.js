@@ -73,6 +73,17 @@ class OrderController {
       }),
     }).send(res);
   }
+
+  async updateStatus(req, res, next) {
+    new SuccessResponse({
+      message: "Update order status successfully",
+      metadata: await orderService.updateOrderStatusByShop({
+        shop_id: req.body.shop_id,
+        order_id: req.body.order_id,
+        action: req.body.action,
+      }),
+    }).send(res);
+  }
 }
 
 module.exports = new OrderController();
