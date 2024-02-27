@@ -2359,3 +2359,5 @@
 27-February-2024	23:33:02 ----- UID: 0c4504dd-c386-4e93-9e61-5134c605eb6b /api/v1/order/update-status -- POST -- shop is not iterable
 27-February-2024	23:33:39 ----- UID: 4a29e786-4cb5-4e16-ac64-22661c68117e /api/v1/order/update-status -- POST -- shop is not iterable
 27-February-2024	23:33:53 ----- UID: 1845d7a8-8096-4218-b525-9df73d02d821 /api/v1/order/update-status -- POST -- shop is not iterable
+28-February-2024	00:06:23 ----- UID: ae656cfb-a222-4cdc-b5ad-498f7f2c18ad /api/v1/order/update-status -- POST -- newOrder.save is not a function
+28-February-2024	00:09:43 ----- UID: c4b9a5a4-f6c6-47cc-84bb-78e88687936f /api/v1/order/update-status -- POST -- Can not find order

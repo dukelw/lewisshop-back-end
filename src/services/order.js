@@ -213,6 +213,52 @@ class OrderService {
     return newOrder;
   }
 
+  async cloneOrder({
+    shop_order_ids,
+    cart_id,
+    user_id,
+    user_address = {},
+    user_payment = {},
+  }) {
+    const { shop_order_ids_new, checkout_order } = await this.checkoutReview({
+      cart_id,
+      user_id,
+      shop_order_ids,
+    });
+
+    // One more check inventory of product
+    // Get new array by flatmap
+    const products = shop_order_ids_new.flatMap((order) => order.item_products);
+    const productIDs = [];
+    const acquireProduct = [];
+
+    for (let i = 0; i < products.length; i++) {
+      const { product_id, quantity } = products[i];
+      productIDs.push(product_id);
+      const keyLock = await acquireLock(product_id, quantity, cart_id);
+      acquireProduct.push(keyLock ? true : false);
+      if (keyLock) {
+        await releaseLock(keyLock);
+      }
+    }
+
+    // Check if some products is out of stock
+    if (acquireProduct.includes(false))
+      throw new BadRequestError(
+        `Some products have been updated recently. please try again`
+      );
+
+    const newOrder = await OrderModel.create({
+      order_user_id: user_id,
+      order_checkout: checkout_order,
+      order_shipping: user_address,
+      order_payment: user_payment,
+      order_products: shop_order_ids_new,
+      order_cart_id: cart_id,
+    });
+
+    return newOrder;
+  }
   /*
     1. Query Orders [User]
   */
@@ -340,10 +386,19 @@ class OrderService {
     if (!foundOrder) throw new NotFoundError("Can not find order");
 
     // From here we use newOrder
-    const newOrder = foundOrder;
+    const newOrder = await this.cloneOrder({
+      shop_order_ids: foundOrder.order_products,
+      cart_id: foundOrder.order_cart_id,
+      user_id: foundOrder.order_user_id,
+      user_address: foundOrder.order_shipping,
+      user_payment: foundOrder.order_payment,
+    });
 
     if (newOrder) {
-      foundOrder.$isDeleted = true;
+      foundOrder.deleted = true;
+      foundOrder.save();
+      console.log("New order: " + newOrder);
+      console.log("Found order: " + foundOrder);
     }
 
     // Case when in the order only has one shop
@@ -351,7 +406,7 @@ class OrderService {
       const isValid = shop_id === foundOrder.order_products[0].shop_id;
       if (!isValid) throw new BadRequestError("Invalid shop");
 
-      await updateStatusOfOrder({ order_id, action });
+      return await updateStatusOfOrder({ order_id, action });
     } else {
       // Case when order has more than one shop
       foundOrder.order_products.forEach(async (shop, index) => {
@@ -369,7 +424,7 @@ class OrderService {
             shop_order_ids[0].item_products
           );
 
-          const subOrder = this.orderByUser({
+          const subOrder = await this.orderByUser({
             shop_order_ids,
             cart_id: foundOrder.order_cart_id,
             user_id: foundOrder.order_user_id,
@@ -380,54 +435,16 @@ class OrderService {
           if (!subOrder) {
             throw new BadRequestError("Can not create sub order");
           } else {
-            newOrder.order_products = newOrder.order_products.splice(index, 1);
+            await updateStatusOfOrder({ order_id: subOrder._id, action });
+            newOrder.order_products.splice(index, 1);
+            await newOrder.save();
           }
 
-          await updateStatusOfOrder({ order_id: subOrder._id, action });
           return newOrder;
         }
       });
     }
   }
 }
-
-/*"shop_order_ids": [
-    {
-      "shop_id": "65a37b046d6199828898f004",
-      "shop_discounts": [
-        {
-          "shop_id": "65a37b046d6199828898f004",
-          "discount_id": "65a4d02a279c1afc2208cd0c",
-          "code": "LEWISSALEADVANCE"
-        }
-      ],
-      "item_products": [
-        {
-          "quantity": 1,
-          "product_id": "65a4af9e6ce3c89edb196946"
-        },
-        {
-          "quantity": 2,
-          "product_id": "65a4b4089826c15520c04490"
-        }
-      ]
-    },
-    {
-      "shop_id": "65a794bccd2e5f046a9d2f96",
-      "shop_discounts": [
-        {
-          "shop_id": "65a794bccd2e5f046a9d2f96",
-          "discount_id": "65c4ed0418f6f5ad1a6a2a45",
-          "code": "LEWISTETNHENHANG"
-        }
-      ],
-      "item_products": [
-        {
-          "quantity": 1,
-          "product_id": "65ba52d9fd1f84a20f0027c4"
-        }
-      ]
-    }
-  ], */
 
 module.exports = new OrderService();
