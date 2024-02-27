@@ -51,16 +51,6 @@ class OrderService {
     // Check cart's existence
     const foundCart = await findCartByID({ cart_id });
     if (!foundCart) throw new NotFoundError("Cart does not exist");
-    // if (!foundCart) {
-    //   await createUserCart({
-    //     user_id,
-    //     product: {
-    //       product_id: shop_order_ids[0].item_products[0].product_id,
-    //       quantity: shop_order_ids[0].item_products[0].quantity,
-    //       shop_id: shop_order_ids[0].shop_id,
-    //     },
-    //   });
-    // }
 
     const checkout_order = {
         totalPrice: 0,
@@ -385,22 +375,6 @@ class OrderService {
     const foundOrder = await OrderModel.findById(order_id);
     if (!foundOrder) throw new NotFoundError("Can not find order");
 
-    // From here we use newOrder
-    const newOrder = await this.cloneOrder({
-      shop_order_ids: foundOrder.order_products,
-      cart_id: foundOrder.order_cart_id,
-      user_id: foundOrder.order_user_id,
-      user_address: foundOrder.order_shipping,
-      user_payment: foundOrder.order_payment,
-    });
-
-    if (newOrder) {
-      foundOrder.deleted = true;
-      foundOrder.save();
-      console.log("New order: " + newOrder);
-      console.log("Found order: " + foundOrder);
-    }
-
     // Case when in the order only has one shop
     if (foundOrder.order_products.length === 1) {
       const isValid = shop_id === foundOrder.order_products[0].shop_id;
@@ -424,7 +398,7 @@ class OrderService {
             shop_order_ids[0].item_products
           );
 
-          const subOrder = await this.orderByUser({
+          const subOrder = await this.cloneOrder({
             shop_order_ids,
             cart_id: foundOrder.order_cart_id,
             user_id: foundOrder.order_user_id,
@@ -436,11 +410,14 @@ class OrderService {
             throw new BadRequestError("Can not create sub order");
           } else {
             await updateStatusOfOrder({ order_id: subOrder._id, action });
-            newOrder.order_products.splice(index, 1);
-            await newOrder.save();
+            foundOrder.order_products.splice(index, 1);
+            await foundOrder.save();
           }
 
-          return newOrder;
+          return {
+            newOrder: foundOrder,
+            updatedStatusOrder: subOrder,
+          };
         }
       });
     }

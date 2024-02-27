@@ -1,4 +1,4 @@
-const { NotFoundError } = require("../../core/error-response");
+const { NotFoundError, BadRequestError } = require("../../core/error-response");
 const { OrderModel } = require("../Order");
 
 const updateStatusOfOrder = async ({ order_id, action }) => {
