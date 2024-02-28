@@ -2362,3 +2362,55 @@
 28-February-2024	00:06:23 ----- UID: ae656cfb-a222-4cdc-b5ad-498f7f2c18ad /api/v1/order/update-status -- POST -- newOrder.save is not a function
 28-February-2024	00:09:43 ----- UID: c4b9a5a4-f6c6-47cc-84bb-78e88687936f /api/v1/order/update-status -- POST -- Can not find order
 28-February-2024	00:43:24 ----- UID: f5a35430-dfa3-4ff5-bb1f-1b0caeb8212b /api/v1/order/update-status -- POST -- Can not find user
+28-February-2024	13:33:05 ----- UID: ce768b54-0275-4ff5-aa9c-e394188723fa /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	13:33:07 ----- UID: a0ee965b-a84d-4021-9d62-99f14cfb1d81 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	13:33:25 ----- UID: 7ebdcbfa-9606-4ef6-9bbd-179ad98a38f3 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	13:41:32 ----- UID: 26660191-428a-4a6f-b17f-3ab0f59aea82 /api/v1/order/find-pending -- POST -- Not found keyStore
+28-February-2024	13:42:17 ----- UID: af4e366b-d1dc-47b0-85e9-9962d67deda8 /api/v1/order/find-pending -- POST -- Invalid user ID
+28-February-2024	13:48:29 ----- UID: 65efe476-f823-4cf5-8058-de2c8ddbc708 /api/v1/order/find-pending -- POST -- Cannot read properties of undefined (reading 'order_products')
+28-February-2024	13:49:06 ----- UID: 63c05071-0b15-4e3e-9e31-c0465939ceef /api/v1/order/find-pending -- POST -- Cannot read properties of undefined (reading 'metadata')
+28-February-2024	13:49:23 ----- UID: 03e5d4a4-43ca-4509-902a-7b701f76d193 /api/v1/order/find-pending -- POST -- Cannot read properties of undefined (reading 'order_products')
+28-February-2024	13:49:25 ----- UID: 787ddc74-16f0-4c6b-b39e-cb894c5a5415 /api/v1/order/find-pending -- POST -- Cannot read properties of undefined (reading 'order_products')
+28-February-2024	14:00:02 ----- UID: cb3d1154-441e-47ef-9666-c35e9be10372 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:04 ----- UID: a976fcd6-86bd-4c0b-9898-5bf1a669a3f0 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:05 ----- UID: 074fcd3f-aa26-4135-9212-6a049fa852e5 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:10 ----- UID: a835b774-5a6c-4cc7-aed4-2a2f8de9a4ff /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:11 ----- UID: 9b429791-0e6b-45f5-adc9-017abbdeaf39 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:11 ----- UID: 0d0776f6-2390-4c7c-a0fe-b5f9bf5d70a1 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:15 ----- UID: dfd83559-edc2-4886-864e-fc02e905ab96 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:29 ----- UID: a8bef349-5ee6-4539-8d54-faea42cd60a3 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:30 ----- UID: 74a12201-1953-47ea-b804-778de6211638 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:30 ----- UID: b61766a2-5375-4e36-a555-0351ea74ba50 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:31 ----- UID: 3bc8cf0e-0f9f-4597-a04c-ae52154e3e8e /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:32 ----- UID: 52507fd1-9bbb-4aae-aaf8-2be7ad020905 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:36 ----- UID: a7d7a52f-6847-4c63-88c6-ad72e2b777bc /api/v1/product/publish/all -- GET -- invalid signature
+28-February-2024	14:00:40 ----- UID: 6f092b3b-d0c8-44ff-be1c-7085fba88948 /api/v1/product/draft/all -- GET -- invalid signature
+28-February-2024	14:00:42 ----- UID: b5a7ec02-d93a-4503-8af6-fb392f3305aa /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:43 ----- UID: c82c9701-19e2-4d39-946a-eb49088b57ce /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:00:43 ----- UID: 7bd92d10-ff9e-4da1-972a-ff92ddc8ac88 /api/v1/shop/logout -- POST -- invalid signature
+28-February-2024	14:05:44 ----- UID: 1745e1f4-e5a2-4d92-a0b0-fa2d00df110d /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:06:30 ----- UID: 88674bc1-cb1c-4e61-b5c0-6279603366eb /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:06:36 ----- UID: c0fc9cf4-8506-424e-bd48-2fe71445e767 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:06:40 ----- UID: 8df69863-a7a4-403a-88e1-cf371d97f802 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:06:58 ----- UID: 5af25390-14eb-4810-961d-b5abd7e27260 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:07:04 ----- UID: 0283276f-cbe3-4775-a2a7-0b47e5191f40 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:07:07 ----- UID: b338de44-8f74-4512-b089-41c9ad158470 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:07:17 ----- UID: 4c8d5c84-7bdb-4c02-8804-87d53d7e9df9 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:07:18 ----- UID: 6420fc84-c625-4cc7-a830-8d2cfdacf0e2 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:07:30 ----- UID: 63b2f418-652a-47e8-bb31-8b18d865f814 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:07:50 ----- UID: 3a748246-c248-45b0-8bba-e5e07ebacd4a /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:07:52 ----- UID: 258e6d94-cc3b-4711-add3-bb03377e17b8 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:07:57 ----- UID: 5e0ad783-d487-4a9b-b790-e433683c8d21 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:08:38 ----- UID: badb86ac-3dca-4ec4-971a-d337809818a2 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:08:39 ----- UID: 39d86480-1086-4088-8dd9-f01fe40084d8 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:08:56 ----- UID: 961beda6-1958-41fe-9fb0-b4f29f2e3a31 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:08:59 ----- UID: 663bad9e-df74-4a6b-9c57-a1883ec253cd /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:09:05 ----- UID: 2aad022e-2953-4f79-be1c-d8510fbbea0e /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:09:16 ----- UID: 40c08b4f-c4a3-44f1-bd2b-eb9d8a9a0601 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:09:24 ----- UID: 5ac55cf7-c695-463d-b7dc-54e3ae06a43e /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:09:29 ----- UID: 76161c6c-cec4-409b-ba27-8b171187a830 /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:10:07 ----- UID: bc999936-14e3-48f3-a08c-fced6d8753cc /api/v1/order/find-status -- POST -- User id not found
+28-February-2024	14:58:13 ----- UID: c1429efd-9ed3-4f19-9831-a7f4f5d1822d /api/v1/order/update-status -- POST -- Invalid shop
+28-February-2024	15:17:39 ----- UID: 84e88b9f-5c2d-4f59-9984-87ba0e67ba3a /api/v1/product/find-products -- POST -- product_ids.map is not a function
+28-February-2024	15:17:41 ----- UID: 5aa5422a-d93d-4709-8103-d8c3369a6dee /api/v1/product/find-products -- POST -- product_ids.map is not a function
+28-February-2024	15:17:44 ----- UID: 7624f917-7370-4d65-8a18-2fa67bbb9573 /api/v1/product/find-products -- POST -- product_ids.map is not a function

@@ -14,6 +14,10 @@ router.post(
   "/find-status",
   asyncHandler(orderController.findOrderOfUserByStatus)
 );
+router.post(
+  "/find-pending",
+  asyncHandler(orderController.findPendingOrderOfShop)
+);
 router.post("/find", asyncHandler(orderController.findOrderOfUserByID));
 router.post("/cancel", asyncHandler(orderController.cancel));
 router.post("/deleted", asyncHandler(orderController.findDeleted));

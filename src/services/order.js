@@ -289,6 +289,41 @@ class OrderService {
     return orders;
   }
 
+  async getPendingOrderByShop({
+    limit = 50,
+    page = 1,
+    sort = "ctime",
+    shop_id,
+  }) {
+    const foundShop = await ShopModel.findById(shop_id);
+    if (!foundShop) throw new NotFoundError("Shop id not found");
+    const skip = (page - 1) * limit;
+    const sortBy = sort === "ctime" ? { _id: -1 } : { _id: 1 };
+    const orders = await OrderModel.find({
+      order_status: "pending",
+    })
+      .sort(sortBy)
+      .skip(skip)
+      .limit(limit)
+      .lean();
+      
+    // To only get the products of shop
+    const shopOrders = [];
+
+    orders.forEach((order) => {
+      order.order_products.map((shop) => {
+        if (shop.shop_id === shop_id) {
+          shopOrders.push({
+            ...order,
+            order_products: [shop],
+          });
+        }
+      });
+    });
+
+    return shopOrders;
+  }
+
   /*
     2. Query Orders Using ID [User]
   */

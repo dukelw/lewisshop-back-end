@@ -113,6 +113,8 @@ const checkProductByServer = async (products) => {
           name: foundProduct.product_name,
           description: foundProduct.product_description,
           thumb: foundProduct.product_thumb,
+          slug: foundProduct.product_slug,
+          type: foundProduct.product_type,
         };
       }
     })

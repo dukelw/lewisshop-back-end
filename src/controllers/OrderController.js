@@ -35,6 +35,15 @@ class OrderController {
     }).send(res);
   }
 
+  async findPendingOrderOfShop(req, res, next) {
+    new SuccessResponse({
+      message: "Find pending order of shop successfully",
+      metadata: await orderService.getPendingOrderByShop({
+        shop_id: req.body.shop_id,
+      }),
+    }).send(res);
+  }
+
   async findOrderOfUserByID(req, res, next) {
     new SuccessResponse({
       message: "Find order of user by ID successfully",
