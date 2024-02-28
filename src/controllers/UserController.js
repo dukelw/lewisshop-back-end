@@ -33,6 +33,15 @@ class UserController {
       }),
     }).send(res);
   }
+
+  async find(req, res, next) {
+    new SuccessResponse({
+      message: "Find user successfully",
+      metadata: await userService.find({
+        user_id: req.body.user_id,
+      }),
+    }).send(res);
+  }
 }
 
 module.exports = new UserController();

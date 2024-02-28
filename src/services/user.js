@@ -2,6 +2,7 @@ const {
   BadRequestError,
   AuthFailureError,
   ForbiddenError,
+  NotFoundError,
 } = require("../core/error-response");
 const UserModel = require("../models/User");
 const bcrypt = require("bcrypt");
@@ -10,6 +11,7 @@ const keyTokenService = require("./key-token");
 const { generatePairOfToken } = require("../auth/utils");
 const { getInfoData } = require("../utils/index");
 const { findByEmail } = require("../helpers/function/user");
+const { findById } = require("../models/Shop");
 
 class UserService {
   signUp = async ({ name, email, password, isAdmin }) => {
@@ -169,6 +171,21 @@ class UserService {
     return {
       user,
       tokens,
+    };
+  };
+
+  find = async ({ user_id }) => {
+    const foundUser = await UserModel.findById(user_id);
+    if (!foundUser) throw new NotFoundError("Can find user");
+
+    const user = {
+      name: foundUser.name,
+      phone_number: foundUser.phone_number,
+      email: foundUser.email,
+      thumb: foundUser.thumb,
+    };
+    return {
+      user,
     };
   };
 }
