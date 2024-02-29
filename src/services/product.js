@@ -90,7 +90,40 @@ class ProductFactory {
   }
 
   static async findAllProducts({
-    limit = 50,
+    limit = 30,
+    sort = "ctime",
+    page = 1,
+    filter = { isPublished: true },
+    shop_id,
+  }) {
+    let filters = filter;
+    if (shop_id) {
+      filters = {
+        ...filter,
+        product_shop: shop_id,
+      };
+    }
+    return await findAllProducts({
+      limit,
+      sort,
+      page,
+      filter: filters,
+      select: [
+        "product_name",
+        "product_description",
+        "product_price",
+        "product_thumb",
+        "product_slug",
+        "product_shop",
+        "product_type",
+        "product_ratingAverage",
+        "product_quantity",
+      ],
+    });
+  }
+
+  static async findAllProductsNoLimit({
+    limit = 100000000000,
     sort = "ctime",
     page = 1,
     filter = { isPublished: true },

@@ -77,6 +77,13 @@ class ProductController {
     }).send(res);
   }
 
+  async findAllProductsNoLimit(req, res, next) {
+    new SuccessResponse({
+      message: "Find all product successfully",
+      metadata: await ProductService.findAllProductsNoLimit(req.query),
+    }).send(res);
+  }
+
   async findProduct(req, res, next) {
     new SuccessResponse({
       message: "Find product by id successfully",

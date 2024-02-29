@@ -2450,3 +2450,10 @@
 28-February-2024	16:02:51 ----- UID: 465c941a-9ff0-4957-996f-1b408b1cd9a5 /api/v1/user/find -- POST -- `Model.findById()` cannot run without a model as `this`. Make sure you are calling `MyModel.findById()` where `MyModel` is a Mongoose model.
 28-February-2024	16:02:51 ----- UID: cb4fab86-453f-4e7c-94e0-8070ea69dfdc /api/v1/user/find -- POST -- `Model.findById()` cannot run without a model as `this`. Make sure you are calling `MyModel.findById()` where `MyModel` is a Mongoose model.
 28-February-2024	16:02:51 ----- UID: 3c6d9dbd-6718-4136-b35e-81fbbd73b681 /api/v1/user/find -- POST -- `Model.findById()` cannot run without a model as `this`. Make sure you are calling `MyModel.findById()` where `MyModel` is a Mongoose model.
+28-February-2024	23:42:27 ----- UID: 14407d5e-2d84-43b0-ae7f-6f6b5c8d72de /api/v1/user/signin -- POST -- User has not registered
+28-February-2024	23:42:27 ----- UID: 0c17500e-4535-45cd-80ee-8d880f931ee3 /api/v1/user/signin -- POST -- User has not registered
+28-February-2024	23:42:29 ----- UID: 8da02f08-c81c-4904-9ecc-2eb8d40555e3 /api/v1/user/signin -- POST -- User has not registered
+28-February-2024	23:42:29 ----- UID: d2e367f6-afb8-4f4a-9999-a20c80a85aab /api/v1/user/signin -- POST -- User has not registered
+29-February-2024	00:28:46 ----- UID: 26041852-55bc-41d8-88df-2e4dbfd4175c /api/v1/shop/signin -- POST -- Shop has not registered
+29-February-2024	00:28:46 ----- UID: 1eb0f24e-98f1-43e9-bdcc-ece658353ea5 /api/v1/shop/signin -- POST -- Shop has not registered
+29-February-2024	00:28:48 ----- UID: 6f56a066-f328-4b1c-8ee7-f923ebe7d714 /api/v1/shop/signin -- POST -- Shop has not registered
