@@ -2457,3 +2457,4 @@
 29-February-2024	00:28:46 ----- UID: 26041852-55bc-41d8-88df-2e4dbfd4175c /api/v1/shop/signin -- POST -- Shop has not registered
 29-February-2024	00:28:46 ----- UID: 1eb0f24e-98f1-43e9-bdcc-ece658353ea5 /api/v1/shop/signin -- POST -- Shop has not registered
 29-February-2024	00:28:48 ----- UID: 6f56a066-f328-4b1c-8ee7-f923ebe7d714 /api/v1/shop/signin -- POST -- Shop has not registered
+03-March-2024	01:23:13 ----- UID: 91848d8c-619f-4a32-a7f2-20ca859ea453 /api/v1/user/update -- POST -- isNew is not defined

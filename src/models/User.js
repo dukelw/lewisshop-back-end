@@ -21,23 +21,33 @@ var userSchema = new Schema(
     },
     thumb: {
       type: String,
+      default: "",
     },
     bank_account_number: {
       type: String,
+      default: "",
     },
     gender: {
-      type: Boolean,
+      type: String,
+      default: "Male",
+      enum: ["Male", "Female", "Other"],
     },
     address: {
       type: String,
+      default: "",
     },
     phone_number: {
       type: String,
+      default: "",
     },
     status: {
       type: String,
       enum: ["active", "inactive"],
       default: "inactive",
+    },
+    birthday: {
+      type: Date,
+      default: new Date(),
     },
     verify: {
       type: Schema.Types.Boolean,

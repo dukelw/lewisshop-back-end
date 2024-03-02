@@ -42,6 +42,16 @@ class UserController {
       }),
     }).send(res);
   }
+
+  async updateInformation(req, res, next) {
+    new SuccessResponse({
+      message: "Update information successfully",
+      metadata: await userService.updateInformation({
+        ...req.body,
+        user_id: req.user.user_id,
+      }),
+    }).send(res);
+  }
 }
 
 module.exports = new UserController();

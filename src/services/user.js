@@ -9,7 +9,7 @@ const bcrypt = require("bcrypt");
 const crypto = require("crypto");
 const keyTokenService = require("./key-token");
 const { generatePairOfToken } = require("../auth/utils");
-const { getInfoData } = require("../utils/index");
+const { getInfoData, convertToObjectIDMongo } = require("../utils/index");
 const { findByEmail } = require("../helpers/function/user");
 const { findById } = require("../models/Shop");
 
@@ -187,6 +187,41 @@ class UserService {
     return {
       user,
     };
+  };
+
+  updateInformation = async ({
+    user_id,
+    name,
+    email,
+    phone_number,
+    gender,
+    birthday,
+    address,
+    bank_account_number,
+    thumb,
+  }) => {
+    const foundUser = await UserModel.findById(user_id);
+    if (!foundUser) throw new NotFoundError("User not found");
+    const filter = {
+      _id: user_id,
+    };
+
+    const bodyUpdate = {
+      name,
+      email,
+      phone_number,
+      gender,
+      birthday,
+      address,
+      bank_account_number,
+      thumb,
+    };
+
+    const updatedUser = await UserModel.findOneAndUpdate(filter, bodyUpdate, {
+      new: true,
+    });
+
+    return updatedUser;
   };
 }
 

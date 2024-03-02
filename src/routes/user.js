@@ -10,6 +10,7 @@ router.post("/signup", asyncHandler(userController.signup));
 router.use(authentication);
 router.post("/logout", asyncHandler(userController.logout));
 router.post("/find", asyncHandler(userController.find));
+router.post("/update", asyncHandler(userController.updateInformation));
 router.post("/refresh-token", asyncHandler(userController.refreshToken));
 
 module.exports = router;
