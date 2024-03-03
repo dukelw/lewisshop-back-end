@@ -51,7 +51,6 @@ class UserService {
         publicKey,
         privateKey
       );
-      console.log("Created Token Success::", tokens);
 
       return {
         code: 201,
@@ -67,6 +66,7 @@ class UserService {
               "phone_number",
               "gender",
               "isAdmin",
+              "birthday",
             ],
             object: newUser,
           }),
@@ -83,7 +83,6 @@ class UserService {
   signIn = async ({ email, password, refresh_token = null }) => {
     // 1. Check email
     const foundUser = await findByEmail({ email });
-    console.log(`Found user::: ${foundUser}`);
     if (!foundUser) throw new BadRequestError("User has not registered");
 
     // 2. Match password
@@ -121,6 +120,7 @@ class UserService {
           "phone_number",
           "gender",
           "isAdmin",
+          "birthday",
         ],
         object: foundUser,
       }),
@@ -179,10 +179,16 @@ class UserService {
     if (!foundUser) throw new NotFoundError("Can find user");
 
     const user = {
+      _id: foundUser._id,
       name: foundUser.name,
       phone_number: foundUser.phone_number,
       email: foundUser.email,
       thumb: foundUser.thumb,
+      bank_account_number: foundUser.bank_account_number,
+      birthday: foundUser.birthday,
+      gender: foundUser.gender,
+      address: foundUser.address,
+      phone_number: foundUser.phone_number,
     };
     return {
       user,
@@ -211,7 +217,7 @@ class UserService {
       email,
       phone_number,
       gender,
-      birthday,
+      birthday: new Date(birthday),
       address,
       bank_account_number,
       thumb,

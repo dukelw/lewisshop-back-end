@@ -13,9 +13,9 @@ const findByEmail = async ({
     bank_account_number: 1,
     status: 1,
     roles: 1,
+    birthday: 1,
   },
 }) => {
-  console.log(`User model:::`, JSON.stringify(UserModel));
   return await UserModel.findOne({ email }).select(select).lean();
 };
 
