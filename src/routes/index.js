@@ -9,6 +9,7 @@ const orderRouter = require("./order");
 const commentRouter = require("./comment");
 const notificationRouter = require("./notification");
 const paymentRouter = require("./payment");
+const uploadRouter = require("./upload");
 const { apiKey, permission } = require("../auth/check-auth");
 const { pushToLogDiscord } = require("../middlewares/index");
 
@@ -20,7 +21,6 @@ function route(app) {
   // Check permissions
   app.use(permission("0000"));
   // Use router
-  app.use("/", siteRouter);
   app.use("/api/v1/shop", shopRouter);
   app.use("/api/v1/user", userRouter);
   app.use("/api/v1/product", productRouter);
@@ -31,6 +31,8 @@ function route(app) {
   app.use("/api/v1/comment", commentRouter);
   app.use("/api/v1/notification", notificationRouter);
   app.use("/api/v1/payment", paymentRouter);
+  app.use("/api/v1/upload", uploadRouter);
+  app.use("/", siteRouter);
 }
 
 module.exports = route;

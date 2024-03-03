@@ -2460,3 +2460,22 @@
 03-March-2024	01:23:13 ----- UID: 91848d8c-619f-4a32-a7f2-20ca859ea453 /api/v1/user/update -- POST -- isNew is not defined
 03-March-2024	12:44:16 ----- UID: e631f56e-5ed9-40f1-9c34-59bde340805b /api/v1/user/logout -- POST -- invalid signature
 03-March-2024	13:15:31 ----- UID: 50653846-8be3-4d4b-a110-76cf8102ac42 /api/v1/user/update -- POST -- Cast to date failed for value "Invalid Date" (type Date) at path "birthday"
+03-March-2024	22:46:58 ----- UID: 3ed631d1-99eb-452e-820d-e1b9526f66a0 /api/v1/upload -- POST -- File missing
+03-March-2024	22:47:24 ----- UID: 731e146b-a445-4665-92d4-b6cd8739e8c9 /api/v1/upload -- POST -- File missing
+03-March-2024	22:48:30 ----- UID: d04a3c0b-52e9-42b4-ab61-df4ebeb198d4 /api/v1/upload -- POST -- File missing
+03-March-2024	23:02:10 ----- UID: edcc6e4d-2d18-453d-a3cd-7703f43c511f /api/v1/upload -- POST -- File missing
+03-March-2024	23:02:24 ----- UID: 9ad20533-f995-4d54-bfe4-54119cd14ba6 /api/v1/upload -- POST -- File missing
+04-March-2024	00:18:42 ----- UID: a75bfd32-9032-4d5c-ac6c-e549ad52ba83 /api/v1/upload -- POST -- Multipart: Boundary not found
+04-March-2024	00:19:12 ----- UID: f2bbf4fb-3116-4888-93f1-c721444f9008 /api/v1/upload -- POST -- Multipart: Boundary not found
+04-March-2024	00:19:43 ----- UID: d44e7692-57bd-4be9-9d4b-13cf02640625 /api/v1/upload -- POST -- Multipart: Boundary not found
+04-March-2024	00:19:58 ----- UID: 92adac8d-37d2-4b3c-82b1-44c887ee11b9 /api/v1/upload/thumb -- POST -- Multipart: Boundary not found
+04-March-2024	00:20:00 ----- UID: 3321a6a0-2ec8-48ac-a071-38edb1f3694f /api/v1/upload/thumb -- POST -- Multipart: Boundary not found
+04-March-2024	00:22:49 ----- UID: a3df6325-eeb3-430d-81cd-760e2b74b405 /api/v1/upload/thumb -- POST -- Multipart: Boundary not found
+04-March-2024	00:23:36 ----- UID: c229b9bc-cb34-48b0-a0ca-47c51e2136e0 /api/v1/upload/thumb -- POST -- Multipart: Boundary not found
+04-March-2024	00:24:57 ----- UID: 55e6d4df-2fb4-4731-a3a3-330e0325dff1 /api/v1/upload/thumb -- POST -- File missing
+04-March-2024	00:25:15 ----- UID: fa1478b3-9a63-473e-9471-1367ed289647 /api/v1/upload/thumb -- POST -- Multipart: Boundary not found
+04-March-2024	00:25:19 ----- UID: 8f9ff7d9-3689-4e79-bb0c-b5c796889eb6 /api/v1/upload/thumb -- POST -- File missing
+04-March-2024	00:32:46 ----- UID: 646bfef5-4ef8-472f-9dc9-b4e5d38a0bd5 /api/v1/upload/thumb -- POST -- request entity too large
+04-March-2024	00:35:58 ----- UID: df9a6e59-021e-4a50-9a80-68569083495a /api/v1/upload/thumb -- POST -- request entity too large
+04-March-2024	00:37:22 ----- UID: fd480595-6429-4451-a07f-dd5b63bd7f73 /api/v1/upload/thumb -- POST -- request entity too large
+04-March-2024	00:50:11 ----- UID: 6dc1efc0-6bec-4775-b2ff-53be74c66770 /api/v1/upload/thumb -- POST -- File missing
