@@ -11,7 +11,6 @@ const keyTokenService = require("./key-token");
 const { generatePairOfToken } = require("../auth/utils");
 const { getInfoData, convertToObjectIDMongo } = require("../utils/index");
 const { findByEmail } = require("../helpers/function/user");
-const { findById } = require("../models/Shop");
 
 class UserService {
   signUp = async ({ name, email, password, isAdmin }) => {
@@ -67,6 +66,7 @@ class UserService {
               "gender",
               "isAdmin",
               "birthday",
+              "all_addresses",
             ],
             object: newUser,
           }),
@@ -121,6 +121,7 @@ class UserService {
           "gender",
           "isAdmin",
           "birthday",
+          "all_addresses",
         ],
         object: foundUser,
       }),
@@ -189,6 +190,7 @@ class UserService {
       gender: foundUser.gender,
       address: foundUser.address,
       phone_number: foundUser.phone_number,
+      all_addresses: foundUser.all_addresses,
     };
     return {
       user,
@@ -228,6 +230,56 @@ class UserService {
     });
 
     return updatedUser;
+  };
+
+  addAddress = async ({ user_id, address }) => {
+    const foundUser = await UserModel.findById(user_id);
+    if (!foundUser) throw new NotFoundError("User not found");
+    foundUser.all_addresses.push(address);
+    await foundUser.save();
+
+    if (address.default) {
+      const index = foundUser.all_addresses.indexOf(address);
+      await this.setDefaultAddress({ user_id, index });
+    }
+
+    return { user: foundUser };
+  };
+
+  updateAddresses = async ({ user_id, index, new_address = {} }) => {
+    const foundUser = await UserModel.findById(user_id);
+    if (!foundUser) throw new NotFoundError("User not found");
+    foundUser.all_addresses[index] = new_address;
+    await foundUser.save();
+
+    if (new_address.default) {
+      await this.setDefaultAddress({ user_id, index });
+    }
+
+    return { user: foundUser };
+  };
+
+  setDefaultAddress = async ({ user_id, index }) => {
+    const foundUser = await UserModel.findById(user_id);
+    if (!foundUser) throw new NotFoundError("User not found");
+    const newAddresses = [];
+    for (let i = 0; i < foundUser.all_addresses.length; i++) {
+      if (i !== index) {
+        foundUser.all_addresses[i].default = false;
+      } else {
+        foundUser.all_addresses[i].default = true;
+      }
+      newAddresses.push(foundUser.all_addresses[i]);
+    }
+
+    const filter = {
+        _id: convertToObjectIDMongo(user_id),
+      },
+      bodyUpdate = {
+        all_addresses: newAddresses,
+      };
+
+    return await UserModel.findOneAndUpdate(filter, bodyUpdate);
   };
 }
 

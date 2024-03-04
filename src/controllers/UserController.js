@@ -52,6 +52,37 @@ class UserController {
       }),
     }).send(res);
   }
+
+  async updateAddress(req, res, next) {
+    new SuccessResponse({
+      message: "Update address successfully",
+      metadata: await userService.updateAddresses({
+        new_address: req.body.address,
+        index: req.body.index,
+        user_id: req.user.user_id,
+      }),
+    }).send(res);
+  }
+
+  async updateAddressDefault(req, res, next) {
+    new SuccessResponse({
+      message: "Update address default successfully",
+      metadata: await userService.setDefaultAddress({
+        index: req.body.index,
+        user_id: req.user.user_id,
+      }),
+    }).send(res);
+  }
+
+  async addAddress(req, res, next) {
+    new SuccessResponse({
+      message: "Update address successfully",
+      metadata: await userService.addAddress({
+        address: req.body.address,
+        user_id: req.user.user_id,
+      }),
+    }).send(res);
+  }
 }
 
 module.exports = new UserController();

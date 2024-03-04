@@ -36,6 +36,10 @@ var userSchema = new Schema(
       type: String,
       default: "",
     },
+    all_addresses: {
+      type: Array,
+      default: [],
+    },
     phone_number: {
       type: String,
       default: "",

@@ -14,6 +14,7 @@ const findByEmail = async ({
     status: 1,
     roles: 1,
     birthday: 1,
+    all_addresses: 1,
   },
 }) => {
   return await UserModel.findOne({ email }).select(select).lean();
