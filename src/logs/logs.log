@@ -2482,3 +2482,5 @@
 04-March-2024	10:19:07 ----- UID: 5e7d5077-0d7e-495b-a098-0b2c1868c1a7 /api/v1/order -- POST -- Some products have been updated recently. please try again
 04-March-2024	10:20:31 ----- UID: 4e912de8-923b-43c7-9b3a-b5290f93b4f8 /api/v1/order -- POST -- Some products have been updated recently. please try again
 04-March-2024	10:22:11 ----- UID: c57483ac-dffc-494c-84fd-cabc71ded05d /api/v1/order -- POST -- Some products have been updated recently. please try again
+04-March-2024	11:40:06 ----- UID: 583ca4b7-63bf-408b-ac16-91ae4a20293f /api/v1/upload/thumb -- POST -- File missing
+04-March-2024	11:43:05 ----- UID: 37e205c8-fc07-413d-95e1-5aeeb5a979ed /api/v1/upload/thumb -- POST -- File missing
