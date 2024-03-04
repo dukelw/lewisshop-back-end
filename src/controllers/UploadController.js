@@ -11,13 +11,18 @@ class UploadController {
   }
 
   async uploadThumb(req, res, next) {
-    const { file } = req;
-    console.log(file);
+    const {
+      file,
+      body: { folderName },
+    } = req;
+    console.log(file, folderName);
     if (!file) throw new BadRequestError("File missing");
     new SuccessResponse({
       message: "Upload thumbnail image success",
       metadata: await UploadService.uploadImageFromLocal({
         path: file.path,
+        folderName: folderName,
+        name: file.filename,
       }),
     }).send(res);
   }

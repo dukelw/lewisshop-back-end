@@ -18,15 +18,18 @@ const uploadImageFromUrl = async () => {
   }
 };
 
-const uploadImageFromLocal = async ({ path, folderName = "lewishop/logo" }) => {
+const uploadImageFromLocal = async ({
+  path,
+  folderName = "lewishop/logo",
+  name = "image",
+}) => {
   try {
     const result = await cloudinary.uploader.upload(path, {
-      public_id: "thumb",
+      public_id: name,
       folder: folderName,
     });
     return {
       img_url: result.secure_url,
-      shopID: 1610,
       thumb_url: cloudinary.url(result.public_id, {
         height: 100,
         width: 100,
