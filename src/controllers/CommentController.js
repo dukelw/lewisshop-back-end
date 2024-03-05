@@ -18,7 +18,14 @@ class CommentController {
     }).send(res);
   }
 
-  // Get comment by parent id
+  // Get comment of product
+  async getCommentOfProduct(req, res, next) {
+    new SuccessResponse({
+      message: "Get comment of product successfully",
+      metadata: await commentService.getAllCommentOfProduct(req.query),
+    }).send(res);
+  }
+
   async delete(req, res, next) {
     new SuccessResponse({
       message: "Delete comment successfully",

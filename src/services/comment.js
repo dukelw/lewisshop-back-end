@@ -2,17 +2,21 @@ const { NotFoundError } = require("../core/error-response");
 const { CommentModel } = require("../models/Comment");
 const { convertToObjectIDMongo } = require("../utils/index");
 const { findProduct } = require("../models/function/Product");
+const { ProductModel } = require("../models/Product");
 
 class CommentService {
   async createComment({
     product_id,
     user_id,
+    user_name,
     content,
     parent_comment_id = null,
   }) {
+    console.log("Parent::::: ", parent_comment_id);
     const comment = new CommentModel({
       comment_product_id: product_id,
       comment_user_id: user_id,
+      comment_user_name: user_name,
       comment_content: content,
       comment_parent_id: parent_comment_id,
     });
@@ -90,6 +94,8 @@ class CommentService {
           comment_right: 1,
           comment_content: 1,
           comment_parent_id: 1,
+          comment_user_id: 1,
+          comment_user_name: 1,
         })
         .sort({ comment_left: 1 });
       return comment;
@@ -103,6 +109,8 @@ class CommentService {
         comment_right: 1,
         comment_content: 1,
         comment_parent_id: 1,
+        comment_user_id: 1,
+        comment_user_name: 1,
       })
       .sort({
         comment_left: 1,
@@ -152,6 +160,16 @@ class CommentService {
       }
     );
     return true;
+  }
+
+  async getAllCommentOfProduct({ product_id }) {
+    const foundProduct = await ProductModel.findById(product_id);
+    if (!foundProduct) throw new NotFoundError("Product not found");
+
+    const comments = await CommentModel.find({
+      comment_product_id: convertToObjectIDMongo(product_id),
+    });
+    return comments;
   }
 }
 

@@ -10,8 +10,12 @@ var commentSchema = new Schema(
       ref: "Product",
     },
     comment_user_id: {
-      type: Number,
-      default: 1,
+      type: String,
+      default: "",
+    },
+    comment_user_name: {
+      type: String,
+      default: "",
     },
     comment_content: {
       type: String,

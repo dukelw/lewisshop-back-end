@@ -2536,3 +2536,22 @@
 05-March-2024	10:06:04 ----- UID: dc2ff23f-08d4-46f4-9e6a-ffc08e710f67 /api/v1/user/change-password -- POST -- Authentication failed
 05-March-2024	10:06:10 ----- UID: 35cc02ab-3dde-47b7-99c8-b69c200c9753 /api/v1/user/change-password -- POST -- Authentication failed
 05-March-2024	10:07:06 ----- UID: 30e3fac0-b6a5-4b9f-9a1a-54b66dc34125 /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	22:23:38 ----- UID: b17e6c5f-6946-426b-b870-becaa9e6638a /api/v1/product/id/null -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+05-March-2024	22:23:38 ----- UID: a741d542-2fa3-46a4-8032-0287c23b07a9 /api/v1/shop/null -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+05-March-2024	22:26:22 ----- UID: ef1bb4f1-faa9-40f9-8c80-f89a47704829 /api/v1/comment/product?product_id=comment/Furniture&page=1 -- GET -- Invalid user ID
+05-March-2024	22:26:23 ----- UID: e61f2a6f-8831-42fc-9193-e63fde798a22 /api/v1/comment/product?product_id=comment/Furniture&page=1 -- GET -- Invalid user ID
+05-March-2024	22:26:29 ----- UID: 738ec3da-c9c1-4800-90c2-e55e31bfe312 /api/v1/comment/product?product_id=comment/Furniture&page=1 -- GET -- Invalid user ID
+05-March-2024	22:26:32 ----- UID: 6f082c27-9bb2-4492-a72a-57cd92a525de /api/v1/comment/product?product_id=comment/Furniture&page=1 -- GET -- Invalid user ID
+05-March-2024	22:26:36 ----- UID: fbc48515-c435-4c28-a8ab-4d02d5999cd4 /api/v1/comment/product?product_id=comment/Furniture&page=1 -- GET -- Invalid user ID
+05-March-2024	22:26:59 ----- UID: 33d813a0-b4dd-417d-a338-26f9e0c3a298 /api/v1/comment/product?product_id=Furniture&page=1 -- GET -- Invalid user ID
+05-March-2024	22:27:06 ----- UID: ed36222c-1efc-4e61-bef0-1efed3b955fa /api/v1/comment/product?product_id=Furniture&page=1 -- GET -- Invalid user ID
+05-March-2024	22:27:17 ----- UID: d0cff583-66e1-4153-a59b-87310c8a4bbc /api/v1/comment/product?product_id=Furniture&page=1 -- GET -- Invalid user ID
+05-March-2024	22:28:05 ----- UID: 360d22c8-e4f4-4afb-ac69-1a79fe88cfcf /api/v1/comment/product?product_id=65df682232db43867a34910e&page=1 -- GET -- Invalid user ID
+06-March-2024	00:26:48 ----- UID: fde135e7-d5f2-437e-b0bc-c28f00402c5a /api/v1/product/id/null -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+06-March-2024	00:26:48 ----- UID: 3e80d711-5513-4cab-8b58-98ee013104c6 /api/v1/shop/null -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+06-March-2024	00:26:48 ----- UID: 7c5b3bf0-3ae1-4811-9a00-d1305ed6efcd /api/v1/comment/product?product_id=null&page=1 -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+06-March-2024	00:26:52 ----- UID: 289d8662-06b2-4734-b9a7-34682b04baf1 /api/v1/product/id/null -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+06-March-2024	00:26:52 ----- UID: cd80430b-ac68-4c0e-b5ad-4361d316e153 /api/v1/shop/null -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+06-March-2024	00:26:52 ----- UID: 8cfdcbd6-c66d-4279-9ac6-74f0ac56db42 /api/v1/comment/product?product_id=null&page=1 -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+06-March-2024	00:27:29 ----- UID: d964bfc6-813f-47aa-81cd-59d3c4ece2d9 /api/v1/comment -- POST -- Comment validation failed: comment_user_id: Cast to Number failed for value "65ba0798e33ce54e936d5710" (type string) at path "comment_user_id"
+06-March-2024	00:28:10 ----- UID: 8adbbb6f-0336-4a37-81c9-38eb12010368 /api/v1/comment/product?product_id=undefined&page=1 -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"

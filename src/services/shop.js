@@ -60,13 +60,12 @@ class ShopService {
         publicKey,
         privateKey
       );
-      console.log("Created Token Success::", tokens);
 
       return {
         code: 201,
         metadata: {
           shop: getInfoData({
-            fields: ["_id", "name", "email"],
+            fields: ["_id", "name", "email", "thumb", "description"],
             object: newShop,
           }),
           tokens,
@@ -109,7 +108,7 @@ class ShopService {
 
     return {
       shop: getInfoData({
-        fields: ["_id", "name", "email"],
+        fields: ["_id", "name", "email", "thumb", "description"],
         object: foundShop,
       }),
       tokens,
