@@ -281,6 +281,28 @@ class UserService {
 
     return await UserModel.findOneAndUpdate(filter, bodyUpdate);
   };
+
+  changePassword = async ({ email, password, new_password }) => {
+    // 1. Check email
+    const foundUser = await findByEmail({ email });
+    if (!foundUser) throw new BadRequestError("User has not registered");
+
+    // 2. Match password
+    const isMatch = await bcrypt.compare(password, foundUser.password);
+    if (!isMatch) throw new AuthFailureError("Authentication failed");
+
+    // 4. Hash password
+    const hashedPassword = await bcrypt.hash(new_password, 10);
+
+    // 4. Change password
+    const updatedUser = await UserModel.findOneAndUpdate(
+      { email },
+      { password: hashedPassword }
+    );
+
+    console.log("Updated user: " + updatedUser, updatedUser.modifiedCount);
+    return updatedUser.modifiedCount;
+  };
 }
 
 module.exports = new UserService();

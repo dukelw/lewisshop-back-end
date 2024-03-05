@@ -2487,3 +2487,52 @@
 04-March-2024	11:53:28 ----- UID: d115c46c-eb83-4b6d-bb19-a8c35eeeee35 /api/v1/upload/thumb -- POST -- File missing
 04-March-2024	11:53:33 ----- UID: cc701e77-a658-4a2e-9eb5-ab075d360c6c /api/v1/upload/thumb -- POST -- File missing
 04-March-2024	14:02:01 ----- UID: d543a5d0-aa65-41e2-b2a6-52d2302581a7 /api/v1/user/logout -- POST -- invalid signature
+04-March-2024	20:22:40 ----- UID: 9efae3d1-9da7-4c0d-aca8-9a688fea47ad /api/v1/upload/thumb -- POST -- File missing
+04-March-2024	20:22:49 ----- UID: 1959b1d1-2204-4909-8c24-668d08d111e8 /api/v1/upload/thumb -- POST -- File missing
+05-March-2024	09:57:42 ----- UID: d81ef981-85a6-411d-ad99-0ebf977b310a /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Not found keyStore
+05-March-2024	09:57:45 ----- UID: 9b77f7eb-6e0b-46de-afad-52800d98b22f /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Not found keyStore
+05-March-2024	09:57:45 ----- UID: b8cd697c-dab4-4d54-b00e-fa0b802715bf /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	09:57:45 ----- UID: e6771c41-4006-4cdf-b8e6-77817f63ce97 /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	09:57:45 ----- UID: 6d9203c8-7d0f-4829-a9fb-f505fa511227 /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	09:57:52 ----- UID: c3bd9a18-c319-4e24-a7ad-a792c632679c /api/v1/user/logout -- POST -- Not found keyStore
+05-March-2024	09:57:56 ----- UID: de19f554-d309-41a6-9f8c-49871959e5ef /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:57:57 ----- UID: c7abe056-f5e9-49a6-8bb2-8b148d1729a9 /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:58:01 ----- UID: 1dd04dcc-1065-4340-a50c-d25f3b4baad6 /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:58:02 ----- UID: 63226725-ad66-4644-9d7b-a9ad18d48832 /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:58:04 ----- UID: a0482480-ac98-4f34-9ce8-01b1221e70dc /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:58:08 ----- UID: d55e8887-60a5-4ad5-bb5a-338c0876e5e5 /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:58:09 ----- UID: 00a4ed7e-a671-48d8-93b7-8f4b7a89af1c /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:58:16 ----- UID: b78c03b2-5232-446c-aac1-03d8399b9e95 /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:58:34 ----- UID: 5d14302f-35e7-4323-80b9-8b024a18439b /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	09:58:38 ----- UID: 0cdf7721-fec1-4d7e-bdce-70a2d7630257 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Not found keyStore
+05-March-2024	09:58:44 ----- UID: 5cecfbb5-2fcf-44e7-8246-bd76fb0b42b7 /api/v1/user/logout -- POST -- Not found keyStore
+05-March-2024	09:59:39 ----- UID: 3a9b414f-07ca-4a51-961d-ba8efbdfe11d /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Not found keyStore
+05-March-2024	09:59:47 ----- UID: a4c2c257-9458-4032-a1ae-9ad702f0be2c /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Not found keyStore
+05-March-2024	10:03:05 ----- UID: 897811ba-1644-406f-ae8f-b74d0432dce0 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Not found keyStore
+05-March-2024	10:03:05 ----- UID: 69609228-1ec9-40b7-ad95-b301c3ecf898 /api/v1/order/all -- POST -- Not found keyStore
+05-March-2024	10:03:05 ----- UID: 3500db39-3a84-4d01-8696-e004798ce594 /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	10:03:07 ----- UID: f80ca03b-d222-49c8-8236-833b77029aea /api/v1/order/find-status -- POST -- Not found keyStore
+05-March-2024	10:03:07 ----- UID: 1750de9e-36ff-4067-a4fc-4f8340611036 /api/v1/order/find-status -- POST -- Not found keyStore
+05-March-2024	10:03:08 ----- UID: 3cb0c9bf-8911-48d2-a27a-a54f0c809308 /api/v1/order/all -- POST -- Not found keyStore
+05-March-2024	10:03:09 ----- UID: 60fc6b44-fde6-4458-8215-17d82cb6cca1 /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	10:03:09 ----- UID: f5c6ba41-78a6-4b81-93e2-2dce13373096 /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	10:03:14 ----- UID: 3f23d81e-175e-4a42-b2c4-607d75d24132 /api/v1/user/logout -- POST -- Not found keyStore
+05-March-2024	10:03:19 ----- UID: ededc4cd-53f2-4117-afa0-fa384e8c1454 /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	10:03:21 ----- UID: 8ed4abcd-f878-4de3-b3e1-18bcd98ef2ef /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	10:03:26 ----- UID: a78dddb7-832a-42bb-8d34-80bb5c654cb4 /api/v1/user/signin -- POST -- Authentication failed
+05-March-2024	10:03:34 ----- UID: 66755df8-bb77-4259-8d34-3857e9ffae04 /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Not found keyStore
+05-March-2024	10:03:34 ----- UID: 1ec73c27-80cd-4ee1-a9fe-53ae05d2a848 /api/v1/order/all -- POST -- Not found keyStore
+05-March-2024	10:03:34 ----- UID: 5239c1e3-ebeb-438f-84a5-700b72634bed /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	10:03:35 ----- UID: 0ce19bfc-147e-46bd-ae65-c65e0471714a /api/v1/order/find-status -- POST -- Not found keyStore
+05-March-2024	10:03:36 ----- UID: 16d8f0b8-c390-4b7c-9221-c696a67866ec /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	10:03:36 ----- UID: 41d1db42-a5c7-4047-b727-c2c2cb937629 /api/v1/user/find -- POST -- Not found keyStore
+05-March-2024	10:03:50 ----- UID: 1d442ff8-8365-42ff-9779-fcb0809abba4 /api/v1/user/change-password -- POST -- Not found keyStore
+05-March-2024	10:03:51 ----- UID: 28717f11-ee0d-4879-8095-e92c8b88e8be /api/v1/user/change-password -- POST -- Not found keyStore
+05-March-2024	10:03:54 ----- UID: 34a10d35-00dd-4ed0-b025-c4c45c1d9a0d /api/v1/user/change-password -- POST -- Not found keyStore
+05-March-2024	10:04:03 ----- UID: 4937fe23-7b90-4c46-bfd8-2e05991f7722 /api/v1/user/change-password -- POST -- Not found keyStore
+05-March-2024	10:04:22 ----- UID: 2c1b3048-82a1-4055-9c87-cdcafe4eed98 /api/v1/user/logout -- POST -- Not found keyStore
+05-March-2024	10:05:25 ----- UID: 1f0084f8-f1d2-4434-93c3-3393e0688c9a /api/v1/cart?user_id=65ba0798e33ce54e936d5710 -- GET -- Not found keyStore
+05-March-2024	10:05:29 ----- UID: b2a348b2-9217-450a-8d9f-1f1d3196d4b9 /api/v1/user/logout -- POST -- Not found keyStore
+05-March-2024	10:06:04 ----- UID: dc2ff23f-08d4-46f4-9e6a-ffc08e710f67 /api/v1/user/change-password -- POST -- Authentication failed
+05-March-2024	10:06:10 ----- UID: 35cc02ab-3dde-47b7-99c8-b69c200c9753 /api/v1/user/change-password -- POST -- Authentication failed
+05-March-2024	10:07:06 ----- UID: 30e3fac0-b6a5-4b9f-9a1a-54b66dc34125 /api/v1/user/signin -- POST -- Authentication failed
