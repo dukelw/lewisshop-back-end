@@ -9,6 +9,7 @@ class CommentService {
     product_id,
     user_id,
     user_name,
+    parent_name,
     content,
     parent_comment_id = null,
   }) {
@@ -16,6 +17,7 @@ class CommentService {
       comment_product_id: product_id,
       comment_user_id: user_id,
       comment_user_name: user_name,
+      comment_parent_name: parent_name,
       comment_content: content,
       comment_parent_id: parent_comment_id,
     });
@@ -95,6 +97,7 @@ class CommentService {
           comment_parent_id: 1,
           comment_user_id: 1,
           comment_user_name: 1,
+          comment_parent_name: 1,
           comment_product_id: 1,
         })
         .sort({ comment_left: 1 });

@@ -2569,3 +2569,5 @@
 06-March-2024	14:20:10 ----- UID: bea3dfc8-58d9-4499-b372-1fac7d9e3956 /api/v1/comment -- DELETE -- Product not found
 06-March-2024	14:42:25 ----- UID: f022dfbb-4d27-4e06-9c30-4ddf3f529c19 /api/v1/comment/product?product_id=undefined&page=1 -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
 06-March-2024	14:56:01 ----- UID: 142e1f37-ce11-49f5-a59b-4a6810938d2a /api/v1/comment?parent_comment_id=65e821870d28d8e155be4d36&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
+06-March-2024	14:59:23 ----- UID: 12faa2e5-af0e-491e-b35e-67f606945e80 /api/v1/user/signin -- POST -- User has not registered
+06-March-2024	14:59:24 ----- UID: 1afd9370-b892-4843-8af7-aa73e904ba9f /api/v1/user/signin -- POST -- User has not registered
