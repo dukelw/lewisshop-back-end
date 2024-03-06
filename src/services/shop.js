@@ -1,6 +1,7 @@
 const {
   BadRequestError,
   AuthFailureError,
+  NotFoundError,
   ForbiddenError,
 } = require("../core/error-response");
 const ShopModel = require("../models/Shop");
@@ -166,7 +167,16 @@ class ShopService {
       _id: convertToObjectIDMongo(shop_id),
     })
       .select(
-        getSelectData(["name", "thumb", "email", "description", "status"])
+        getSelectData([
+          "_id",
+          "name",
+          "thumb",
+          "email",
+          "description",
+          "status",
+          "birthday",
+          "phone_number",
+        ])
       )
       .lean();
   };
@@ -181,9 +191,117 @@ class ShopService {
           "email",
           "description",
           "status",
+          "birthday",
+          "phone_number",
         ])
       )
       .lean();
+  };
+
+  updateInformation = async ({
+    shop_id,
+    name,
+    email,
+    phone_number,
+    gender,
+    birthday,
+    address,
+    bank_account_number,
+    thumb,
+  }) => {
+    const foundShop = await ShopModel.findById(shop_id);
+    if (!foundShop) throw new NotFoundError("Shop not found");
+    const filter = {
+      _id: shop_id,
+    };
+
+    const bodyUpdate = {
+      name,
+      email,
+      phone_number,
+      gender,
+      birthday: new Date(birthday),
+      address,
+      bank_account_number,
+      thumb,
+    };
+
+    const updatedShop = await ShopModel.findOneAndUpdate(filter, bodyUpdate, {
+      new: true,
+    });
+
+    return updatedShop;
+  };
+
+  addAddress = async ({ shop_id, address }) => {
+    const foundShop = await ShopModel.findById(shop_id);
+    if (!foundShop) throw new NotFoundError("User not found");
+    foundShop.all_addresses.push(address);
+    await foundShop.save();
+
+    if (address.default) {
+      const index = foundShop.all_addresses.indexOf(address);
+      await this.setDefaultAddress({ shop_id, index });
+    }
+
+    return { shop: foundShop };
+  };
+
+  updateAddresses = async ({ shop_id, index, new_address = {} }) => {
+    const foundShop = await ShopModel.findById(shop_id);
+    if (!foundShop) throw new NotFoundError("User not found");
+    foundShop.all_addresses[index] = new_address;
+    await foundShop.save();
+
+    if (new_address.default) {
+      await this.setDefaultAddress({ shop_id, index });
+    }
+
+    return { shop: foundShop };
+  };
+
+  setDefaultAddress = async ({ shop_id, index }) => {
+    const foundShop = await ShopModel.findById(shop_id);
+    if (!foundShop) throw new NotFoundError("User not found");
+    const newAddresses = [];
+    for (let i = 0; i < foundShop.all_addresses.length; i++) {
+      if (i !== index) {
+        foundShop.all_addresses[i].default = false;
+      } else {
+        foundShop.all_addresses[i].default = true;
+      }
+      newAddresses.push(foundShop.all_addresses[i]);
+    }
+
+    const filter = {
+        _id: convertToObjectIDMongo(shop_id),
+      },
+      bodyUpdate = {
+        all_addresses: newAddresses,
+      };
+
+    return await ShopModel.findOneAndUpdate(filter, bodyUpdate);
+  };
+
+  changePassword = async ({ email, password, new_password }) => {
+    // 1. Check email
+    const foundShop = await findByEmail({ email });
+    if (!foundShop) throw new BadRequestError("User has not registered");
+
+    // 2. Match password
+    const isMatch = await bcrypt.compare(password, foundShop.password);
+    if (!isMatch) throw new AuthFailureError("Authentication failed");
+
+    // 4. Hash password
+    const hashedPassword = await bcrypt.hash(new_password, 10);
+
+    // 4. Change password
+    const updatedShop = await ShopModel.findOneAndUpdate(
+      { email },
+      { password: hashedPassword }
+    );
+
+    return updatedShop.modifiedCount;
   };
 }
 

@@ -16,6 +16,14 @@ var shopSchema = new Schema(
       unique: true,
       trim: true,
     },
+    phone_number: {
+      type: String,
+      default: "",
+    },
+    birthday: {
+      type: Date,
+      default: new Date(),
+    },
     password: {
       type: String,
       required: true,

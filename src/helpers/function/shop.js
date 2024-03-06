@@ -10,6 +10,8 @@ const findByEmail = async ({
     roles: 1,
     thumb: 1,
     description: 1,
+    birthday: 1,
+    phone_number: 1,
   },
 }) => {
   return await ShopModel.findOne({ email }).select(select).lean();

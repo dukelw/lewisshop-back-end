@@ -2600,3 +2600,29 @@
 06-March-2024	17:09:47 ----- UID: cde6e584-c004-4af6-a684-1413a7492a88 /api/v1/product/create -- POST -- Invalid Product type: 
 06-March-2024	21:47:44 ----- UID: b421b5f2-b501-4655-8d63-d8595bcc62cc /api/v1/user/signin -- POST -- Authentication failed
 06-March-2024	21:47:46 ----- UID: 578cd820-7a51-4a15-91d0-0d558bb644bd /api/v1/user/signin -- POST -- Authentication failed
+06-March-2024	22:56:59 ----- UID: 4f0fee1c-ff0b-430f-bedc-5c3f0588ebd2 /api/v1/shop/signin -- POST -- Authentication failed
+06-March-2024	22:57:00 ----- UID: bb906ff6-ac1c-4a38-9d5a-0bdbc59e0894 /api/v1/shop/signin -- POST -- Authentication failed
+06-March-2024	23:08:51 ----- UID: 31327c09-a53e-438a-beed-631efbdc14ab /api/v1/shop/signin -- POST -- Authentication failed
+06-March-2024	23:11:19 ----- UID: 524ba034-3d54-4882-9c13-9ac5c9bb351f /api/v1/shop/signin -- POST -- Authentication failed
+06-March-2024	23:11:20 ----- UID: a41772bb-f84b-4870-8a09-d2f84daf7b05 /api/v1/shop/signin -- POST -- Authentication failed
+06-March-2024	23:16:44 ----- UID: 8a840126-24af-4661-8d38-911d601765e8 /api/v1/shop/signin -- POST -- Authentication failed
+06-March-2024	23:34:22 ----- UID: ae8af4e7-b05d-4ada-8589-4fddf9a77dc2 /api/v1/shop/undefined -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+07-March-2024	00:01:14 ----- UID: aab452de-5a72-414c-8f50-b85752b7648a /api/v1/shop/signin -- POST -- Authentication failed
+07-March-2024	00:02:46 ----- UID: 3abc754d-431b-4fd2-968a-5d8e56bb0b97 /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:02:46 ----- UID: 8a4affa7-21bc-458e-8d84-1b76666e9f41 /api/v1/shop/update -- POST -- NotFoundError is not defined
+07-March-2024	00:04:24 ----- UID: 86d84de3-4e19-47bb-be71-4b602e79e64a /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:04:24 ----- UID: 9cf216e7-8f34-4b00-9f14-cd24ca66d42a /api/v1/shop/update -- POST -- Shop not found
+07-March-2024	00:06:12 ----- UID: 712eacc4-ef19-43aa-8023-7c3ab2a5bff5 /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:06:13 ----- UID: 2dff3690-5923-49ec-8f6c-4ee8ed2407f8 /api/v1/shop/update -- POST -- Shop not found
+07-March-2024	00:08:00 ----- UID: a6157051-c742-480b-8f4c-f845f9051fe6 /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:08:00 ----- UID: d9505ccf-3c5a-4452-bd31-9743b0dca512 /api/v1/shop/update -- POST -- Shop not found
+07-March-2024	00:08:57 ----- UID: 213a03eb-8eeb-4263-91e4-73d4688e1eeb /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:14:33 ----- UID: 0c9353a2-d7ec-4c25-a90d-1ddc5b00c457 /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:14:52 ----- UID: 607595d9-2a3b-4fe5-a867-316bfbf88b1f /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:14:56 ----- UID: 31a8a365-b602-4ffd-914b-e9f3571ba318 /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:15:16 ----- UID: 1d64f1c5-5454-412d-8794-4d6a06afcd0f /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:15:31 ----- UID: 72e6e0e5-bd60-48ca-857c-66d647314005 /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:15:39 ----- UID: a7da8a75-d750-4585-b1ba-2897b119454f /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:18:09 ----- UID: c910055a-b8d8-4109-9666-12a4ec3454cc /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:20:53 ----- UID: 5be0ee12-78f7-4183-9d84-983df730c88b /api/v1/upload/thumb -- POST -- File missing
+07-March-2024	00:22:37 ----- UID: 177a6380-16df-401c-ae3d-5e4e8cbded77 /api/v1/shop/signin -- POST -- Authentication failed

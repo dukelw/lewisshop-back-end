@@ -10,6 +10,14 @@ router.get("/all", asyncHandler(shopController.findAllShops));
 router.get("/:id", asyncHandler(shopController.findShopByID));
 
 router.use(authentication);
+router.post("/change-password", asyncHandler(shopController.changePassword));
+// router.post(
+//   "/update-address-default",
+//   asyncHandler(shopController.updateAddressDefault)
+// );
+// router.post("/update-address", asyncHandler(shopController.updateAddress));
+// router.post("/add-address", asyncHandler(shopController.addAddress));
+router.post("/update", asyncHandler(shopController.updateInformation));
 router.post("/logout", asyncHandler(shopController.logout));
 router.post("/refresh-token", asyncHandler(shopController.refreshToken));
 
