@@ -19,10 +19,10 @@ class CommentController {
   }
 
   // Get comment of product
-  async getCommentOfProduct(req, res, next) {
+  async getParentCommentOfProduct(req, res, next) {
     new SuccessResponse({
       message: "Get comment of product successfully",
-      metadata: await commentService.getAllCommentOfProduct(req.query),
+      metadata: await commentService.getParentCommentOfProduct(req.query),
     }).send(res);
   }
 

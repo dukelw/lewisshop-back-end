@@ -12,7 +12,6 @@ class CommentService {
     content,
     parent_comment_id = null,
   }) {
-    console.log("Parent::::: ", parent_comment_id);
     const comment = new CommentModel({
       comment_product_id: product_id,
       comment_user_id: user_id,
@@ -76,7 +75,7 @@ class CommentService {
   async getCommentByParentID({
     product_id,
     parent_comment_id,
-    limit = 50,
+    limit = 10,
     offset = 0,
   }) {
     if (parent_comment_id) {
@@ -96,6 +95,7 @@ class CommentService {
           comment_parent_id: 1,
           comment_user_id: 1,
           comment_user_name: 1,
+          comment_product_id: 1,
         })
         .sort({ comment_left: 1 });
       return comment;
@@ -162,12 +162,13 @@ class CommentService {
     return true;
   }
 
-  async getAllCommentOfProduct({ product_id }) {
+  async getParentCommentOfProduct({ product_id }) {
     const foundProduct = await ProductModel.findById(product_id);
     if (!foundProduct) throw new NotFoundError("Product not found");
 
     const comments = await CommentModel.find({
       comment_product_id: convertToObjectIDMongo(product_id),
+      comment_parent_id: null,
     });
     return comments;
   }

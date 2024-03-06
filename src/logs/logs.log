@@ -2555,3 +2555,17 @@
 06-March-2024	00:26:52 ----- UID: 8cfdcbd6-c66d-4279-9ac6-74f0ac56db42 /api/v1/comment/product?product_id=null&page=1 -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
 06-March-2024	00:27:29 ----- UID: d964bfc6-813f-47aa-81cd-59d3c4ece2d9 /api/v1/comment -- POST -- Comment validation failed: comment_user_id: Cast to Number failed for value "65ba0798e33ce54e936d5710" (type string) at path "comment_user_id"
 06-March-2024	00:28:10 ----- UID: 8adbbb6f-0336-4a37-81c9-38eb12010368 /api/v1/comment/product?product_id=undefined&page=1 -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+06-March-2024	13:31:58 ----- UID: 919321b4-6dec-408f-82ab-aa44374e13f3 /api/v1/shop/null -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+06-March-2024	13:31:58 ----- UID: 311d89d5-248b-46d8-8b92-bfa15cc58806 /api/v1/product/id/null -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+06-March-2024	13:31:58 ----- UID: 484e2951-0df1-4803-91ca-216cd0276e96 /api/v1/comment/product?product_id=null&page=1 -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+06-March-2024	13:45:44 ----- UID: 4732ab27-c2ee-4180-a4dd-766c6ae4c96e /api/v1/shop/null -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+06-March-2024	13:45:44 ----- UID: 025cc501-2664-4d4f-b18f-dbc743dc6174 /api/v1/product/id/null -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+06-March-2024	13:45:44 ----- UID: 93450490-6e79-45bc-8486-89e83ea73900 /api/v1/comment/product?product_id=null&page=1 -- GET -- Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Product"
+06-March-2024	13:48:18 ----- UID: d2512958-64b1-4aef-a4f4-2158faa9f687 /api/v1/comment?parent_comment_id=65a5fbab7519cd8955ee0f33&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Invalid user ID
+06-March-2024	13:48:32 ----- UID: 97f54ebc-e6c7-431f-a906-d65eaaf13e0d /api/v1/comment?parent_comment_id=65a5fbab7519cd8955ee0f33&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Invalid user ID
+06-March-2024	14:19:00 ----- UID: 959929c2-d782-4175-9d23-7b18583100f4 /api/v1/comment -- DELETE -- Product not found
+06-March-2024	14:19:03 ----- UID: bccf8da6-f87e-48ec-9c51-3784e18bd654 /api/v1/comment -- DELETE -- Product not found
+06-March-2024	14:20:09 ----- UID: e0e44991-2f22-4987-8129-03af6de14c2b /api/v1/comment -- DELETE -- Product not found
+06-March-2024	14:20:10 ----- UID: bea3dfc8-58d9-4499-b372-1fac7d9e3956 /api/v1/comment -- DELETE -- Product not found
+06-March-2024	14:42:25 ----- UID: f022dfbb-4d27-4e06-9c30-4ddf3f529c19 /api/v1/comment/product?product_id=undefined&page=1 -- GET -- Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+06-March-2024	14:56:01 ----- UID: 142e1f37-ce11-49f5-a59b-4a6810938d2a /api/v1/comment?parent_comment_id=65e821870d28d8e155be4d36&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
