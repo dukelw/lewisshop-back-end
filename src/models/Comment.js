@@ -17,6 +17,10 @@ var commentSchema = new Schema(
       type: String,
       default: "",
     },
+    comment_user_thumb: {
+      type: String,
+      default: "",
+    },
     comment_parent_name: {
       type: String,
       default: "",

@@ -6,6 +6,7 @@ const shopController = require("../controllers/ShopController");
 
 router.post("/signin", asyncHandler(shopController.signin));
 router.post("/signup", asyncHandler(shopController.signup));
+router.get("/all", asyncHandler(shopController.findAllShops));
 router.get("/:id", asyncHandler(shopController.findShopByID));
 
 router.use(authentication);

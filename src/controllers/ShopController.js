@@ -40,6 +40,13 @@ class ShopController {
       metadata: await shopService.getShopByID(req.params.id),
     }).send(res);
   }
+
+  async findAllShops(req, res, next) {
+    new SuccessResponse({
+      message: "Find all shop successfully",
+      metadata: await shopService.getAllShop(),
+    }).send(res);
+  }
 }
 
 module.exports = new ShopController();

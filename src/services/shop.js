@@ -170,6 +170,21 @@ class ShopService {
       )
       .lean();
   };
+
+  getAllShop = async () => {
+    return await ShopModel.find()
+      .select(
+        getSelectData([
+          "_id",
+          "name",
+          "thumb",
+          "email",
+          "description",
+          "status",
+        ])
+      )
+      .lean();
+  };
 }
 
 module.exports = new ShopService();

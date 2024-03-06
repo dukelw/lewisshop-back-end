@@ -2571,3 +2571,32 @@
 06-March-2024	14:56:01 ----- UID: 142e1f37-ce11-49f5-a59b-4a6810938d2a /api/v1/comment?parent_comment_id=65e821870d28d8e155be4d36&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
 06-March-2024	14:59:23 ----- UID: 12faa2e5-af0e-491e-b35e-67f606945e80 /api/v1/user/signin -- POST -- User has not registered
 06-March-2024	14:59:24 ----- UID: 1afd9370-b892-4843-8af7-aa73e904ba9f /api/v1/user/signin -- POST -- User has not registered
+06-March-2024	16:11:06 ----- UID: 1ed0ab96-c030-47af-a767-167a1a40a316 /api/v1/comment?parent_comment_id=65e821c70d28d8e155be4d56&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
+06-March-2024	16:11:08 ----- UID: fdd89093-0e21-47b5-babb-3611a01238c6 /api/v1/comment?parent_comment_id=65e821730d28d8e155be4d2e&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
+06-March-2024	16:11:12 ----- UID: c08cf1f3-8592-4fc0-a9e3-70dae805b5ea /api/v1/comment?parent_comment_id=65e81aeb0d28d8e155be4a1f&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
+06-March-2024	16:11:13 ----- UID: 402f7559-1cbf-4b21-bf10-a7a4eada9e5f /api/v1/comment?parent_comment_id=65e758887831281dd879fbac&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
+06-March-2024	16:13:38 ----- UID: abb6b66a-fe7c-43fe-8e38-56356cb65765 /api/v1/comment?parent_comment_id=65e8337c4107c25d0b185ba1&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
+06-March-2024	16:14:45 ----- UID: bee6c736-0056-47d5-9c58-bf175f0b0624 /api/v1/comment?parent_comment_id=65e833df4107c25d0b185be8&product_id=65a47ec2318bb83d2e1ade1e&page=1 -- GET -- Can not find parent comment
+06-March-2024	16:31:50 ----- UID: 1c4407c2-d9c3-4f09-8391-4f31b1e0cd6f /api/v1/shop/signin -- POST -- Shop has not registered
+06-March-2024	16:31:51 ----- UID: 42b12770-e02a-4a5b-9aac-204f3f28370b /api/v1/shop/signin -- POST -- Shop has not registered
+06-March-2024	16:31:53 ----- UID: 9c8e636f-d00a-49b0-a715-8eca4134eeb4 /api/v1/shop/signin -- POST -- Shop has not registered
+06-March-2024	16:31:54 ----- UID: 72b9f866-7d1d-4228-b9dd-5a4fb6dae727 /api/v1/shop/signin -- POST -- Shop has not registered
+06-March-2024	16:40:39 ----- UID: 1ab9cfd1-e9a0-4a52-a6bd-03d38f3e3fad /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	16:41:07 ----- UID: c1d37fb0-923e-4b6e-8ec8-f7dd6da1fc57 /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	16:41:25 ----- UID: 49d4d6d7-f9b9-4c0e-886e-ba52d0da3ed3 /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	16:43:01 ----- UID: 77611fe5-ac28-42b4-a900-e7552ee4142a /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	16:43:44 ----- UID: 6d1e4b1d-9b5b-4d92-9cfa-c17c5a18d67c /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	16:49:13 ----- UID: 18b2cba2-628f-42f4-a353-6150220ed661 /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	16:52:45 ----- UID: ee8a2091-47e6-4548-8ef0-ded191bd0ea1 /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	16:58:01 ----- UID: e07d3c76-7ac9-4a10-97d7-75cf1785ef2a /api/v1/upload/thumb -- POST -- File missing
+06-March-2024	16:58:01 ----- UID: 4d0c30b0-5895-42fc-8904-6b499a09ea65 /api/v1/product/create -- POST -- Clothes validation failed: brand: Path `brand` is required.
+06-March-2024	17:03:29 ----- UID: 41293a6c-ee77-4176-8123-3cdd8a5f670f /api/v1/upload/thumb -- POST -- File missing
+06-March-2024	17:03:29 ----- UID: 863e4555-2284-4df0-aabb-0b6f50bd788e /api/v1/product/create -- POST -- Furniture validation failed: manufacturer: Path `manufacturer` is required.
+06-March-2024	17:06:36 ----- UID: fdc4e49a-33cd-4b19-ac9d-fc920afaf4ff /api/v1/upload/thumb -- POST -- File missing
+06-March-2024	17:06:36 ----- UID: 2a564f1b-d03e-4974-b142-57071b658172 /api/v1/product/create -- POST -- Furniture validation failed: manufacturer: Path `manufacturer` is required.
+06-March-2024	17:09:01 ----- UID: 5645e50b-23e2-4a76-ab9e-e3409680b9a6 /api/v1/upload/thumb -- POST -- File missing
+06-March-2024	17:09:01 ----- UID: 3d748c2c-942e-4e1f-ab63-b4d3ae2499ad /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	17:09:47 ----- UID: cebcc7b8-a00f-4cbd-b630-13465ed44138 /api/v1/upload/thumb -- POST -- File missing
+06-March-2024	17:09:47 ----- UID: cde6e584-c004-4af6-a684-1413a7492a88 /api/v1/product/create -- POST -- Invalid Product type: 
+06-March-2024	21:47:44 ----- UID: b421b5f2-b501-4655-8d63-d8595bcc62cc /api/v1/user/signin -- POST -- Authentication failed
+06-March-2024	21:47:46 ----- UID: 578cd820-7a51-4a15-91d0-0d558bb644bd /api/v1/user/signin -- POST -- Authentication failed
