@@ -77,7 +77,7 @@ class ProductFactory {
 
   static async findAllPublishProductOfShop({
     product_shop,
-    limit = 50,
+    limit = 30,
     skip = 0,
   }) {
     const query = { product_shop, isPublished: true };
@@ -129,6 +129,7 @@ class ProductFactory {
     filter = { isPublished: true },
     shop_id,
   }) {
+    console.log("FILTER:", JSON.stringify(filter));
     let filters = filter;
     if (shop_id) {
       filters = {

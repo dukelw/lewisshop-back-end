@@ -2681,3 +2681,40 @@
 07-March-2024	23:42:58 ----- UID: 9d851ee2-b65b-48b2-9149-511700bf8378 /api/v1/order/review -- POST -- Cart does not exist
 07-March-2024	23:43:01 ----- UID: b7fb2d73-c969-4c43-bd5f-ed3457392ab0 /api/v1/order/review -- POST -- Cart does not exist
 07-March-2024	23:43:02 ----- UID: 036885f7-18b2-4dd4-ad11-e067985316e6 /api/v1/order/review -- POST -- Cart does not exist
+10-March-2024	19:11:08 ----- UID: 2e721a08-42c0-4822-9aca-6263766b1e7b /api/v1/comment?parent_comment_id=65eda3502cc58b14d6813718&product_id=65df6e7f32db43867a349223&page=1 -- GET -- Can not find parent comment
+10-March-2024	19:17:34 ----- UID: f65e0bd0-735e-4ffe-a0e8-503d49ec4a10 /api/v1/upload/thumb -- POST -- File missing
+10-March-2024	19:17:41 ----- UID: 28649c18-7941-40ce-983f-475a0282c94b /api/v1/upload/thumb -- POST -- File missing
+10-March-2024	19:19:45 ----- UID: 3c2c2aa2-9c20-41a0-b82d-3433f24dbcbd /api/v1/order -- POST -- Some products have been updated recently. please try again
+10-March-2024	19:20:10 ----- UID: 9d4bda8a-6082-4676-b6a9-31fb0440c87f /api/v1/order -- POST -- Some products have been updated recently. please try again
+10-March-2024	23:06:52 ----- UID: 48553f8b-207c-4291-9d29-3a52977e345f /api/v1/shop/[object%20Object] -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+11-March-2024	01:20:22 ----- UID: b2bb37d5-a807-4722-b79c-db6bd2961a42 /api/v1/product/all-product-no-limit?filter=&limit= -- GET -- Parameter "filter" to find() must be an object, got "" (type string)
+11-March-2024	01:20:27 ----- UID: 382acc1d-6bdb-4f03-8fa9-cf9f3e0ca190 /api/v1/product/all-product-no-limit?filter=&limit= -- GET -- Parameter "filter" to find() must be an object, got "" (type string)
+11-March-2024	01:20:50 ----- UID: c4402baa-319f-4832-9363-c6004ee545c0 /api/v1/product/all-product-no-limit?filter=&limit= -- GET -- Parameter "filter" to find() must be an object, got "" (type string)
+11-March-2024	01:21:29 ----- UID: f41cb444-5700-45da-8c25-ec261ac698bd /api/v1/product/all-product-no-limit?filter=[object%20Object]&limit= -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:30:47 ----- UID: e70221cf-6d65-486e-9e01-d70d7d6ea2d4 /api/v1/product/all-product-no-limit?filter=&limit=100000000 -- GET -- Parameter "filter" to find() must be an object, got "" (type string)
+11-March-2024	01:31:15 ----- UID: fb6de3f3-3330-4bb2-b474-4ea79c847710 /api/v1/product/all-product-no-limit?filter=&limit=100000000 -- GET -- Parameter "filter" to find() must be an object, got "" (type string)
+11-March-2024	01:34:16 ----- UID: 1ca8635e-d189-4348-83c9-8d7cd4f09f8c /api/v1/product/all-product-no-limit?filter=[object%20Object]&limit=100000000 -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:46:35 ----- UID: c1092b1e-140a-4b2d-866c-d047e7b696ec /api/v1/product/all-product-no-limit?filter=%5Bobject%20Object%5D&limit=10 -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:48:03 ----- UID: 473b9a84-4ded-40c7-ad8e-7798ee64f165 /api/v1/product/all-product-no-limit?filter=Electronic&limit=10 -- GET -- Parameter "filter" to find() must be an object, got "Electronic" (type string)
+11-March-2024	01:49:01 ----- UID: d94e1d96-0dba-40bc-a43f-46b9b2bfb2fe /api/v1/product/all-product-no-limit?filter=%5Bobject%20Object%5D&limit=10 -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:50:22 ----- UID: 57dd3d8c-24d7-4613-8622-333198df3aba /api/v1/product/all-product-no-limit?filter=%5Bobject%20Object%5D&limit=10 -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:50:55 ----- UID: b4c2272e-8fe7-4474-88bb-394c3ab533de /api/v1/product/all-product-no-limit?filter=%5Bobject%20Object%5D&limit=10 -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:51:50 ----- UID: cf238dd1-aeb0-47cb-beb3-04d8c162109e /api/v1/product/all-product-no-limit?filter=[object%20Object] -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:53:18 ----- UID: 3189b6b8-eecf-40f9-b485-2d21adcc3706 /api/v1/product/all-product-no-limit?filter=[object%20Object] -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:54:39 ----- UID: db9080b6-423c-4d28-a827-36e1e35f6264 /api/v1/product/all-product-no-limit?filter=[object%20Object] -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	01:55:15 ----- UID: 5f23ab7f-dcca-4b2d-bd21-575c18e3f847 /api/v1/product/all-product-no-limit?filter=[object%20Object] -- GET -- Parameter "filter" to find() must be an object, got "[object Object]" (type string)
+11-March-2024	12:23:04 ----- UID: dc559ffd-6c95-49a6-8a71-fb38ced4ae1f /api/v1/product/publish/all -- GET -- Not found keyStore
+11-March-2024	12:23:59 ----- UID: 43707a94-b0fc-428d-8b1b-9563b1350ddd /api/v1/product/publish/all -- GET -- Not found keyStore
+11-March-2024	12:24:02 ----- UID: 71317f55-23ff-4703-a9c1-1139680a7e06 /api/v1/product/publish/all -- GET -- Not found keyStore
+11-March-2024	12:24:02 ----- UID: 7025b5ab-6312-416e-8f35-4716f1f4d590 /api/v1/product/publish/all -- GET -- Not found keyStore
+11-March-2024	12:24:15 ----- UID: b8d8888c-f8e2-4df0-9085-a7f96655078d /api/v1/product/publish/all -- GET -- Not found keyStore
+11-March-2024	12:24:15 ----- UID: 213ae207-cc4e-4cf1-a5d0-68a5c2282821 /api/v1/product/publish/all -- GET -- Not found keyStore
+11-March-2024	12:25:15 ----- UID: 7a6236d7-cfea-4100-82a1-d591866b583a /api/v1/product/publish/all -- GET -- Not found keyStore
+11-March-2024	12:25:15 ----- UID: b174fc57-9165-4c72-9ee7-27c8b258203c /api/v1/product/publish/all -- GET -- Not found keyStore
+11-March-2024	12:25:39 ----- UID: b9a01d1b-84aa-4523-8930-380fd927db65 /api/v1/product/publish/all -- GET -- Cannot read properties of undefined (reading 'user_id')
+11-March-2024	12:25:39 ----- UID: 2e560422-b6fc-4282-9adf-c47256d1cd52 /api/v1/product/publish/all -- GET -- Cannot read properties of undefined (reading 'user_id')
+11-March-2024	12:49:23 ----- UID: bd5deafe-1e15-43b1-8345-ea5299207536 /api/v1/shop/[object%20Object] -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+11-March-2024	12:49:26 ----- UID: 663b2a5d-a936-4dd4-b21b-37063e06832c /api/v1/shop/[object%20Object] -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+11-March-2024	17:37:28 ----- UID: 722b66de-317e-44d7-afe9-a9d7e2c50a0a /api/v1/discount/discount-codes?discount_shop_id=65a78dffcd2e5f046a9d2f8c -- GET -- Invalid user ID
+11-March-2024	17:37:31 ----- UID: d66798bc-86c3-4cba-b16a-e3ab00af8a3d /api/v1/discount/discount-codes?discount_shop_id=65a78dffcd2e5f046a9d2f8c -- GET -- Invalid user ID
+11-March-2024	17:40:22 ----- UID: 77ba5372-6544-4ae2-aeb8-d3edf329090e /api/v1/shop/[object%20Object] -- GET -- Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer

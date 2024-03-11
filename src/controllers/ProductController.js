@@ -58,7 +58,7 @@ class ProductController {
     new SuccessResponse({
       message: "Get all publish product successfully",
       metadata: await ProductService.findAllPublishProductOfShop({
-        product_shop: req.user.user_id,
+        product_shop: req.query.shopID,
       }),
     }).send(res);
   }

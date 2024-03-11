@@ -10,23 +10,22 @@ router.get(
   asyncHandler(discountController.getAllProductApplyADiscountCode)
 );
 router.post("/amount", asyncHandler(discountController.getDiscountAmount));
-
-// Authentication
-router.use(authentication);
-
-router.post("/create", asyncHandler(discountController.create));
-router.get(
-  "/codes/all",
-  asyncHandler(discountController.getAllDiscountCodesOfShop)
-);
 router.get(
   "/discount-codes",
   asyncHandler(discountController.getAllDiscountCodesOfAShopByUser)
+);
+router.get(
+  "/codes/all",
+  asyncHandler(discountController.getAllDiscountCodesOfShop)
 );
 router.post(
   "/codes-of-shops",
   asyncHandler(discountController.getAllDiscountCodesOfShopsByUser)
 );
+// Authentication
+router.use(authentication);
+
+router.post("/create", asyncHandler(discountController.create));
 router.delete(
   "/delete/:code",
   asyncHandler(discountController.deleteDiscountCode)
