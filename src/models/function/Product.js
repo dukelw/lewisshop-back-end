@@ -66,7 +66,26 @@ const searchProductByUser = async ({ keySearch }) => {
 
 const findAllProducts = async ({ limit, sort, page, filter, select }) => {
   const skip = (page - 1) * limit;
-  const sortBy = sort === "ctime" ? { _id: -1 } : { _id: 1 };
+  let sortBy;
+  switch (sort) {
+    case "ctime":
+      sortBy = { _id: -1 };
+      break;
+    case "low":
+      sortBy = { product_price: 1 };
+      break;
+    case "high":
+      sortBy = { product_price: -1 };
+      break;
+    case "asc":
+      sortBy = { product_name: 1 };
+      break;
+    case "desc":
+      sortBy = { product_name: -1 };
+      break;
+    default:
+      sortBy = { _id: 1 };
+  }
   const products = await ProductModel.find(filter)
     .sort(sortBy)
     .skip(skip)

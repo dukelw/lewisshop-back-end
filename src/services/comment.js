@@ -102,6 +102,8 @@ class CommentService {
           comment_user_thumb: 1,
           comment_parent_name: 1,
           comment_product_id: 1,
+          createdAt: 1,
+          updatedAt: 1,
         })
         .sort({ comment_left: 1 });
       return comment;
@@ -118,6 +120,10 @@ class CommentService {
         comment_user_id: 1,
         comment_user_name: 1,
         comment_user_thumb: 1,
+        comment_parent_name: 1,
+        comment_product_id: 1,
+        createdAt: 1,
+        updatedAt: 1,
       })
       .sort({
         comment_left: 1,
