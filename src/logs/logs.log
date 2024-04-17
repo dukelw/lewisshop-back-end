@@ -2741,3 +2741,20 @@
 12-March-2024	13:48:21 ----- UID: 814332d3-ce90-4e90-b5bc-df237f48e1bd /api/v1/product/all-product-no-limit?filter[$or][0][product_type]=Furniture&filter[product_price][$lte]=NaN&filter[isPublished]=true&page=1&limit=30 -- GET -- Cast to Number failed for value "NaN" (type string) at path "product_price" for model "Product"
 12-March-2024	20:23:20 ----- UID: 259c9a49-5e49-4a50-8102-5f8c59096c1c /api/v1/product/all-product-no-limit?filter[$or][0][product_type]=Clothes&filter[isPublished]=true&filter[$orderby][createdAt]=-1&page=1&limit=30 -- GET -- unknown top level operator: $orderby. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
 12-March-2024	20:23:24 ----- UID: 80b0e407-2583-476f-a5f5-9ebbff47ef8b /api/v1/product/all-product-no-limit?filter[$or][0][product_type]=Electronic&filter[$or][1][product_type]=Clothes&filter[isPublished]=true&filter[$orderby][createdAt]=-1&page=1&limit=30 -- GET -- unknown top level operator: $orderby. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+12-March-2024	22:27:20 ----- UID: 4667818b-f03c-4cab-a493-c2dff82a057d /api/v1/order -- POST -- Some products have been updated recently. please try again
+12-March-2024	22:28:11 ----- UID: b3c3f3a8-2845-475f-a3ab-576c7e85e703 /api/v1/order -- POST -- Some products have been updated recently. please try again
+12-March-2024	22:28:39 ----- UID: 927ea4a6-7b70-471c-b02c-92ddd32b053a /api/v1/order -- POST -- Some products have been updated recently. please try again
+12-March-2024	22:29:16 ----- UID: edb81be5-e6f6-4749-abd3-3560813be2a5 /api/v1/order -- POST -- Some products have been updated recently. please try again
+12-March-2024	22:29:42 ----- UID: 56532398-e665-4ce8-bf7a-46985ce9a341 /api/v1/order -- POST -- Some products have been updated recently. please try again
+12-March-2024	23:59:12 ----- UID: bb0f91a7-bd9c-43da-a182-3543e5b413b3 /api/v1/user/add-favourite -- POST -- User not found
+12-March-2024	23:59:17 ----- UID: cdd4df4a-42c9-4b31-b476-33c3a2195c46 /api/v1/user/add-favourite -- POST -- User not found
+12-March-2024	23:59:26 ----- UID: f646a30f-1137-461f-b1af-526891b6e14f /api/v1/user/add-favourite -- POST -- User not found
+13-March-2024	00:03:15 ----- UID: f07873ae-ccac-4240-bbc9-23e7a99933f6 /api/v1/user/add-favourite -- POST -- foundUser.favourite.contains is not a function
+13-March-2024	00:13:20 ----- UID: 911cddaf-b9a7-4d79-b824-2ba0213c8819 /api/v1/user/add-favourite -- POST -- User already have this product in favorite list
+13-March-2024	00:13:44 ----- UID: f7584831-9418-4881-8899-9b9d9d9d3bda /api/v1/user/add-favourite -- POST -- User already have this product in favorite list
+13-March-2024	00:13:49 ----- UID: 81b7c86f-6890-4182-aca3-eb0bd811586a /api/v1/user/add-favourite -- POST -- User already have this product in favorite list
+13-March-2024	15:50:06 ----- UID: 4e04710e-ed23-4d1f-8e0c-a69be3477ef8 /api/v1/product/all-product-no-limit?filter[product_price][$lte]=All+price&page=1&limit=30&sort=ctime -- GET -- Cast to Number failed for value "All price" (type string) at path "product_price" for model "Product"
+15-March-2024	11:31:15 ----- UID: 32a7231e-2431-414a-8c83-65a20ae1e4d3 /api/v1/comment?parent_comment_id=65f3cf1182614f76baa15129&product_id=65a4843d6ce3c89edb196927&page=1 -- GET -- Can not find parent comment
+15-March-2024	11:31:33 ----- UID: 4481130a-1f5b-4fc5-b1f4-4ae2f1c79a87 /api/v1/user/signin -- POST -- Authentication failed
+15-March-2024	11:31:37 ----- UID: 8b9e254e-0766-478e-b4f5-39b218b1ac24 /api/v1/user/signin -- POST -- Authentication failed
+15-March-2024	11:34:10 ----- UID: 9ab9f2ce-28e1-40b4-ba46-3e7006e5c4c2 /api/v1/upload/thumb -- POST -- File missing

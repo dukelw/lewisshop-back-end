@@ -11,6 +11,7 @@ const keyTokenService = require("./key-token");
 const { generatePairOfToken } = require("../auth/utils");
 const { getInfoData, convertToObjectIDMongo } = require("../utils/index");
 const { findByEmail } = require("../helpers/function/user");
+const { isProductInFavorites } = require("../models/function/Product");
 
 class UserService {
   signUp = async ({ name, email, password, isAdmin }) => {
@@ -301,6 +302,19 @@ class UserService {
 
     console.log("Updated user: " + updatedUser, updatedUser.modifiedCount);
     return updatedUser.modifiedCount;
+  };
+
+  addToFavourite = async ({ product, user_id }) => {
+    const foundUser = await UserModel.findById(user_id);
+    if (!foundUser) throw new NotFoundError("User not found");
+
+    const isInFavourite = isProductInFavorites(product, foundUser.favourite);
+    if (isInFavourite)
+      throw new BadRequestError(
+        "User already have this product in favorite list"
+      );
+    foundUser.favourite.push(product);
+    return await foundUser.save();
   };
 }
 

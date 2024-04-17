@@ -140,6 +140,21 @@ const checkProductByServer = async (products) => {
   );
 };
 
+const isProductInFavorites = (productToCheck, favorites) => {
+  for (let i = 0; i < favorites.length; i++) {
+    const favorite = favorites[i];
+
+    if (
+      favorite.product_name === productToCheck.product_name &&
+      favorite.product_price === productToCheck.product_price &&
+      favorite.product_type === productToCheck.product_type
+    ) {
+      return true;
+    }
+  }
+  return false;
+};
+
 module.exports = {
   publishProductByShopId,
   unpublishProductByShopId,
@@ -151,4 +166,5 @@ module.exports = {
   updateProductByID,
   getProductByID,
   checkProductByServer,
+  isProductInFavorites,
 };

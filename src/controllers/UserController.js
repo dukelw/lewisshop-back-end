@@ -90,6 +90,13 @@ class UserController {
       metadata: await userService.changePassword(req.body),
     }).send(res);
   }
+
+  async addToFavouriteList(req, res, next) {
+    new SuccessResponse({
+      message: "Add product to favourite list successfully",
+      metadata: await userService.addToFavourite(req.body),
+    }).send(res);
+  }
 }
 
 module.exports = new UserController();
