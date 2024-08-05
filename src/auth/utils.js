@@ -72,15 +72,22 @@ const authentication = asyncHandler(async (req, res, next) => {
     }
   }
 
+  console.log("Access token normal 1111!!!");
   const accessToken = req.headers[HEADER.AUTHORIZATION];
   if (!accessToken) throw new AuthFailureError("Invalid request");
 
   try {
+    console.log("Access token normal 2222!!!");
+    console.log(keyStore);
+
     const decodeUser = JWT.verify(accessToken, keyStore.publicKey);
+    console.log(`decodeUser`, JSON.stringify(decodeUser));
     if (userID !== decodeUser.user_id)
       throw new AuthFailureError("Invalid userID");
     req.keyStore = keyStore;
     req.user = decodeUser;
+    console.log("Access token normal 3333!!!");
+
     return next();
   } catch (error) {
     throw error;

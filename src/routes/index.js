@@ -10,6 +10,7 @@ const commentRouter = require("./comment");
 const notificationRouter = require("./notification");
 const paymentRouter = require("./payment");
 const uploadRouter = require("./upload");
+const variantRouter = require("./variant");
 const { apiKey, permission } = require("../auth/check-auth");
 const { pushToLogDiscord } = require("../middlewares/index");
 
@@ -32,6 +33,7 @@ function route(app) {
   app.use("/api/v1/notification", notificationRouter);
   app.use("/api/v1/payment", paymentRouter);
   app.use("/api/v1/upload", uploadRouter);
+  app.use("/api/v1/variant", variantRouter);
   app.use("/", siteRouter);
 }
 

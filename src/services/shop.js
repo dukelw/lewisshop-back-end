@@ -198,6 +198,34 @@ class ShopService {
       .lean();
   };
 
+  getShopByName = async (keyword) => {
+    if (!keyword) throw new BadRequestError("Keyword is required");
+
+    // Tách từ khóa thành mảng các từ
+    const keywords = keyword.split(" ").map((word) => new RegExp(word, "i"));
+
+    const shops = await ShopModel.find({
+      $or: keywords.map((word) => ({ name: { $regex: word } })),
+    })
+      .select(
+        getSelectData([
+          "_id",
+          "name",
+          "thumb",
+          "email",
+          "description",
+          "status",
+          "birthday",
+          "phone_number",
+        ])
+      )
+      .lean();
+
+    if (!shops || shops.length === 0) throw new NotFoundError("No shops found");
+
+    return shops;
+  };
+
   updateInformation = async ({
     shop_id,
     name,

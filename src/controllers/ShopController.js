@@ -41,6 +41,14 @@ class ShopController {
     }).send(res);
   }
 
+  async findShopByName(req, res, next) {
+    console.log("Search shop by name....");
+    new SuccessResponse({
+      message: "Find shop by name successfully",
+      metadata: await shopService.getShopByName(req.params.keySearch),
+    }).send(res);
+  }
+
   async findAllShops(req, res, next) {
     new SuccessResponse({
       message: "Find all shop successfully",

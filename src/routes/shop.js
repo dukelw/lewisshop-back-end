@@ -4,6 +4,7 @@ const { authentication } = require("../auth/utils");
 const asyncHandler = require("../helpers/async-handler");
 const shopController = require("../controllers/ShopController");
 
+router.get("/search/:keySearch", asyncHandler(shopController.findShopByName));
 router.post("/signin", asyncHandler(shopController.signin));
 router.post("/signup", asyncHandler(shopController.signup));
 router.get("/all", asyncHandler(shopController.findAllShops));

@@ -25,6 +25,6 @@ const config = {
   pro,
 };
 
-const env = process.env.CURRENT_ENV || "dev"
+const env = process.env.CURRENT_ENV || "dev";
 
-module.exports = config[env]
+module.exports = config[env];
