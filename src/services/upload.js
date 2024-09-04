@@ -5,7 +5,8 @@ const {
   GetObjectCommand,
   DeleteObjectCommand,
 } = require("../configs/s3");
-const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
+// const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
+const { getSignedUrl } = require("@aws-sdk/cloudfront-signer");
 const crypto = require("crypto");
 const randomImageName = () => crypto.randomBytes(16).toString("hex");
 
@@ -26,16 +27,24 @@ const uploadImageFromLocalS3 = async ({ file }) => {
     console.log("S3 upload result:::", result);
 
     // config public url
-    const signedUrl = new GetObjectCommand({
-      Bucket: process.env.AWS_BUCKET_NAME,
-      Key: imageName,
-    });
+    // const signedUrl = new GetObjectCommand({
+    //   Bucket: process.env.AWS_BUCKET_NAME,
+    //   Key: imageName,
+    // });
 
-    // export public url
-    const url = await getSignedUrl(s3, signedUrl, { expiresIn: 3600 });
+    // const url = await getSignedUrl(s3, signedUrl, { expiresIn: 3600 });
+    // export public url (have cloudfront)
 
-    return {
+    // Video #69
+
+    const url = getSignedUrl({
       url: process.env.AWS_CLOUDFRONT + "/" + imageName,
+      keyPairId: process.env.AWS_CLOUDFRONT_PUBLIC_KEY,
+      dateLessThan: new Date(Date.now() + 1000 * 60), // expired in 60s
+      privateKey: process.env.AWS_CLOUDFRONT_PRIVATE_KEY,
+    });
+    return {
+      url,
       result,
     };
   } catch (error) {
