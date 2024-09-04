@@ -32,8 +32,8 @@ function route(app) {
   app.use("/api/v1/comment", commentRouter);
   app.use("/api/v1/notification", notificationRouter);
   app.use("/api/v1/payment", paymentRouter);
-  app.use("/api/v1/upload", uploadRouter);
   app.use("/api/v1/variant", variantRouter);
+  app.use("/api/v1/upload", uploadRouter);
   app.use("/", siteRouter);
 }
 
